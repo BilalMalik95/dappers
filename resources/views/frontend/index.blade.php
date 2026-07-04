@@ -1,6 +1,6 @@
-﻿@extends('frontend.layout')
-@section('title', 'DapperSolutions - Software House in Rawalpindi | AI & Web Development')
-@section('meta_description', 'DapperSolutions is a leading software house in Rawalpindi, Pakistan, delivering AI integration, custom software development, SaaS platforms, and Laravel backend systems for businesses worldwide.')
+@extends('frontend.layout')
+@section('title', 'DappersTech - Software House in Rawalpindi | AI & Web Development')
+@section('meta_description', 'DappersTech is a leading software house in Rawalpindi, Pakistan, delivering AI integration, custom software development, SaaS platforms, and Laravel backend systems for businesses worldwide.')
 @section('meta_keywords', 'software house in Rawalpindi, software house Rawalpindi, IT company Rawalpindi, web development company Rawalpindi, AI software development company, AI automation agency, AI agent development company, generative AI integration services, custom built ChatGPT, RAG systems, AI-powered web development agency, custom software development company, SaaS development agency')
 
 @section('styles')
@@ -11,12 +11,12 @@
         [
             '@type' => ['Organization', 'ProfessionalService'],
             '@id' => url('/#organization'),
-            'name' => 'DapperSolutions IT Services',
-            'alternateName' => 'DapperSolutions Software House',
+            'name' => 'DappersTech IT Services',
+            'alternateName' => 'DappersTech Software House',
             'url' => url('/'),
-            'logo' => asset('frontend/assets/images/logo/logo-dappersolutions.png'),
-            'image' => asset('frontend/assets/images/logo/logo-dappersolutions.png'),
-            'description' => 'DapperSolutions is a software house in Rawalpindi, Pakistan, delivering AI-powered software development, SaaS platforms, AI integration services, Laravel backend systems, and workflow automation for clients worldwide.',
+            'logo' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
+            'image' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
+            'description' => 'DappersTech is a software house in Rawalpindi, Pakistan, delivering AI-powered software development, SaaS platforms, AI integration services, Laravel backend systems, and workflow automation for clients worldwide.',
             'foundingDate' => '2017',
             'founder' => ['@type' => 'Person', 'name' => 'Bilal Malik', 'url' => 'https://malikbilal.com'],
             'sameAs' => [
@@ -25,7 +25,7 @@
                 'https://wa.me/923339302731',
             ],
             'telephone' => '+92-333-9302731',
-            'email' => 'imbilalmalik95@gmail.com',
+            'email' => 'info@dapperstech.com',
             'priceRange' => '$$',
             'address' => [
                 '@type' => 'PostalAddress',
@@ -66,7 +66,7 @@
             ],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
-                'name' => 'DapperSolutions Services',
+                'name' => 'DappersTech Services',
                 'itemListElement' => [
                     ['@type' => 'Service', 'name' => 'AI & Automation Integration', 'description' => 'Generative AI integration, OpenAI & Claude chatbots, RAG pipelines, and vector database systems.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'Backend Development', 'description' => 'Laravel and Node.js backends, REST APIs, admin panels, and scalable database architecture.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
@@ -82,7 +82,7 @@
         ],
         [
             '@type' => 'WebSite',
-            'name' => 'DapperSolutions',
+            'name' => 'DappersTech',
             'url' => url('/'),
         ],
     ],
@@ -102,7 +102,7 @@
                 <span class="home-slide-kicker">Software House in Rawalpindi · 7+ Years · 40+ Systems Shipped · 5-Star Upwork</span>
                 <h1>Software House in Rawalpindi Engineering Production-Grade AI &amp; Web Systems for Growing Businesses</h1>
                 <p>
-                    DapperSolutions is a software house in Rawalpindi, Pakistan delivering AI-powered software
+                    DappersTech is a software house in Rawalpindi, Pakistan delivering AI-powered software
                     development, custom software, scalable SaaS platforms, Laravel backend systems, and
                     end-to-end AI integration services for businesses worldwide.
                 </p>
@@ -159,7 +159,7 @@
                         Book a Consultation
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="{{ route('aboutus') }}" class="home-outline-btn">About DapperSolutions</a>
+                    <a href="{{ route('aboutus') }}" class="home-outline-btn">About DappersTech</a>
                 </div>
             </div>
         </div>
@@ -411,7 +411,7 @@
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span><i class="fa-regular fa-calendar"></i> {{ $blog->created_at->format('M d, Y') }}</span>
-                            <span><i class="fa-regular fa-circle-user"></i> {{ $blog->user->name ?? 'DapperSolutions' }}</span>
+                            <span><i class="fa-regular fa-circle-user"></i> {{ $blog->user->name ?? 'DappersTech' }}</span>
                         </div>
 
                         <h3>{{ $blog->title }}</h3>
@@ -452,7 +452,7 @@
 
         <div class="testimonial-card">
             <div class="testimonial-author">
-                <img src="{{ asset('frontend/assets/images/team/image.jpg') }}" alt="Bilal Malik, Founder of DapperSolutions">
+                <img src="{{ asset('frontend/assets/images/team/image.jpg') }}" alt="Bilal Malik, Founder of DappersTech">
                 <h4>Bilal Malik <span>Founder</span></h4>
                 <span class="testimonial-badge"><i class="fa-solid fa-quote-left"></i> Message From The Founder</span>
             </div>

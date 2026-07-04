@@ -15,14 +15,14 @@
       "serviceType": "Search Engine Optimization",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com",
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"}
       },
       "description": "Expert SEO optimization services including technical audits, on-page optimization, local SEO, content strategy, and link building - data-driven SEO that delivers measurable organic traffic growth.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/seo-optimization",
+      "url": "https://dapperstech.com/services/seo-optimization",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "SEO Services Packages",
@@ -37,9 +37,9 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "SEO Optimization", "item": "https://dappersolution.com/services/seo-optimization"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "SEO Optimization", "item": "https://dapperstech.com/services/seo-optimization"}
       ]
     }
   ]

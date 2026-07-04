@@ -15,19 +15,19 @@
       "serviceType": "Web Design",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com"
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com"
       },
       "description": "Creative and conversion-focused web design services including UI/UX design, Figma to HTML, custom website design, landing pages, website redesign, graphic design and branding.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-design"
+      "url": "https://dapperstech.com/services/web-design"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dappersolution.com/services/web-design"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dapperstech.com/services/web-design"}
       ]
     }
   ]

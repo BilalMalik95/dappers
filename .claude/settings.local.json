@@ -1,4 +1,4 @@
-{
+﻿{
   "permissions": {
     "allow": [
       "WebFetch(domain:malikbilal.com)",
@@ -7,18 +7,18 @@
       "Bash(php -l app/Http/Controllers/HomeController.php)",
       "Bash(php -l app/Mail/NewsletterSubscriptionMail.php)",
       "Bash(php -l routes/web.php)",
-      "Bash(cd \"/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions\" && grep -n \"Clean, Documented Code\\\\|Security-First Development\\\\|Custom PHP Web Application\" resources/views/frontend/*.blade.php)",
-      "Read(//c/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions/resources/views/**)",
-      "Bash(cd \"/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions\" && grep -n \"\\\\.why-item\\\\|\\\\.why-choose-grid\\\\|\\\\.why-icon\\\\|\\\\.why-choose-box\\\\|\\\\.why-choose-content\\\\|\\\\.why-choose-visual\\\\|\\\\.why-floating-card\\\\|\\\\.why-tech-pill\\\\|\\\\.services-premium-v2\\\\|\\\\.services-v2-head\\\\|\\\\.services-v2-layout\\\\|\\\\.services-v2-stack\\\\|\\\\.services-v2-bottom\\\\|\\\\.service-feature-card\\\\|\\\\.service-feature-img\\\\|\\\\.service-feature-content\\\\|\\\\.service-feature-points\\\\|\\\\.service-card-action\\\\|\\\\.service-mini-card\\\\|\\\\.service-mini-icon\\\\|\\\\.service-wide-card\\\\|\\\\.service-tag\" public/frontend/assets/css/site-theme.css)",
-      "Read(//c/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions/public/frontend/assets/css/**)",
+      "Bash(cd \"/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech\" && grep -n \"Clean, Documented Code\\\\|Security-First Development\\\\|Custom PHP Web Application\" resources/views/frontend/*.blade.php)",
+      "Read(//c/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech/resources/views/**)",
+      "Bash(cd \"/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech\" && grep -n \"\\\\.why-item\\\\|\\\\.why-choose-grid\\\\|\\\\.why-icon\\\\|\\\\.why-choose-box\\\\|\\\\.why-choose-content\\\\|\\\\.why-choose-visual\\\\|\\\\.why-floating-card\\\\|\\\\.why-tech-pill\\\\|\\\\.services-premium-v2\\\\|\\\\.services-v2-head\\\\|\\\\.services-v2-layout\\\\|\\\\.services-v2-stack\\\\|\\\\.services-v2-bottom\\\\|\\\\.service-feature-card\\\\|\\\\.service-feature-img\\\\|\\\\.service-feature-content\\\\|\\\\.service-feature-points\\\\|\\\\.service-card-action\\\\|\\\\.service-mini-card\\\\|\\\\.service-mini-icon\\\\|\\\\.service-wide-card\\\\|\\\\.service-tag\" public/frontend/assets/css/site-theme.css)",
+      "Read(//c/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech/public/frontend/assets/css/**)",
       "Bash(python3 -)",
       "Bash(command -v chromium-cli)",
       "Bash(npx --yes chromium-cli --help)",
       "Bash(NODE_PATH=\"/c/Users/User/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node _shot.js)",
-      "Bash(cd \"/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions\" && ls -la _shot_*.png 2>/dev/null)",
-      "Read(//c/c/Users/User/Desktop/Office work/DapperSolutions Website/**)",
+      "Bash(cd \"/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech\" && ls -la _shot_*.png 2>/dev/null)",
+      "Read(//c/c/Users/User/Desktop/Office work/DappersTech Website/**)",
       "Bash(NODE_PATH=\"/c/Users/User/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node _shot2.js)",
-      "Bash(cd \"/c/Users/User/Desktop/Office work/DapperSolutions Website/dappersolutions\" && sed -i \"s#/services/web-development/php-development#/services/digital-marketing/ppc-advertising#\" _shot2.js && NODE_PATH=\"/c/Users/User/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node _shot2.js)",
+      "Bash(cd \"/c/Users/User/Desktop/Office work/DappersTech Website/dapperstech\" && sed -i \"s#/services/web-development/php-development#/services/digital-marketing/ppc-advertising#\" _shot2.js && NODE_PATH=\"/c/Users/User/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node _shot2.js)",
       "Bash(grep -E \"services$|ui_ux_design|web_design |web_dev_laravel|seo_optimization|contact_us |\\\\bteam\\\\b\")",
       "Bash(php -l resources/views/frontend/includes/header.blade.php)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -L http://127.0.0.1:8001/admin/team-members --max-time 10)",
@@ -54,7 +54,7 @@
       "Bash(node .navredesign.js)"
     ],
     "additionalDirectories": [
-      "c:\\c\\Users\\User\\Desktop\\Office work\\DapperSolutions Website\\dappersolutions"
+      "c:\\c\\Users\\User\\Desktop\\Office work\\DappersTech Website\\dapperstech"
     ]
   }
 }

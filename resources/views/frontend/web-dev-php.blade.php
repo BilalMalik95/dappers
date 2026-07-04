@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'PHP Development Services | Dynamic Websites & Web Applications | DapperSolutions')
+@section('title', 'PHP Development Services | Dynamic Websites & Web Applications | DappersTech')
 @section('meta_description', 'Reliable and high-performance PHP development services - dynamic websites, web applications, custom APIs, CMS solutions, and e-commerce platforms. Expert PHP developers.')
 @section('meta_keywords', 'PHP development services, PHP developer Pakistan, custom PHP application, PHP web development, PHP CMS, PHP e-commerce, hire PHP developer, PHP API development')
 
@@ -13,17 +13,17 @@
       "@type": "Service",
       "name": "PHP Development Services",
       "serviceType": "PHP Web Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Reliable and high-performance PHP development services for dynamic websites, web applications, custom APIs, CMS solutions, and e-commerce platforms.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-development/php-development"
+      "url": "https://dapperstech.com/services/web-development/php-development"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dappersolution.com/services/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "PHP Development", "item": "https://dappersolution.com/services/web-development/php-development"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/services/web-development"},
+        {"@type": "ListItem", "position": 3, "name": "PHP Development", "item": "https://dapperstech.com/services/web-development/php-development"}
       ]
     }
   ]

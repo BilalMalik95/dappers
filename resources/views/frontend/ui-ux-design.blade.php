@@ -15,20 +15,20 @@
       "serviceType": "UI/UX Design",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com"
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com"
       },
       "description": "Intuitive and visually engaging interfaces built on real user research - wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-design/ui-ux-design"
+      "url": "https://dapperstech.com/services/web-design/ui-ux-design"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dappersolution.com/services/web-design"},
-        {"@type": "ListItem", "position": 4, "name": "UI/UX Design", "item": "https://dappersolution.com/services/web-design/ui-ux-design"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dapperstech.com/services/web-design"},
+        {"@type": "ListItem", "position": 4, "name": "UI/UX Design", "item": "https://dapperstech.com/services/web-design/ui-ux-design"}
       ]
     }
   ]

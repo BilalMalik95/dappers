@@ -1,9 +1,9 @@
 @extends('frontend.layout')
 
 @section('title', 'Latest Blogs | Web Development, Software & Digital Marketing Insights')
-@section('meta_description', 'Read the latest insights from DapperSolutions about web development, software development, UI/UX design, ecommerce, SEO, APIs, cloud solutions, and business automation.')
-@section('meta_keywords', 'IT blog, software development blog, web development articles, SEO tips, digital marketing insights, ecommerce development, UI UX design, API development, DapperSolutions blog')
-@section('og_image', $blogs->first() ? asset('frontend/assets/images/blog/' . $blogs->first()->image) : asset('frontend/assets/images/logo/logo-dappersolutions.png'))
+@section('meta_description', 'Read the latest insights from DappersTech about web development, software development, UI/UX design, ecommerce, SEO, APIs, cloud solutions, and business automation.')
+@section('meta_keywords', 'IT blog, software development blog, web development articles, SEO tips, digital marketing insights, ecommerce development, UI UX design, API development, DappersTech blog')
+@section('og_image', $blogs->first() ? asset('frontend/assets/images/blog/' . $blogs->first()->image) : asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'))
 
 @php
     $featured = $blogs->first();
@@ -17,15 +17,15 @@
   "@graph": [
     {
       "@type": "CollectionPage",
-      "name": "DapperSolutions Blog",
-      "url": "https://dappersolution.com/blogs",
+      "name": "DappersTech Blog",
+      "url": "https://dapperstech.com/blogs",
       "description": "Articles on web development, software development, UI/UX design, ecommerce, SEO, APIs, cloud solutions, and business automation."
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://dappersolution.com/blogs"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://dapperstech.com/blogs"}
       ]
     },
     {
@@ -107,7 +107,7 @@
 
                 <div class="blog-featured-meta">
                     <span><i class="fa-regular fa-calendar"></i> {{ $featured->created_at->format('M d, Y') }}</span>
-                    <span><i class="fa-regular fa-user"></i> {{ $featured->user->name ?? 'DapperSolutions Team' }}</span>
+                    <span><i class="fa-regular fa-user"></i> {{ $featured->user->name ?? 'DappersTech Team' }}</span>
                     <span><i class="fa-regular fa-folder"></i> {{ $featured->category }}</span>
                 </div>
 
@@ -151,7 +151,7 @@
                         <div class="blog-list-content">
                             <div class="blog-list-meta">
                                 <span><i class="fa-regular fa-calendar"></i> {{ $blog->created_at->format('M d, Y') }}</span>
-                                <span><i class="fa-regular fa-user"></i> {{ $blog->user->name ?? 'DapperSolutions' }}</span>
+                                <span><i class="fa-regular fa-user"></i> {{ $blog->user->name ?? 'DappersTech' }}</span>
                             </div>
 
                             <h3>{{ $blog->title }}</h3>

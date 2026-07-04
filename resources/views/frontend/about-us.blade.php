@@ -1,8 +1,8 @@
 @extends('frontend.layout')
 
-@section('title', 'About DapperSolutions | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'DapperSolutions is a premium software house in Rawalpindi, Pakistan providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
-@section('meta_keywords', 'about DapperSolutions, software house in Rawalpindi, software house Rawalpindi, software development company, IT services company, web development, custom software, mobile app development, UI UX design, ecommerce development, API development, cloud solutions')
+@section('title', 'About DappersTech | Software House in Rawalpindi, Pakistan')
+@section('meta_description', 'DappersTech is a premium software house in Rawalpindi, Pakistan providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
+@section('meta_keywords', 'about DappersTech, software house in Rawalpindi, software house Rawalpindi, software development company, IT services company, web development, custom software, mobile app development, UI UX design, ecommerce development, API development, cloud solutions')
 @section('og_image', 'https://images.pexels.com/photos/6804612/pexels-photo-6804612.jpeg?auto=compress&cs=tinysrgb&w=1200')
 
 @section('styles')
@@ -12,19 +12,19 @@
   "@graph": [
     {
       "@type": "AboutPage",
-      "name": "About DapperSolutions",
-      "url": "https://dappersolution.com/about-us",
-      "description": "DapperSolutions is a premium IT services and software development company providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.",
+      "name": "About DappersTech",
+      "url": "https://dapperstech.com/about-us",
+      "description": "DappersTech is a premium IT services and software development company providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.",
       "mainEntity": {
         "@type": ["Organization", "ProfessionalService"],
-        "name": "DapperSolutions IT Services",
-        "alternateName": "DapperSolutions Software House",
-        "url": "https://dappersolution.com",
+        "name": "DappersTech IT Services",
+        "alternateName": "DappersTech Software House",
+        "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"},
         "description": "Software house in Rawalpindi, Pakistan helping businesses build premium websites, ecommerce platforms, custom dashboards, APIs, mobile apps, automation systems, and digital growth solutions.",
         "telephone": "+92-333-9302731",
-        "email": "imbilalmalik95@gmail.com",
+        "email": "info@dapperstech.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Mid City Mall, Rehmanabad, Murree Road",
@@ -43,8 +43,8 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://dappersolution.com/about-us"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://dapperstech.com/about-us"}
       ]
     }
   ]
@@ -57,26 +57,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Where is DapperSolutions located?",
+      "name": "Where is DappersTech located?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DapperSolutions is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely."
+        "text": "DappersTech is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely."
       }
     },
     {
       "@type": "Question",
-      "name": "What does DapperSolutions actually do?",
+      "name": "What does DappersTech actually do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DapperSolutions is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies."
+        "text": "DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies."
       }
     },
     {
       "@type": "Question",
-      "name": "How long has DapperSolutions been in business?",
+      "name": "How long has DappersTech been in business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DapperSolutions has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects."
+        "text": "DappersTech has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects."
       }
     },
     {
@@ -115,7 +115,7 @@
         <div class="about-editorial-grid">
 
             <div class="about-editorial-left">
-                <span class="about-label">About DapperSolutions</span>
+                <span class="about-label">About DappersTech</span>
 
                 <h1>
                     We design and build digital systems that help businesses move forward.
@@ -124,7 +124,7 @@
 
             <div class="about-editorial-right">
                 <p>
-                    DapperSolutions is a software house in Rawalpindi, Pakistan helping businesses build premium
+                    DappersTech is a software house in Rawalpindi, Pakistan helping businesses build premium
                     websites, ecommerce platforms, custom dashboards, APIs, mobile apps, automation systems,
                     and digital growth solutions for clients locally and worldwide.
                 </p>
@@ -397,19 +397,19 @@
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>About DapperSolutions - Frequently Asked Questions</h2>
+    <h2>About DappersTech - Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>Where is DapperSolutions located?</summary>
-        <p>DapperSolutions is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely.</p>
+        <summary>Where is DappersTech located?</summary>
+        <p>DappersTech is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely.</p>
       </details>
       <details>
-        <summary>What does DapperSolutions actually do?</summary>
-        <p>DapperSolutions is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies.</p>
+        <summary>What does DappersTech actually do?</summary>
+        <p>DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies.</p>
       </details>
       <details>
-        <summary>How long has DapperSolutions been in business?</summary>
-        <p>DapperSolutions has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects.</p>
+        <summary>How long has DappersTech been in business?</summary>
+        <p>DappersTech has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects.</p>
       </details>
       <details>
         <summary>What industries or business sizes do you work with?</summary>

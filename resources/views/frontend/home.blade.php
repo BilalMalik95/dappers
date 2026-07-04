@@ -1,1 +1,1 @@
-﻿@extends('frontend.index')
+@extends('frontend.index')

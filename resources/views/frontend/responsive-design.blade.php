@@ -15,20 +15,20 @@
       "serviceType": "Responsive Web Design",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com"
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com"
       },
       "description": "Mobile-first designs that look and function flawlessly across all devices and screen sizes - smartphones, tablets, laptops, and large desktops, every breakpoint perfect.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-design/responsive-design"
+      "url": "https://dapperstech.com/services/web-design/responsive-design"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dappersolution.com/services/web-design"},
-        {"@type": "ListItem", "position": 4, "name": "Responsive Design", "item": "https://dappersolution.com/services/web-design/responsive-design"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dapperstech.com/services/web-design"},
+        {"@type": "ListItem", "position": 4, "name": "Responsive Design", "item": "https://dapperstech.com/services/web-design/responsive-design"}
       ]
     }
   ]

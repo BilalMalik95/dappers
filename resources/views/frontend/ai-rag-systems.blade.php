@@ -13,17 +13,17 @@
       "@type": "Service",
       "name": "RAG Systems & Document Intelligence",
       "serviceType": "Retrieval-Augmented Generation Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Retrieval-augmented generation pipelines that ground LLM answers in your own documents, knowledge base, or database - with vector search, chunking strategy, and citation tracking.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/ai-development/rag-systems"
+      "url": "https://dapperstech.com/services/ai-development/rag-systems"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dappersolution.com/services/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "RAG Systems", "item": "https://dappersolution.com/services/ai-development/rag-systems"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/services/ai-development"},
+        {"@type": "ListItem", "position": 3, "name": "RAG Systems", "item": "https://dapperstech.com/services/ai-development/rag-systems"}
       ]
     }
   ]

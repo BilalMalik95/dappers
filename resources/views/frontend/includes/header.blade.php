@@ -4,8 +4,8 @@
 
             <a href="{{ route('home') }}" class="logo">
                 <img
-                    src="{{ asset('frontend/assets/images/logo/dappersolutions-logo-trimmed.png') }}"
-                    alt="DapperSolution Logo"
+                    src="{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}"
+                    alt="DappersTech Logo"
                     class="header-logo-img logo-for-dark">
             </a>
 

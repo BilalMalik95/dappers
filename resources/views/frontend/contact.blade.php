@@ -1,7 +1,7 @@
 {{-- @extends('frontend.layout')
 @section('title','Contact Us | Web & App Development Experts')
-@section('meta_description','Contact DapperSolutions to discuss your project or get a free quote. Let our expert developers bring your web, app, or Laravel project to life. We`re ready to help.')
-@section('meta_keywords','contact dappersolutions, contact web development company, contact laravel developers, website quote, hire web developers, get in touch web agency, web development support')
+@section('meta_description','Contact DappersTech to discuss your project or get a free quote. Let our expert developers bring your web, app, or Laravel project to life. We`re ready to help.')
+@section('meta_keywords','contact dapperstech, contact web development company, contact laravel developers, website quote, hire web developers, get in touch web agency, web development support')
 
 @section('styles')
 <style>
@@ -172,7 +172,7 @@
       <div class="contact-info">
         <h2>Let's discuss your next project</h2>
         <p class="contact-intro">
-          Share your requirements and Bilal Malik and the DapperSolutions team will guide you
+          Share your requirements and Bilal Malik and the DappersTech team will guide you
           to the right digital solution - with a written scope before any work begins.
         </p>
 
@@ -387,9 +387,9 @@
  --}}
 @extends('frontend.layout')
 
-@section('title', 'Contact DapperSolutions | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'Contact DapperSolutions, a software house in Rawalpindi, Pakistan (Mid City Mall, Rehmanabad, Murree Road), for premium web development, software development, mobile apps, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
-@section('meta_keywords', 'contact DapperSolutions, software house in Rawalpindi, software house Rawalpindi contact, IT services contact, software development company contact, web development agency, app development company, custom software, digital marketing services')
+@section('title', 'Contact DappersTech | Software House in Rawalpindi, Pakistan')
+@section('meta_description', 'Contact DappersTech, a software house in Rawalpindi, Pakistan (Mid City Mall, Rehmanabad, Murree Road), for premium web development, software development, mobile apps, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
+@section('meta_keywords', 'contact DappersTech, software house in Rawalpindi, software house Rawalpindi contact, IT services contact, software development company contact, web development agency, app development company, custom software, digital marketing services')
 
 @section('styles')
 <script type="application/ld+json">
@@ -399,12 +399,12 @@
         [
             '@type' => ['Organization', 'ProfessionalService'],
             '@id' => url('/#organization'),
-            'name' => 'DapperSolutions IT Services',
-            'alternateName' => 'DapperSolutions Software House',
+            'name' => 'DappersTech IT Services',
+            'alternateName' => 'DappersTech Software House',
             'url' => url('/'),
-            'logo' => asset('frontend/assets/images/logo/logo-dappersolutions.png'),
+            'logo' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
             'telephone' => '+92-333-9302731',
-            'email' => 'xyz@gmail.com',
+            'email' => 'info@dapperstech.com',
             'address' => [
                 '@type' => 'PostalAddress',
                 'streetAddress' => 'Mid City Mall, Rehmanabad, Murree Road',
@@ -421,7 +421,7 @@
             'contactPoint' => [
                 '@type' => 'ContactPoint',
                 'telephone' => '+92-333-9302731',
-                'email' => 'xyz@gmail.com',
+                'email' => 'info@dapperstech.com',
                 'contactType' => 'customer service',
                 'areaServed' => 'Worldwide',
             ],
@@ -464,7 +464,7 @@
                 <div class="contact-ceo-top">
                     <div class="contact-ceo-avatar">
                         <img src="{{ asset('frontend/assets/images/team/image.jpg') }}"
-                             alt="Bilal Malik, Founder of DapperSolutions">
+                             alt="Bilal Malik, Founder of DappersTech">
                     </div>
 
                     <div>
@@ -474,13 +474,13 @@
                 </div>
 
                 <p>
-                    “At DapperSolutions, our goal is to understand your business first, then build
+                    “At DappersTech, our goal is to understand your business first, then build
                     digital solutions that are beautiful, reliable, secure, and ready to grow
                     with your company.”
                 </p>
 
                 <div class="contact-ceo-sign">
-                    <strong>Founder, DapperSolutions</strong>
+                    <strong>Founder, DappersTech</strong>
                     <span>Premium IT & Software Solutions</span>
                 </div>
             </div>
@@ -504,12 +504,12 @@
                 <p>Speak directly with our team about your project requirements.</p>
             </a>
 
-            <a href="mailto:xyz@gmail.com" class="contact-info-card">
+            <a href="mailto:info@dapperstech.com" class="contact-info-card">
                 <div class="contact-info-icon">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <span>Email Address</span>
-                <h3>xyz@gmail.com</h3>
+                <h3>info@dapperstech.com</h3>
                 <p>Send us your idea, project details, or business requirements.</p>
             </a>
 
@@ -613,9 +613,9 @@
                     </p>
 
                     <div class="contact-side-list">
-                        <a href="mailto:xyz@gmail.com">
+                        <a href="mailto:info@dapperstech.com">
                             <i class="fa-solid fa-envelope"></i>
-                            xyz@gmail.com
+                            info@dapperstech.com
                         </a>
 
                         <a href="tel:+923339302731">

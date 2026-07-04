@@ -13,17 +13,17 @@
       "@type": "Service",
       "name": "Custom GPT & LLM Integration",
       "serviceType": "LLM Integration Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "OpenAI and Claude integration, custom GPTs, prompt engineering, and chatbot interfaces wired directly into your existing product or CRM.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/ai-development/llm-integration"
+      "url": "https://dapperstech.com/services/ai-development/llm-integration"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dappersolution.com/services/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "Custom GPT & LLM Integration", "item": "https://dappersolution.com/services/ai-development/llm-integration"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/services/ai-development"},
+        {"@type": "ListItem", "position": 3, "name": "Custom GPT & LLM Integration", "item": "https://dapperstech.com/services/ai-development/llm-integration"}
       ]
     }
   ]

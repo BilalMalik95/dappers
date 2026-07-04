@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Custom Website Development | Tailored Web Solutions | DapperSolutions')
+@section('title', 'Custom Website Development | Tailored Web Solutions | DappersTech')
 @section('meta_description', 'Custom website development tailored to your brand - corporate sites, startup MVPs, e-commerce platforms, and web applications. Clean code, SEO-ready, responsive design. Get a free quote.')
 @section('meta_keywords', 'custom website development, custom web development, bespoke website, corporate website development, startup website, web development company Pakistan, hire web developer')
 
@@ -13,17 +13,17 @@
       "@type": "Service",
       "name": "Custom Website Development",
       "serviceType": "Custom Web Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Custom website development tailored to your brand objectives - from corporate sites and startup MVPs to e-commerce platforms and web applications.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-development/custom-website-development"
+      "url": "https://dapperstech.com/services/web-development/custom-website-development"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dappersolution.com/services/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "Custom Website Development", "item": "https://dappersolution.com/services/web-development/custom-website-development"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/services/web-development"},
+        {"@type": "ListItem", "position": 3, "name": "Custom Website Development", "item": "https://dapperstech.com/services/web-development/custom-website-development"}
       ]
     }
   ]

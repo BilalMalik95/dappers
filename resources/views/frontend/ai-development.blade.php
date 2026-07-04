@@ -15,14 +15,14 @@
       "serviceType": "Generative AI Development",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com",
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"}
       },
       "description": "Production-grade Generative AI development including RAG systems, AI agents, custom GPT and LLM integration, and AI backend deployment - built to ship, not stay a demo.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/ai-development",
+      "url": "https://dapperstech.com/services/ai-development",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "AI Development Packages",
@@ -37,9 +37,9 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "AI Development", "item": "https://dappersolution.com/services/ai-development"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "AI Development", "item": "https://dapperstech.com/services/ai-development"}
       ]
     }
   ]
@@ -52,7 +52,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What generative AI services does DapperSolutions actually offer?",
+      "name": "What generative AI services does DappersTech actually offer?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Four specialisations: RAG systems and document intelligence, AI agents and workflow automation, custom GPT and LLM integration, and AI app backend and deployment. As a generative AI development company we scope each project around the specific specialisation your use case needs, not a one-size-fits-all package."
@@ -394,7 +394,7 @@
     <h2>AI Development Services - Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>What generative AI services does DapperSolutions actually offer?</summary>
+        <summary>What generative AI services does DappersTech actually offer?</summary>
         <p>Four specialisations: RAG systems and document intelligence, AI agents and workflow automation, custom GPT and LLM integration, and AI app backend and deployment. As a generative AI development company we scope each project around the specific specialisation your use case needs, not a one-size-fits-all package.</p>
       </details>
       <details>

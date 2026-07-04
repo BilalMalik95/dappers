@@ -22,7 +22,7 @@ class ContactFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'DapperSolutions | Contact Form Mail',
+            subject: 'DappersTech | Contact Form Mail',
         );
     }
 

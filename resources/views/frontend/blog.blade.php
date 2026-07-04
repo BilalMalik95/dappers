@@ -17,11 +17,11 @@
       "image": "{{ asset('frontend/assets/images/blog/' . $blog->image) }}",
       "datePublished": "{{ $blog->created_at->toIso8601String() }}",
       "dateModified": "{{ $blog->updated_at->toIso8601String() }}",
-      "author": {"@type": "Person", "name": "{{ addslashes($blog->user->name ?? 'DapperSolutions Team') }}"},
+      "author": {"@type": "Person", "name": "{{ addslashes($blog->user->name ?? 'DappersTech Team') }}"},
       "publisher": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "logo": {"@type": "ImageObject", "url": "{{ asset('frontend/assets/images/logo/logo-dappersolutions.png') }}"}
+        "name": "DappersTech IT Services",
+        "logo": {"@type": "ImageObject", "url": "{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}"}
       },
       "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ route('SingleBlog', $blog->slug) }}"}
     },
@@ -69,7 +69,7 @@
         <p class="blog-detail-short">{!! nl2br(e($blog->short_description)) !!}</p>
         <div class="blog-detail-meta">
           <span><i class="fa-regular fa-calendar"></i> {{ $blog->created_at->format('M d, Y') }}</span>
-          <span><i class="fa-regular fa-user"></i> {{ $blog->user->name ?? 'DapperSolutions Team' }}</span>
+          <span><i class="fa-regular fa-user"></i> {{ $blog->user->name ?? 'DappersTech Team' }}</span>
         </div>
       </div>
 

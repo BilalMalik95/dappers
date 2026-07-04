@@ -1180,7 +1180,7 @@
         <div class="container">
             <div class="nav-content">
                 <a href="/" class="logo">
-                    <img src="{{ asset('frontend/assets/images/logo/logo-dappersolutions.png') }}" alt="DapperSolutions Logo"
+                    <img src="{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}" alt="DappersTech Logo"
                         class="logo-img">
                 </a>
                 <div class="nav-right">

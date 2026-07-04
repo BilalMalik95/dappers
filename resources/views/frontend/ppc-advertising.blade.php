@@ -15,20 +15,20 @@
       "serviceType": "Pay-Per-Click Advertising",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com"
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com"
       },
       "description": "Search, Shopping, Display, and YouTube ad campaigns - keyword research, audience targeting, ad copy testing, and continuous bid optimisation for maximum ROAS.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/digital-marketing/ppc-advertising"
+      "url": "https://dapperstech.com/services/digital-marketing/ppc-advertising"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Digital Marketing", "item": "https://dappersolution.com/services/digital-marketing"},
-        {"@type": "ListItem", "position": 4, "name": "PPC Advertising", "item": "https://dappersolution.com/services/digital-marketing/ppc-advertising"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Digital Marketing", "item": "https://dapperstech.com/services/digital-marketing"},
+        {"@type": "ListItem", "position": 4, "name": "PPC Advertising", "item": "https://dapperstech.com/services/digital-marketing/ppc-advertising"}
       ]
     }
   ]

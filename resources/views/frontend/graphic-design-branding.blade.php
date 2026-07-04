@@ -15,20 +15,20 @@
       "serviceType": "Graphic Design",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com"
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com"
       },
       "description": "Logos, brand guidelines, visual identity, social media graphics, banners, and marketing materials - cohesive branding that builds trust and recognition across every platform.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-design/graphic-design-branding"
+      "url": "https://dapperstech.com/services/web-design/graphic-design-branding"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dappersolution.com/services/web-design"},
-        {"@type": "ListItem", "position": 4, "name": "Graphic Design & Branding", "item": "https://dappersolution.com/services/web-design/graphic-design-branding"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dapperstech.com/services/web-design"},
+        {"@type": "ListItem", "position": 4, "name": "Graphic Design & Branding", "item": "https://dapperstech.com/services/web-design/graphic-design-branding"}
       ]
     }
   ]

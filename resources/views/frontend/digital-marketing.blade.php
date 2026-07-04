@@ -15,14 +15,14 @@
       "serviceType": "Digital Marketing",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com",
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"}
       },
       "description": "Full-service digital marketing including social media management, Google Ads PPC, email marketing, content marketing, and conversion rate optimization - strategies that turn traffic into real customers.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/digital-marketing",
+      "url": "https://dapperstech.com/services/digital-marketing",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Digital Marketing Services",
@@ -37,9 +37,9 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Digital Marketing", "item": "https://dappersolution.com/services/digital-marketing"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Digital Marketing", "item": "https://dapperstech.com/services/digital-marketing"}
       ]
     }
   ]
@@ -52,7 +52,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What digital marketing channels does DapperSolutions manage?",
+      "name": "What digital marketing channels does DappersTech manage?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We manage social media marketing, Google Ads PPC, email marketing automation, content marketing, and conversion rate optimisation as part of one connected strategy rather than isolated campaigns. If you only need one channel, such as PPC or SEO, we also offer those as standalone services."
@@ -319,7 +319,7 @@
     <h2>Digital Marketing - Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>What digital marketing channels does DapperSolutions manage?</summary>
+        <summary>What digital marketing channels does DappersTech manage?</summary>
         <p>We manage social media marketing, Google Ads PPC, email marketing automation, content marketing, and conversion rate optimisation as part of one connected strategy rather than isolated campaigns. If you only need one channel, such as PPC or SEO, we also offer those as standalone services.</p>
       </details>
       <details>

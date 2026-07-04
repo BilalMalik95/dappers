@@ -4,7 +4,7 @@
 <head>
     <base href="{{ url('/') }}/" />
     <title>
-        @yield('title') - {{ config('app.name', 'DapperSolutions') }}
+        @yield('title') - {{ config('app.name', 'DappersTech') }}
     </title>
     <meta charset="utf-8" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -14,7 +14,7 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content=" " />
-    <link rel="shortcut icon" href="{{ asset('admin/assets/media/logos/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('frontend/assets/images/logo/favicon-32.png') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="{{ asset('admin/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
@@ -87,7 +87,7 @@
                     <!--begin::Mobile logo-->
                     <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
                         <a href="#" class="d-lg-none">
-                            <img alt="Logo" src="{{ asset('admin/assets/media/logos/default-small.svg') }}" class="h-30px" />
+                            <img alt="Logo" src="{{ asset('frontend/assets/images/logo/dapperstech-logo-black.png') }}" class="h-30px" />
                         </a>
                     </div>
                     <!--end::Mobile logo-->

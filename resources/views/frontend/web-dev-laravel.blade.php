@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Laravel Development Services | Custom Web Applications | DapperSolutions')
+@section('title', 'Laravel Development Services | Custom Web Applications | DappersTech')
 @section('meta_description', 'Expert Laravel development services - 100% custom Laravel web apps, REST APIs, SaaS platforms, CRM/CMS, and full-stack Laravel + Vue.js solutions. Full code ownership. Get a free quote.')
 @section('meta_keywords', 'Laravel development, Laravel developer Pakistan, custom Laravel application, Laravel REST API, Laravel SaaS, Laravel CRM, full stack Laravel Vue.js, hire Laravel developer')
 
@@ -13,10 +13,10 @@
       "@type": "Service",
       "name": "Laravel Development Services",
       "serviceType": "Laravel Web Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Expert Laravel development services - 100% custom web applications, REST APIs, SaaS platforms, CRM, CMS, and full-stack Laravel + Vue.js solutions. Pricing from $1,500 to $20,000+ depending on complexity.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-development/laravel-development",
+      "url": "https://dapperstech.com/services/web-development/laravel-development",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
@@ -33,9 +33,9 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dappersolution.com/services/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "Laravel Development", "item": "https://dappersolution.com/services/web-development/laravel-development"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/services/web-development"},
+        {"@type": "ListItem", "position": 3, "name": "Laravel Development", "item": "https://dapperstech.com/services/web-development/laravel-development"}
       ]
     }
   ]

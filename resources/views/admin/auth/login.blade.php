@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-    <title>Panel - DapperSolutions</title>
+    <title>Panel - DappersTech</title>
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -12,7 +12,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content=" " />
 
-    <link rel="shortcut icon" href="{{ asset('admin/assets/media/logos/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('frontend/assets/images/logo/favicon-32.png') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="{{ asset('admin/assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
@@ -82,7 +82,7 @@
             <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url({{ asset('admin/assets/media/misc/auth-bg.png') }})">
                 <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">
                     <a href="#" class="mb-0 mb-lg-12">
-                        <img alt="Logo" src="{{ asset('frontend/assets/images/logo/dappersolutions-lockup-dark-bg-transparent.png') }}" class="h-60px h-lg-75px" />
+                        <img alt="Logo" src="{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}" class="h-60px h-lg-75px" />
                     </a>
                     <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="{{ asset('admin/assets/media/misc/auth-screens.png') }}" alt="" />
 

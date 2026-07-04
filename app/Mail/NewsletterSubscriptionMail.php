@@ -22,7 +22,7 @@ class NewsletterSubscriptionMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'DapperSolutions | New Newsletter Subscriber',
+            subject: 'DappersTech | New Newsletter Subscriber',
         );
     }
 

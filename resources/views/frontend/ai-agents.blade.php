@@ -13,17 +13,17 @@
       "@type": "Service",
       "name": "AI Agents & Workflow Automation",
       "serviceType": "AI Agent Development",
-      "provider": {"@type": "Organization", "name": "DapperSolutions IT Services", "url": "https://dappersolution.com"},
+      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Tool/function-calling AI agents that take real actions across your stack, with guardrails, fallbacks, and human-in-the-loop checkpoints where it matters.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/ai-development/ai-agents"
+      "url": "https://dapperstech.com/services/ai-development/ai-agents"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dappersolution.com/services/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "AI Agents", "item": "https://dappersolution.com/services/ai-development/ai-agents"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/services/ai-development"},
+        {"@type": "ListItem", "position": 3, "name": "AI Agents", "item": "https://dapperstech.com/services/ai-development/ai-agents"}
       ]
     }
   ]

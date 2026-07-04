@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
-@section('title', 'Our Services | Software House in Rawalpindi - DapperSolutions')
-@section('meta_description', 'DapperSolutions, a software house in Rawalpindi, delivers custom web application development services, AI automation agency solutions, generative AI integration, n8n workflow automation, fintech app development, SaaS development, and affordable web design services.')
+@section('title', 'Our Services | Software House in Rawalpindi - DappersTech')
+@section('meta_description', 'DappersTech, a software house in Rawalpindi, delivers custom web application development services, AI automation agency solutions, generative AI integration, n8n workflow automation, fintech app development, SaaS development, and affordable web design services.')
 @section('meta_keywords', 'software house in Rawalpindi, software house Rawalpindi, custom web application development services, AI automation agency, generative AI integration services, n8n development services, fintech app development, SaaS development, affordable web design services, software outsourcing company')
 
 @section('content')
@@ -380,10 +380,10 @@
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "What services does DapperSolutions provide?",
+            "name": "What services does DappersTech provide?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "DapperSolutions provides custom web application development services, generative AI integration, n8n workflow automation, fintech app development, SaaS development, cloud deployment, and project rescue."
+                "text": "DappersTech provides custom web application development services, generative AI integration, n8n workflow automation, fintech app development, SaaS development, cloud deployment, and project rescue."
             }
         },
         {
@@ -396,7 +396,7 @@
         },
         {
             "@type": "Question",
-            "name": "How does DapperSolutions support fintech app development?",
+            "name": "How does DappersTech support fintech app development?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "We build secure payment systems, subscription billing, user authentication, regulatory compliance, and fintech integrations for businesses that need reliable financial software."
@@ -404,7 +404,7 @@
         },
         {
             "@type": "Question",
-            "name": "How much does a project with DapperSolutions cost?",
+            "name": "How much does a project with DappersTech cost?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Cost depends on scope - a marketing website, a SaaS platform, and an AI integration each have different complexity. Most projects are scoped in milestones so you know the total cost before development starts. Book a free consultation for an estimate specific to your project."
@@ -441,19 +441,19 @@
     <h2>Our Services - Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>What services does DapperSolutions provide?</summary>
-        <p>DapperSolutions provides custom web application development services, generative AI integration, n8n workflow automation, fintech app development, SaaS development, cloud deployment, and project rescue.</p>
+        <summary>What services does DappersTech provide?</summary>
+        <p>DappersTech provides custom web application development services, generative AI integration, n8n workflow automation, fintech app development, SaaS development, cloud deployment, and project rescue.</p>
       </details>
       <details>
         <summary>What is n8n development services?</summary>
         <p>n8n development services automate workflows by connecting apps, APIs, and databases into reusable pipelines, improving efficiency and reducing manual work.</p>
       </details>
       <details>
-        <summary>How does DapperSolutions support fintech app development?</summary>
+        <summary>How does DappersTech support fintech app development?</summary>
         <p>We build secure payment systems, subscription billing, user authentication, regulatory compliance, and fintech integrations for businesses that need reliable financial software.</p>
       </details>
       <details>
-        <summary>How much does a project with DapperSolutions cost?</summary>
+        <summary>How much does a project with DappersTech cost?</summary>
         <p>Cost depends on scope - a marketing website, a SaaS platform, and an AI integration each have different complexity. Most projects are scoped in milestones so you know the total cost before development starts. Book a free consultation for an estimate specific to your project.</p>
       </details>
       <details>

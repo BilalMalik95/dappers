@@ -95,7 +95,7 @@ function sendEmail() {
 
         <div class="footer-grid">
             <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">DapperSolutions <i class="fa-solid fa-chevron-down"></i></h4>
+                <h4 class="footer-col-toggle">DappersTech <i class="fa-solid fa-chevron-down"></i></h4>
                 <div class="footer-col-links">
                     <a href="{{ route('home') }}">Home</a>
                     <a href="{{ route('team') }}">Meet Our Team</a>
@@ -145,10 +145,10 @@ function sendEmail() {
                 Mid City Mall, Rehmanabad, Murree Road,<br>Rawalpindi, Punjab 46000,Pakistan
             </p>
             <a href="tel:+923339302731" class="footer-address-phone">
-                <i class="fa-solid fa-phone"></i> +92 333 930 2731
+                <i class="fa-solid fa-phone"></i> 051 6125246
             </a>
-            <a href="https://mail.google.com/mail/u/0/?to=xyz@gmail.com&su=Project+Inquiry&fs=1&tf=cm" class="footer-address-phone">
-                <i class="fa-solid fa-envelope"></i> xyz@gmail.com
+            <a href="https://mail.google.com/mail/u/0/?to=info@dapperstech.com&su=Project+Inquiry&fs=1&tf=cm" class="footer-address-phone">
+                <i class="fa-solid fa-envelope"></i> info@dapperstech.com
             </a>
             <div class="footer-socials">
                 <a href="https://www.instagram.com/dapper_solutions/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -158,7 +158,7 @@ function sendEmail() {
         </div>
 
         <div class="copyright">
-            &copy; {{ config('app.name', 'DapperSolutions') }} {{ date('Y') }}. All Rights Reserved.
+            &copy; {{ config('app.name', 'DappersTech') }} {{ date('Y') }}. All Rights Reserved.
           </div>
     </div>
 

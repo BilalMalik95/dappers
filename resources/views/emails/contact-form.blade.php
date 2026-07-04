@@ -14,7 +14,7 @@
         <table width="100%" cellpadding="0" cellspacing="0">
           <tr>
             <td>
-              <p style="margin:0; font-size:20px; font-weight:bold; color:#fff;">DapperSolutions</p>
+              <p style="margin:0; font-size:20px; font-weight:bold; color:#fff;">DappersTech</p>
               <p style="margin:4px 0 0; font-size:13px; color:rgba(255,255,255,0.75);">New contact form submission</p>
             </td>
             <td align="right">
@@ -83,7 +83,7 @@
     <!-- Footer -->
     <tr>
       <td style="background:#f4f4f4; padding:16px 30px; text-align:center; font-size:12px; color:#999;">
-        &copy; {{ date('Y') }} DapperSolutions &mdash; This email was sent from your website contact form.
+        &copy; {{ date('Y') }} DappersTech &mdash; This email was sent from your website contact form.
       </td>
     </tr>
 

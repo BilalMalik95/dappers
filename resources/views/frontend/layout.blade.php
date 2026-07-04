@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        @yield('title') - {{ config('app.name', 'DapperSolutions') }}
+        @yield('title') - {{ config('app.name', 'DappersTech') }}
     </title>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#07090d">
@@ -41,7 +41,7 @@
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
 
     {{-- Preload critical logo asset --}}
-    <link rel="preload" as="image" href="{{ asset('frontend/assets/images/logo/dappersolutions-lockup-dark-bg-transparent.png') }}">
+    <link rel="preload" as="image" href="{{ asset('frontend/assets/images/logo/dapperstech-lockup-dark-bg-transparent.png') }}">
 
     {{-- Critical CSS first --}}
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">

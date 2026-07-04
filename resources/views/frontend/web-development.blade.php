@@ -15,14 +15,14 @@
       "serviceType": "Web Development",
       "provider": {
         "@type": "Organization",
-        "name": "DapperSolutions IT Services",
-        "url": "https://dappersolution.com",
+        "name": "DappersTech IT Services",
+        "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"}
       },
       "description": "Professional web development services including custom websites, SaaS platforms, backend APIs, e-commerce solutions, and admin panels - delivered with Laravel, Vue.js, and MySQL.",
       "areaServed": "Worldwide",
-      "url": "https://dappersolution.com/services/web-development",
+      "url": "https://dapperstech.com/services/web-development",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Web Development Packages",
@@ -37,9 +37,9 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dappersolution.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dappersolution.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Development", "item": "https://dappersolution.com/services/web-development"}
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Web Development", "item": "https://dapperstech.com/services/web-development"}
       ]
     }
   ]

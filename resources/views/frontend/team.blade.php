@@ -1,8 +1,8 @@
 @extends('frontend.layout')
 
-@section('title', 'Meet Our Team | DapperSolutions Software & IT Experts')
-@section('meta_description', 'Meet the DapperSolutions team - the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.')
-@section('meta_keywords', 'DapperSolutions team, Bilal Malik, software development team, web development experts, UI UX designers, IT services team, Laravel developers, digital marketing team')
+@section('title', 'Meet Our Team | DappersTech Software & IT Experts')
+@section('meta_description', 'Meet the DappersTech team - the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.')
+@section('meta_keywords', 'DappersTech team, Bilal Malik, software development team, web development experts, UI UX designers, IT services team, Laravel developers, digital marketing team')
 
 @section('styles')
 @php
@@ -11,7 +11,7 @@
             '@type' => 'Person',
             'name' => $member->name,
             'jobTitle' => $member->designation,
-            'worksFor' => ['@type' => 'Organization', 'name' => 'DapperSolutions IT Services'],
+            'worksFor' => ['@type' => 'Organization', 'name' => 'DappersTech IT Services'],
         ];
 
         if ($member->image) {
@@ -36,12 +36,12 @@
     $schemaGraph = [
         [
             '@type' => 'AboutPage',
-            'name' => 'Meet Our Team | DapperSolutions',
+            'name' => 'Meet Our Team | DappersTech',
             'url' => url('/team'),
-            'description' => 'Meet the DapperSolutions team the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.',
+            'description' => 'Meet the DappersTech team the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.',
             'mainEntity' => [
                 '@type' => 'Organization',
-                'name' => 'DapperSolutions IT Services',
+                'name' => 'DappersTech IT Services',
                 'url' => url('/'),
                 'employee' => $personNodes,
             ],
@@ -70,16 +70,16 @@
                 <span class="team-label">Meet The Team</span>
 
                 <h1>
-                    Meet the team behind DapperSolutions
+                    Meet the team behind DappersTech
                 </h1>
 
                 <p>
                     @if ($founder)
-                        DapperSolutions is founded by {{ $founder->name }} - {{ $founder->designation }} specialising in
+                        DappersTech is founded by {{ $founder->name }} - {{ $founder->designation }} specialising in
                         backend systems, SaaS platforms, Generative AI integration, payment systems, and workflow automation.
                         40+ software systems shipped. 5-star Upwork rating.
                     @else
-                        DapperSolutions is a focused software studio delivering backend systems, SaaS platforms,
+                        DappersTech is a focused software studio delivering backend systems, SaaS platforms,
                         Generative AI integration, payment systems, and workflow automation.
                         40+ software systems shipped. 5-star Upwork rating.
                     @endif
@@ -106,7 +106,7 @@
                     <div class="team-person-photo">
                         @if ($member->image)
                             <img src="{{ asset('frontend/assets/images/team/' . $member->image) }}"
-                                 alt="{{ $member->name }}, {{ $member->designation }} at DapperSolutions"
+                                 alt="{{ $member->name }}, {{ $member->designation }} at DappersTech"
                                  width="320" height="320" loading="lazy" decoding="async" @if (!$member->is_placeholder) itemprop="image" @endif>
                         @else
                             <span class="team-person-fallback" aria-hidden="true">{{ Illuminate\Support\Str::of($member->name)->explode(' ')->map(fn($w) => mb_substr($w, 0, 1))->take(2)->implode('') }}</span>
@@ -259,7 +259,7 @@
         <div class="testimonial-card">
             <div class="testimonial-author">
                 <div class="testimonial-avatar-fallback" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-                <h4>DapperSolutions <span>Engineering Team</span></h4>
+                <h4>DappersTech <span>Engineering Team</span></h4>
                 <span class="testimonial-badge"><i class="fa-solid fa-quote-left"></i> Message From The Team</span>
             </div>
             <blockquote>
