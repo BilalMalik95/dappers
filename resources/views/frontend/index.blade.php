@@ -139,7 +139,7 @@
                         Discuss Your Idea
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.malikbilal.com" target="_blank" rel="noopener" class="home-outline-btn">View Portfolio</a>
+                    <a href="{{ route('ai_development') }}" class="home-outline-btn">Explore AI Services</a>
                 </div>
             </div>
         </div>

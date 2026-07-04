@@ -1,18 +1,15 @@
 <?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>{{ url('/') }}</loc>
-    </url>
-    <url>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
         <loc>{{ route('sitemap.pages') }}</loc>
-    </url>
-    <url>
+    </sitemap>
+    <sitemap>
+        <loc>{{ route('sitemap.service_categories') }}</loc>
+    </sitemap>
+    <sitemap>
         <loc>{{ route('sitemap.services') }}</loc>
-    </url>
-    <url>
+    </sitemap>
+    <sitemap>
         <loc>{{ route('sitemap.blogs') }}</loc>
-    </url>
-    
-
-</urlset>
+    </sitemap>
+</sitemapindex>

@@ -45,7 +45,7 @@
 
     {{-- Critical CSS first --}}
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/site-theme.css') }}?v={{ file_exists(public_path('frontend/assets/css/site-theme.css')) ? filemtime(public_path('frontend/assets/css/site-theme.css')) : '1' }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/site-theme.min.css') }}?v={{ file_exists(public_path('frontend/assets/css/site-theme.min.css')) ? filemtime(public_path('frontend/assets/css/site-theme.min.css')) : '1' }}">
 
     {{-- Non-critical CSS loaded with preload for better performance --}}
     <link rel="preload" href="{{ asset('frontend/assets/css/plugins/animation.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">

@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /dashboard
 Disallow: /login
 
-Sitemap: https://handydevs.com/sitemap.xml
+Sitemap: https://dapperstech.com/sitemap.xml

@@ -34,5 +34,38 @@
     <url>
         <loc>{{ route('ai_backend_deployment') }}</loc>
     </url>
+    <url>
+        <loc>{{ route('web_development') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('web_dev_custom') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('web_dev_laravel') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('web_dev_php') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('web_design') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('ui_ux_design') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('graphic_design_branding') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('responsive_design') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('seo_optimization') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('digital_marketing') }}</loc>
+    </url>
+    <url>
+        <loc>{{ route('ppc_advertising') }}</loc>
+    </url>
 
 </urlset>
