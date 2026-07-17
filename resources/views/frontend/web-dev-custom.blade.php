@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
-@section('title', 'Custom Website Development | Tailored Web Solutions | DappersTech')
-@section('meta_description', 'Custom website development tailored to your brand - corporate sites, startup MVPs, e-commerce platforms, and web applications. Clean code, SEO-ready, responsive design. Get a free quote.')
+@section('title', 'Custom Website Development | Tailored Web Solutions')
+@section('meta_description', 'Custom website development tailored to your brand, corporate sites, startup MVPs, e-commerce platforms, and web applications. Clean code, SEO-ready, responsive design. Get a free quote.')
 @section('meta_keywords', 'custom website development, custom web development, bespoke website, corporate website development, startup website, web development company Pakistan, hire web developer')
 
 @section('styles')
@@ -13,8 +13,8 @@
       "@type": "Service",
       "name": "Custom Website Development",
       "serviceType": "Custom Web Development",
-      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
-      "description": "Custom website development tailored to your brand objectives - from corporate sites and startup MVPs to e-commerce platforms and web applications.",
+      "provider": {"@id": "https://dapperstech.com/#organization", "@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
+      "description": "Custom website development tailored to your brand objectives, from corporate sites and startup MVPs to e-commerce platforms and web applications.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/web-development/custom-website-development"
     },
@@ -39,7 +39,7 @@
       "name": "What's the difference between a custom website and a WordPress or template-based site?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A template or WordPress theme forces your brand into someone else's design and code structure, with bloated theme code you didn't choose. A fully custom website is built from scratch around your brand, your users, and your specific business goals - with no plugin limitations and no shared codebase with thousands of other sites."
+        "text": "A template or WordPress theme forces your brand into someone else's design and code structure, with bloated theme code you didn't choose. A fully custom website is built from scratch around your brand, your users, and your specific business goals, with no plugin limitations and no shared codebase with thousands of other sites."
       }
     },
     {
@@ -47,7 +47,7 @@
       "name": "Is custom development worth it for a small business or startup?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often yes, especially for startups validating an MVP or businesses that need lead generation, custom workflows, or integrations a template can't support. We scope projects realistically, so a startup site doesn't carry unnecessary cost - you only pay for what your business actually needs."
+        "text": "Often yes, especially for startups validating an MVP or businesses that need lead generation, custom workflows, or integrations a template can't support. We scope projects realistically, so a startup site doesn't carry unnecessary cost, you only pay for what your business actually needs."
       }
     },
     {
@@ -63,7 +63,7 @@
       "name": "Do I fully own my custom website once it's delivered?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. You own every line of code we write - no vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform. You're free to take the codebase to any developer or hosting provider in the future."
+        "text": "Yes. You own every line of code we write, no vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform. You're free to take the codebase to any developer or hosting provider in the future."
       }
     },
     {
@@ -71,7 +71,7 @@
       "name": "What happens after my custom website launches?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Launch includes SEO setup and analytics integration, and we offer ongoing maintenance and support afterward - security updates, performance monitoring, and bug fixes - so your custom website stays fast, secure, and up to date."
+        "text": "Launch includes SEO setup and analytics integration, and we offer ongoing maintenance and support afterward, security updates, performance monitoring, and bug fixes, so your custom website stays fast, secure, and up to date."
       }
     }
   ]
@@ -82,14 +82,14 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 44%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/12902944/pexels-photo-12902944.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 44%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/12902944/pexels-photo-12902944.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('web_development') }}">Web Development</a>
+                <span>Web Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Custom Website Development</span>
             </nav>
@@ -99,18 +99,14 @@
                 that aligns perfectly with your business
             </h1>
             <p>
-                Tailored web solutions - from corporate websites and startup MVPs to e-commerce platforms and admin systems.
+                Tailored web solutions, from corporate websites and startup MVPs to e-commerce platforms and admin systems.
                 Built with clean code, SEO-ready architecture, and responsive design that grows with your business.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('web_development') }}" class="services-page-btn services-page-btn--outline">
-                    All Web Dev Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -125,7 +121,7 @@
                 No templates. No shortcuts.
             </h2>
             <p>
-                Every website we build is 100% custom - designed around your brand, built for your users,
+                Every website we build is 100% custom, designed around your brand, built for your users,
                 and optimised for your specific business goals. Full code ownership from day one.
             </p>
         </div>
@@ -139,7 +135,7 @@
                     <span class="service-tag">Core Service</span>
                     <h3>Corporate & Business Websites</h3>
                     <p>
-                        Professional corporate websites that position your brand as a market leader - clean design,
+                        Professional corporate websites that position your brand as a market leader, clean design,
                         compelling messaging, lead generation forms, and full CMS integration for easy content management.
                     </p>
                     <div class="service-feature-points">
@@ -162,7 +158,7 @@
                     <div>
                         <span>01</span>
                         <h3>Startup MVP Development</h3>
-                        <p>Launch your startup fast with a lean, scalable MVP - core features first, built to validate your idea, attract investors, and onboard your first customers.</p>
+                        <p>Launch your startup fast with a lean, scalable MVP, core features first, built to validate your idea, attract investors, and onboard your first customers.</p>
                     </div>
                 </a>
 
@@ -184,7 +180,7 @@
                     <div>
                         <span>03</span>
                         <h3>Web Applications & CMS</h3>
-                        <p>Custom web apps, dashboards, admin panels, and CRM systems - built to handle complex workflows with intuitive interfaces your team will actually enjoy using.</p>
+                        <p>Custom web apps, dashboards, admin panels, and CRM systems, built to handle complex workflows with intuitive interfaces your team will actually enjoy using.</p>
                     </div>
                 </a>
 
@@ -205,19 +201,19 @@
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>05</span>
                 <h3>Multi-Language Websites</h3>
-                <p>Multilingual websites with proper hreflang implementation, localised content, and RTL language support - reach a global or regional audience effectively.</p>
+                <p>Multilingual websites with proper hreflang implementation, localised content, and RTL language support, reach a global or regional audience effectively.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>06</span>
                 <h3>Website Maintenance & Support</h3>
-                <p>Ongoing technical support, security updates, performance monitoring, bug fixes, and content updates - keep your website fast, secure, and up-to-date.</p>
+                <p>Ongoing technical support, security updates, performance monitoring, bug fixes, and content updates, keep your website fast, secure, and up-to-date.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>07</span>
                 <h3>Platform Migration</h3>
-                <p>Migrate from any platform to a custom Laravel or WordPress solution - zero downtime, full SEO preservation, data migration, and improved performance.</p>
+                <p>Migrate from any platform to a custom Laravel or WordPress solution, zero downtime, full SEO preservation, data migration, and improved performance.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -233,14 +229,14 @@
                 <h2>Why custom development beats templates every time</h2>
                 <p>
                     Templates force your brand into a box. Custom development lets your website be exactly what
-                    your business needs - with zero limitations on features, design, or scalability.
+                    your business needs, with zero limitations on features, design, or scalability.
                 </p>
                 <div class="why-choose-grid">
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-fingerprint"></i></div>
                         <div>
                             <h3>Unique Brand Identity</h3>
-                            <p>Your website will look nothing like your competitors - because it was designed exclusively for you, from scratch.</p>
+                            <p>Your website will look nothing like your competitors, because it was designed exclusively for you, from scratch.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -276,7 +272,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating · 40+ websites shipped</span>
+                        <span>5-star Upwork rating, 40+ websites shipped</span>
                     </div>
                 </div>
             </div>
@@ -287,12 +283,12 @@
                     <span>Custom Sites Built</span>
                 </div>
                 <div class="why-floating-card why-floating-card--bottom">
-                    <strong>7+</strong>
+                    <strong>9+</strong>
                     <span>Years Experience</span>
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-code"></i>
-                    Laravel · WordPress · Vue.js · MySQL
+                    Laravel, WordPress, Vue.js, MySQL
                 </div>
             </div>
         </div>
@@ -305,14 +301,14 @@
         <div class="workflow-head">
             <span class="services-page-kicker">How It Works</span>
             <h2>From your idea to a live, custom website in 4 clear stages</h2>
-            <p>Our proven process keeps you informed and in control at every step - no surprises, no delays, just a great website delivered on time and on budget.</p>
+            <p>Our proven process keeps you informed and in control at every step, no surprises, no delays, just a great website delivered on time and on budget.</p>
         </div>
         <div class="workflow-layout">
             <div class="workflow-visual">
                 <img src="https://images.pexels.com/photos/7971537/pexels-photo-7971537.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Custom web development process coding and planning" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our Development Flow</span>
-                    <h3>Plan · Design · Build · Launch</h3>
+                    <h3>Plan, Design, Build, Launch</h3>
                 </div>
             </div>
             <div class="workflow-steps">
@@ -329,7 +325,7 @@
                     <div class="workflow-content">
                         <span>Design</span>
                         <h3>Create wireframes and full visual design</h3>
-                        <p>Wireframes, UI mockups, and interactive prototypes in Figma - approved by you before we write the first line of code.</p>
+                        <p>Wireframes, UI mockups, and interactive prototypes in Figma, approved by you before we write the first line of code.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -337,7 +333,7 @@
                     <div class="workflow-content">
                         <span>Development</span>
                         <h3>Build, test, and optimise your website</h3>
-                        <p>Clean, semantic code, cross-browser testing, performance optimisation, and security hardening - then a staging review with you.</p>
+                        <p>Clean, semantic code, cross-browser testing, performance optimisation, and security hardening, then a staging review with you.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -354,30 +350,30 @@
 </section>
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>Custom Website Development - Frequently Asked Questions</h2>
+    <h2>Custom Website Development, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What's the difference between a custom website and a WordPress or template-based site?</summary>
-        <p>A template or WordPress theme forces your brand into someone else's design and code structure, with bloated theme code you didn't choose. A fully custom website is built from scratch around your brand, your users, and your specific business goals - with no plugin limitations and no shared codebase with thousands of other sites.</p>
+        <p>A template or WordPress theme forces your brand into someone else's design and code structure, with bloated theme code you didn't choose. A fully custom website is built from scratch around your brand, your users, and your specific business goals, with no plugin limitations and no shared codebase with thousands of other sites.</p>
       </details>
       <details>
         <summary>Is custom development worth it for a small business or startup?</summary>
-        <p>Often yes, especially for startups validating an MVP or businesses that need lead generation, custom workflows, or integrations a template can't support. We scope projects realistically, so a startup site doesn't carry unnecessary cost - you only pay for what your business actually needs.</p>
+        <p>Often yes, especially for startups validating an MVP or businesses that need lead generation, custom workflows, or integrations a template can't support. We scope projects realistically, so a startup site doesn't carry unnecessary cost, you only pay for what your business actually needs.</p>
       </details>
       <details>
         <summary>How well does a custom website scale as my business grows?</summary>
@@ -385,11 +381,11 @@
       </details>
       <details>
         <summary>Do I fully own my custom website once it's delivered?</summary>
-        <p>Yes. You own every line of code we write - no vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform. You're free to take the codebase to any developer or hosting provider in the future.</p>
+        <p>Yes. You own every line of code we write, no vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform. You're free to take the codebase to any developer or hosting provider in the future.</p>
       </details>
       <details>
         <summary>What happens after my custom website launches?</summary>
-        <p>Launch includes SEO setup and analytics integration, and we offer ongoing maintenance and support afterward - security updates, performance monitoring, and bug fixes - so your custom website stays fast, secure, and up to date.</p>
+        <p>Launch includes SEO setup and analytics integration, and we offer ongoing maintenance and support afterward, security updates, performance monitoring, and bug fixes, so your custom website stays fast, secure, and up to date.</p>
       </details>
   </div>
 </section>

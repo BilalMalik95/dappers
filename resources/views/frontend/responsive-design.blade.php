@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'Responsive Design Services | Pixel-Perfect on Every Screen')
-@section('meta_description', 'Mobile-first responsive design services - pixel-perfect layouts on every screen size, from smartphones to large desktops, built for speed and usability.')
+@section('meta_description', 'Mobile-first responsive design services, pixel-perfect layouts on every screen size, from smartphones to large desktops, built for speed and usability.')
 @section('meta_keywords', 'responsive web design, mobile-first design, cross-device design, pixel-perfect design, adaptive layouts, mobile optimization, responsive UI')
 
 @section('styles')
@@ -14,11 +14,12 @@
       "name": "Responsive Design",
       "serviceType": "Responsive Web Design",
       "provider": {
+        "@id": "https://dapperstech.com/#organization",
         "@type": "Organization",
         "name": "DappersTech IT Services",
         "url": "https://dapperstech.com"
       },
-      "description": "Mobile-first designs that look and function flawlessly across all devices and screen sizes - smartphones, tablets, laptops, and large desktops, every breakpoint perfect.",
+      "description": "Mobile-first designs that look and function flawlessly across all devices and screen sizes, smartphones, tablets, laptops, and large desktops, every breakpoint perfect.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/web-design/responsive-design"
     },
@@ -44,7 +45,7 @@
       "name": "What is responsive web design and why does it matter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Responsive design means your website automatically adapts its layout, images, and text to fit any screen size - from a small smartphone to a large desktop monitor. Since over 60% of visitors browse on mobile, a site that isn't responsive loses visitors, conversions, and search rankings."
+        "text": "Responsive design means your website automatically adapts its layout, images, and text to fit any screen size, from a small smartphone to a large desktop monitor. Since over 60% of visitors browse on mobile, a site that isn't responsive loses visitors, conversions, and search rankings."
       }
     },
     {
@@ -52,7 +53,7 @@
       "name": "Which devices and browsers do you actually test on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We test on real iOS, Android, and desktop browsers - not just emulators - to catch layout issues emulators often miss. Every major breakpoint is checked, from 320px phones up to 4K monitors, not just two or three common sizes."
+        "text": "We test on real iOS, Android, and desktop browsers, not just emulators, to catch layout issues emulators often miss. Every major breakpoint is checked, from 320px phones up to 4K monitors, not just two or three common sizes."
       }
     },
     {
@@ -68,7 +69,7 @@
       "name": "Does responsive design affect SEO and Google rankings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile - with fast load times and a usable layout - directly supports better search visibility and conversions."
+        "text": "Yes. Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile, with fast load times and a usable layout, directly supports better search visibility and conversions."
       }
     },
     {
@@ -76,7 +77,7 @@
       "name": "Will responsive design slow down my website on mobile?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No - done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop-sized page on a phone."
+        "text": "No, done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop-sized page on a phone."
       }
     }
   ]
@@ -87,14 +88,14 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 45%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/6278755/pexels-photo-6278755.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 45%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/6278755/pexels-photo-6278755.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('web_design') }}">Web Design</a>
+                <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Responsive Design</span>
             </nav>
@@ -104,18 +105,14 @@
                 every screen size
             </h1>
             <p>
-                Mobile-first designs that look and function flawlessly across smartphones, tablets,
-                laptops, and large desktops - every breakpoint tested and perfected.
+                Mobile first designs that look and function flawlessly across smartphones, tablets,
+                laptops, and large desktops, every breakpoint tested and perfected.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('web_design') }}" class="services-page-btn services-page-btn--outline">
-                    All Design Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -131,7 +128,7 @@
                 every device.
             </h2>
             <p>
-                Over 60% of your visitors are on mobile - every layout we design is built mobile-first
+                Over 60% of your visitors are on mobile, every layout we design is built mobile first
                 and scales up cleanly to tablet and desktop without losing impact.
             </p>
         </div>
@@ -143,11 +140,11 @@
                     <img src="https://images.pexels.com/photos/6278758/pexels-photo-6278758.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Responsive website design across multiple devices" loading="lazy" decoding="async">
                 </div>
                 <div class="service-feature-content">
-                    <span class="service-tag">Mobile-First</span>
-                    <h3>Cross-Device Layouts</h3>
+                    <span class="service-tag">Mobile First</span>
+                    <h3>Cross Device Layouts</h3>
                     <p>
                         Every page is designed to adapt fluidly across smartphones, tablets, laptops, and
-                        large desktops - with layouts, type, and spacing tuned for each breakpoint.
+                        large desktops, with layouts, type, and spacing tuned for each breakpoint.
                     </p>
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> Mobile, Tablet & Desktop Layouts</span>
@@ -181,7 +178,7 @@
                     <div>
                         <span>02</span>
                         <h3>Touch-Friendly Navigation</h3>
-                        <p>Mobile menus, buttons, and forms sized and spaced for real thumbs - no accidental taps, no frustrating pinch-to-zoom.</p>
+                        <p>Mobile menus, buttons, and forms sized and spaced for real thumbs, no accidental taps, no frustrating pinch-to-zoom.</p>
                     </div>
                 </a>
 
@@ -203,7 +200,7 @@
                     <div>
                         <span>04</span>
                         <h3>Cross-Browser & Device QA</h3>
-                        <p>Tested on real iOS, Android, and desktop browsers - not just emulators - to catch layout issues before launch.</p>
+                        <p>Tested on real iOS, Android, and desktop browsers, not just emulators, to catch layout issues before launch.</p>
                     </div>
                 </a>
 
@@ -233,7 +230,7 @@
                         <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                         <div>
                             <h3>Mobile-First Approach</h3>
-                            <p>Every design starts on mobile and scales up beautifully - because over 60% of your visitors are on a smartphone.</p>
+                            <p>Every design starts on mobile and scales up beautifully, because over 60% of your visitors are on a smartphone.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -247,14 +244,14 @@
                         <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
                         <div>
                             <h3>Performance Optimised</h3>
-                            <p>Responsive doesn't mean heavy - optimised images and minimal code keep mobile load times fast.</p>
+                            <p>Responsive doesn't mean heavy, optimised images and minimal code keep mobile load times fast.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
                         <div>
                             <h3>100% Custom, No Templates</h3>
-                            <p>Every layout is built from scratch to fit your content - never a generic responsive template.</p>
+                            <p>Every layout is built from scratch to fit your content, never a generic responsive template.</p>
                         </div>
                     </div>
                 </div>
@@ -269,7 +266,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio · 40+ projects delivered</span>
+                        <span>5-star design portfolio, 40+ projects delivered</span>
                     </div>
                 </div>
             </div>
@@ -286,7 +283,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    Figma · CSS3 · Flexbox · Grid
+                    Figma, CSS3, Flexbox, Grid
                 </div>
             </div>
 
@@ -313,7 +310,7 @@
                 <img src="https://images.pexels.com/photos/50614/pexels-photo-50614.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Responsive design workflow across breakpoints" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our Responsive Flow</span>
-                    <h3>Mobile · Tablet · Desktop · Test</h3>
+                    <h3>Mobile, Tablet, Desktop, Test</h3>
                 </div>
             </div>
 
@@ -333,7 +330,7 @@
                     <div class="workflow-content">
                         <span>Scale to Tablet & Desktop</span>
                         <h3>Expand the layout for larger screens</h3>
-                        <p>Layouts are adapted for tablet and desktop, using the extra space to enhance - not just stretch - the design.</p>
+                        <p>Layouts are adapted for tablet and desktop, using the extra space to enhance, not just stretch, the design.</p>
                     </div>
                 </div>
 
@@ -364,30 +361,30 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>Responsive Design - Frequently Asked Questions</h2>
+    <h2>Responsive Design, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What is responsive web design and why does it matter?</summary>
-        <p>Responsive design means your website automatically adapts its layout, images, and text to fit any screen size - from a small smartphone to a large desktop monitor. Since over 60% of visitors browse on mobile, a site that isn't responsive loses visitors, conversions, and search rankings.</p>
+        <p>Responsive design means your website automatically adapts its layout, images, and text to fit any screen size, from a small smartphone to a large desktop monitor. Since over 60% of visitors browse on mobile, a site that isn't responsive loses visitors, conversions, and search rankings.</p>
       </details>
       <details>
         <summary>Which devices and browsers do you actually test on?</summary>
-        <p>We test on real iOS, Android, and desktop browsers - not just emulators - to catch layout issues emulators often miss. Every major breakpoint is checked, from 320px phones up to 4K monitors, not just two or three common sizes.</p>
+        <p>We test on real iOS, Android, and desktop browsers, not just emulators, to catch layout issues emulators often miss. Every major breakpoint is checked, from 320px phones up to 4K monitors, not just two or three common sizes.</p>
       </details>
       <details>
         <summary>What are breakpoints and how do you decide where to place them?</summary>
@@ -395,11 +392,11 @@
       </details>
       <details>
         <summary>Does responsive design affect SEO and Google rankings?</summary>
-        <p>Yes. Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile - with fast load times and a usable layout - directly supports better search visibility and conversions.</p>
+        <p>Yes. Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile, with fast load times and a usable layout, directly supports better search visibility and conversions.</p>
       </details>
       <details>
         <summary>Will responsive design slow down my website on mobile?</summary>
-        <p>No - done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop-sized page on a phone.</p>
+        <p>No, done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop-sized page on a phone.</p>
       </details>
   </div>
 </section>

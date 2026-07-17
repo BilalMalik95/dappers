@@ -4,6 +4,9 @@
    @foreach ($categories as $category)
      <url>
         <loc>{{ url('/') . '/' . $category->slug }}</loc>
-    </url>    
+        <lastmod>{{ $category->updated_at?->toAtomString() }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
  @endforeach
 </urlset>

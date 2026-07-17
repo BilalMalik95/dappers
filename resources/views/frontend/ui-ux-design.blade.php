@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'UI/UX Design Services | Wireframes, Prototypes & Design Systems')
-@section('meta_description', 'Professional UI/UX design services - user research, wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.')
+@section('meta_description', 'Professional UI/UX design services, user research, wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.')
 @section('meta_keywords', 'UI UX design services, user interface design, user experience design, wireframes, interactive prototypes, design systems, Figma design, conversion focused design')
 
 @section('styles')
@@ -14,11 +14,12 @@
       "name": "UI/UX Design",
       "serviceType": "UI/UX Design",
       "provider": {
+        "@id": "https://dapperstech.com/#organization",
         "@type": "Organization",
         "name": "DappersTech IT Services",
         "url": "https://dapperstech.com"
       },
-      "description": "Intuitive and visually engaging interfaces built on real user research - wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.",
+      "description": "Intuitive and visually engaging interfaces built on real user research, wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/web-design/ui-ux-design"
     },
@@ -44,7 +45,7 @@
       "name": "What's the difference between UI design and UX design?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UX design is the research and structure behind a product - user personas, journey maps, and wireframes that define how it should work. UI design is the visual layer built on top - colours, typography, and components. We handle both, starting with research so the visuals are never just decoration."
+        "text": "UX design is the research and structure behind a product, user personas, journey maps, and wireframes that define how it should work. UI design is the visual layer built on top, colours, typography, and components. We handle both, starting with research so the visuals are never just decoration."
       }
     },
     {
@@ -76,7 +77,7 @@
       "name": "How does UI/UX design improve conversions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters - whether that's a purchase, a signup, or a contact form. Research-backed, tested design consistently outperforms designs built on guesswork."
+        "text": "Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters, whether that's a purchase, a signup, or a contact form. Research-backed, tested design consistently outperforms designs built on guesswork."
       }
     }
   ]
@@ -87,14 +88,14 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 45%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 45%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('web_design') }}">Web Design</a>
+                <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>UI/UX Design</span>
             </nav>
@@ -111,11 +112,7 @@
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('web_design') }}" class="services-page-btn services-page-btn--outline">
-                    All Design Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -131,7 +128,7 @@
                 Every screen built to convert.
             </h2>
             <p>
-                We don't guess what users want - we research it, design for it, and validate it
+                We don't guess what users want, we research it, design for it, and validate it
                 with real prototypes before a single line of code is written.
             </p>
         </div>
@@ -203,7 +200,7 @@
                     <div>
                         <span>04</span>
                         <h3>Accessibility-First UI</h3>
-                        <p>Designs built to WCAG guidelines - readable contrast, keyboard navigation, and screen-reader friendly structure for every user.</p>
+                        <p>Designs built to WCAG guidelines, readable contrast, keyboard navigation, and screen-reader friendly structure for every user.</p>
                     </div>
                 </a>
 
@@ -222,10 +219,10 @@
             <div class="why-choose-content">
                 <span class="services-page-kicker">Our Design Philosophy</span>
                 <h2>
-                    Design that goes beyond aesthetics - built to convert
+                    Design that goes beyond aesthetics, built to convert
                 </h2>
                 <p>
-                    Every wireframe, prototype, and interaction is intentional - designed to guide users
+                    Every wireframe, prototype, and interaction is intentional, designed to guide users
                     towards the action that matters most to your business.
                 </p>
                 <div class="why-choose-grid">
@@ -240,7 +237,7 @@
                         <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                         <div>
                             <h3>Mobile-First Approach</h3>
-                            <p>Every design starts on mobile and scales up beautifully - because over 60% of your visitors are on a smartphone.</p>
+                            <p>Every design starts on mobile and scales up beautifully, because over 60% of your visitors are on a smartphone.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -269,7 +266,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio · 40+ projects delivered</span>
+                        <span>5-star design portfolio, 40+ projects delivered</span>
                     </div>
                 </div>
             </div>
@@ -286,7 +283,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-palette"></i>
-                    Figma · Adobe XD · Maze · Hotjar
+                    Figma, Adobe XD, Maze, Hotjar
                 </div>
             </div>
 
@@ -302,7 +299,7 @@
             <span class="services-page-kicker">Design Process</span>
             <h2>A structured UI/UX process from research to handoff</h2>
             <p>
-                Great UX is not accidental - it follows a clear, collaborative process grounded
+                Great UX is not accidental, it follows a clear, collaborative process grounded
                 in research and validated with real users at every stage.
             </p>
         </div>
@@ -313,7 +310,7 @@
                 <img src="https://images.pexels.com/photos/907489/pexels-photo-907489.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="UX research and wireframing workflow" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our UX Flow</span>
-                    <h3>Research · Wireframe · Prototype · Test</h3>
+                    <h3>Research, Wireframe, Prototype, Test</h3>
                 </div>
             </div>
 
@@ -364,26 +361,26 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>UI/UX Design - Frequently Asked Questions</h2>
+    <h2>UI/UX Design, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What's the difference between UI design and UX design?</summary>
-        <p>UX design is the research and structure behind a product - user personas, journey maps, and wireframes that define how it should work. UI design is the visual layer built on top - colours, typography, and components. We handle both, starting with research so the visuals are never just decoration.</p>
+        <p>UX design is the research and structure behind a product, user personas, journey maps, and wireframes that define how it should work. UI design is the visual layer built on top, colours, typography, and components. We handle both, starting with research so the visuals are never just decoration.</p>
       </details>
       <details>
         <summary>Do you build wireframes and prototypes before the final design?</summary>
@@ -399,7 +396,7 @@
       </details>
       <details>
         <summary>How does UI/UX design improve conversions?</summary>
-        <p>Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters - whether that's a purchase, a signup, or a contact form. Research-backed, tested design consistently outperforms designs built on guesswork.</p>
+        <p>Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters, whether that's a purchase, a signup, or a contact form. Research-backed, tested design consistently outperforms designs built on guesswork.</p>
       </details>
   </div>
 </section>

@@ -2,7 +2,11 @@
 Options +FollowSymLinks
 RewriteEngine On
 
-RewriteCond %{REQUEST_URI} !^/public/  
+# Canonicalize host: force non-www (fixes www + non-www both resolving as duplicate sites)
+RewriteCond %{HTTP_HOST} ^www\.dapperstech\.com$ [NC]
+RewriteRule ^(.*)$ https://dapperstech.com/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^/public/
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

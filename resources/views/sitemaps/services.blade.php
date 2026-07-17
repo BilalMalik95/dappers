@@ -3,17 +3,12 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
    @foreach ($services as $service)
-   
     <url>
         <loc>{{ url('/').'/'.$service->category->slug.'/'.$service->slug }}</loc>
+        <lastmod>{{ $service->updated_at?->toAtomString() }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
-   @endforeach
-    @foreach ($categories as $category)
-     Related services for {{ $category->title }}
-      
-     foreach($category->services as $service)
-
-     endforeach
    @endforeach
 
 </urlset>

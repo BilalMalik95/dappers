@@ -1,0 +1,28 @@
+# DappersTech
+
+> DappersTech is a software house based in Rawalpindi, Pakistan, delivering web development, web design, AI development, and digital marketing services to clients in Rawalpindi, Islamabad, and worldwide since 2017.
+
+DappersTech builds custom websites, SaaS platforms, backend APIs, AI integrations (RAG systems, AI agents, LLM integration), and runs digital marketing campaigns (SEO, PPC, social media). Full code ownership is transferred to clients on every project; there is no vendor lock-in.
+
+## Company
+
+- [About Us](https://dapperstech.com/aboutus): Company background, founding story, and team overview.
+- [Our Team](https://dapperstech.com/team): Founders, engineers, designers, and growth specialists.
+- [Contact](https://dapperstech.com/contact-us): Contact details and inquiry form.
+
+## Services
+
+- [Web Development](https://dapperstech.com/services/web-development): Custom websites, SaaS platforms, backend APIs, e-commerce.
+- [Web Design](https://dapperstech.com/services/web-design): UI/UX design, Figma to HTML, custom website design, branding.
+- [AI Development](https://dapperstech.com/services/ai-development): RAG systems, AI agents, LLM integration, AI backend deployment.
+- [Digital Marketing](https://dapperstech.com/services/digital-marketing): SEO, PPC advertising, content and social media marketing.
+
+## Blog
+
+- [Blog](https://dapperstech.com/blogs): Articles on web development, AI development, UI/UX design, and digital marketing.
+
+## Contact
+
+- Phone: +92-51-6125246
+- Email: info@dapperstech.com
+- Address: Mid City Mall, Rehmanabad, Murree Road, Rawalpindi, Punjab, Pakistan

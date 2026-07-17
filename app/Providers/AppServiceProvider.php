@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (Schema::hasTable('categories')) {
+        if (Schema::hasTable('categories') && Schema::hasTable('services')) {
         $categories = Category::with(['service' => function($query){
             $query->where('status','1');
         }])->get();

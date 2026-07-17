@@ -14,9 +14,12 @@
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
     # Redirect Trailing Slashes If Not A Folder...
+    # Uses THE_REQUEST (the original request line from the client) instead of
+    # REQUEST_URI so this redirect never leaks the internal /public/ prefix
+    # added by the project-root .htaccess rewrite into the public, indexable URL.
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteCond %{THE_REQUEST} ^[A-Z]+\s/(?:public/)?(.+)/[?\s]
+    RewriteRule ^ /%1 [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

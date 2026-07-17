@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'RAG Systems Development | Retrieval-Augmented Generation Experts')
-@section('meta_description', 'RAG systems development - vector databases, document intelligence, and retrieval-augmented generation pipelines grounded in your own data. Built for production, not demos.')
+@section('meta_description', 'RAG systems development, vector databases, document intelligence, and retrieval-augmented generation pipelines grounded in your own data. Built for production, not demos.')
 @section('meta_keywords', 'RAG systems, RAG development services, retrieval augmented generation, custom ChatGPT on your data, enterprise RAG, vector databases, document intelligence, RAG developer, Pinecone, pgvector, embeddings, semantic search')
 
 @section('styles')
@@ -13,8 +13,8 @@
       "@type": "Service",
       "name": "RAG Systems & Document Intelligence",
       "serviceType": "Retrieval-Augmented Generation Development",
-      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
-      "description": "Retrieval-augmented generation pipelines that ground LLM answers in your own documents, knowledge base, or database - with vector search, chunking strategy, and citation tracking.",
+      "provider": {"@id": "https://dapperstech.com/#organization", "@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
+      "description": "Retrieval-augmented generation pipelines that ground LLM answers in your own documents, knowledge base, or database, with vector search, chunking strategy, and citation tracking.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/ai-development/rag-systems"
     },
@@ -39,7 +39,7 @@
       "name": "What is a RAG system and how does it work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A RAG (Retrieval-Augmented Generation) system connects a large language model to your own documents, knowledge base, or database. When a user asks a question, the system retrieves the most relevant content using vector search, then the LLM generates an answer grounded in that content - with citations - instead of guessing. This makes answers accurate, up to date, and specific to your business."
+        "text": "A RAG (Retrieval-Augmented Generation) system connects a large language model to your own documents, knowledge base, or database. When a user asks a question, the system retrieves the most relevant content using vector search, then the LLM generates an answer grounded in that content, with citations, instead of guessing. This makes answers accurate, up to date, and specific to your business."
       }
     },
     {
@@ -71,7 +71,7 @@
       "name": "How long does it take to build a production RAG system?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A focused production-ready RAG system typically takes 3–6 weeks depending on data sources, integrations, and security needs. We start with a fixed-scope build so you get a working, measurable system rather than an open-ended demo."
+        "text": "A focused production-ready RAG system typically takes 3 to 6 weeks depending on data sources, integrations, and security needs. We start with a fixed-scope build so you get a working, measurable system rather than an open-ended demo."
       }
     }
   ]
@@ -82,36 +82,32 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 44%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 44%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('ai_development') }}">AI Development</a>
+                <span>AI Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>RAG Systems</span>
             </nav>
             <span class="services-page-kicker">RAG Systems</span>
             <h1>
                 RAG systems that answer from<br>
-                your data - accurately, with citations
+                your data, accurately, with citations
             </h1>
             <p>
                 Retrieval-augmented generation pipelines that ground every answer in your own documents,
-                knowledge base, or database - built with proper chunking, embeddings, and source tracking
+                knowledge base, or database, built with proper chunking, embeddings, and source tracking
                 so answers are accurate, not hallucinated.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('ai_development') }}" class="services-page-btn services-page-btn--outline">
-                    All AI Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -122,12 +118,12 @@
         <div class="services-v2-head">
             <span class="services-page-kicker">What We Build</span>
             <h2>
-                RAG done right - accurate retrieval,<br>
+                RAG done right, accurate retrieval,<br>
                 not just a vector search demo.
             </h2>
             <p>
                 A RAG system is only as good as its retrieval. We design the chunking strategy, embedding model,
-                and ranking logic around your actual content - not a generic tutorial pipeline.
+                and ranking logic around your actual content, not a generic tutorial pipeline.
             </p>
         </div>
 
@@ -140,7 +136,7 @@
                     <span class="service-tag">Core Service</span>
                     <h3>Vector Database Architecture</h3>
                     <p>
-                        Pinecone, pgvector, or Weaviate - set up with the right indexing strategy, metadata filters,
+                        Pinecone, pgvector, or Weaviate, set up with the right indexing strategy, metadata filters,
                         and hybrid search so retrieval stays fast and relevant as your data grows.
                     </p>
                     <div class="service-feature-points">
@@ -163,7 +159,7 @@
                     <div>
                         <span>01</span>
                         <h3>Chunking & Embedding Strategy</h3>
-                        <p>Content-aware chunking (not arbitrary character splits) and the right embedding model for your domain - legal, medical, technical, or general business content.</p>
+                        <p>Content-aware chunking (not arbitrary character splits) and the right embedding model for your domain, legal, medical, technical, or general business content.</p>
                     </div>
                 </a>
 
@@ -174,7 +170,7 @@
                     <div>
                         <span>02</span>
                         <h3>Citation & Source Tracking</h3>
-                        <p>Every answer links back to its source document and passage - so users can verify what the AI told them instead of just trusting it blindly.</p>
+                        <p>Every answer links back to its source document and passage, so users can verify what the AI told them instead of just trusting it blindly.</p>
                     </div>
                 </a>
 
@@ -185,7 +181,7 @@
                     <div>
                         <span>03</span>
                         <h3>Document Intelligence</h3>
-                        <p>PDF, Word, spreadsheet, and scanned document ingestion - turning unstructured files into a searchable, AI-queryable knowledge base.</p>
+                        <p>PDF, Word, spreadsheet, and scanned document ingestion, turning unstructured files into a searchable, AI-queryable knowledge base.</p>
                     </div>
                 </a>
 
@@ -196,7 +192,7 @@
                     <div>
                         <span>04</span>
                         <h3>Retrieval Evals & Tuning</h3>
-                        <p>Measured retrieval precision and recall against real queries - re-ranking and tuning until the system retrieves what actually answers the question.</p>
+                        <p>Measured retrieval precision and recall against real queries, re-ranking and tuning until the system retrieves what actually answers the question.</p>
                     </div>
                 </a>
             </div>
@@ -206,19 +202,19 @@
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>05</span>
                 <h3>Knowledge Base Chatbots</h3>
-                <p>Customer-facing or internal chatbots that answer from your documentation, policies, or support history - with a clear fallback when the answer isn't in the data.</p>
+                <p>Customer-facing or internal chatbots that answer from your documentation, policies, or support history, with a clear fallback when the answer isn't in the data.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>06</span>
                 <h3>Multi-Source RAG</h3>
-                <p>Retrieval across multiple data sources - databases, APIs, and documents combined into a single grounded answer, with source-level access control.</p>
+                <p>Retrieval across multiple data sources, databases, APIs, and documents combined into a single grounded answer, with source-level access control.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>07</span>
                 <h3>RAG Performance Optimisation</h3>
-                <p>Latency and cost optimisation for existing RAG systems - caching, smaller embedding models, and retrieval pruning without losing answer quality.</p>
+                <p>Latency and cost optimisation for existing RAG systems, caching, smaller embedding models, and retrieval pruning without losing answer quality.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -233,21 +229,21 @@
                 <span class="services-page-kicker">Why It Matters</span>
                 <h2>Most RAG demos fall apart the moment real documents hit them</h2>
                 <p>
-                    A RAG pipeline that works on three sample PDFs in a notebook often breaks on a real document set - inconsistent formatting, duplicate content, and edge cases. We design for that from day one.
+                    A RAG pipeline that works on three sample PDFs in a notebook often breaks on a real document set, inconsistent formatting, duplicate content, and edge cases. We design for that from day one.
                 </p>
                 <div class="why-choose-grid">
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
                         <div>
                             <h3>Measured Retrieval Quality</h3>
-                            <p>We test retrieval precision against real queries before launch - not just "it looked right when I tried it."</p>
+                            <p>We test retrieval precision against real queries before launch, not just "it looked right when I tried it."</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-quote-right"></i></div>
                         <div>
                             <h3>Verifiable Answers</h3>
-                            <p>Source citations on every answer mean users - and you - can verify the AI isn't making things up.</p>
+                            <p>Source citations on every answer mean users, and you, can verify the AI isn't making things up.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -261,7 +257,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>The pipeline, prompts, and vector store configuration are yours - no vendor lock-in, no black box.</p>
+                            <p>The pipeline, prompts, and vector store configuration are yours, no vendor lock-in, no black box.</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +272,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating · 40+ systems shipped</span>
+                        <span>5-star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -292,7 +288,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-database"></i>
-                    Pinecone · pgvector · LangChain · OpenAI
+                    Pinecone, pgvector, LangChain, OpenAI
                 </div>
             </div>
         </div>
@@ -305,14 +301,14 @@
         <div class="workflow-head">
             <span class="services-page-kicker">How It Works</span>
             <h2>From raw documents to a reliable RAG system in 4 stages</h2>
-            <p>Every RAG build follows the same disciplined process - because retrieval quality is won or lost in the details, not the demo.</p>
+            <p>Every RAG build follows the same disciplined process, because retrieval quality is won or lost in the details, not the demo.</p>
         </div>
         <div class="workflow-layout">
             <div class="workflow-visual">
                 <img src="https://images.pexels.com/photos/89724/pexels-photo-89724.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="RAG pipeline build process" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our RAG Flow</span>
-                    <h3>Ingest · Index · Retrieve · Evaluate</h3>
+                    <h3>Ingest, Index, Retrieve, Evaluate</h3>
                 </div>
             </div>
             <div class="workflow-steps">
@@ -356,26 +352,26 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>RAG Systems - Frequently Asked Questions</h2>
+    <h2>RAG Systems, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What is a RAG system and how does it work?</summary>
-        <p>A RAG (Retrieval-Augmented Generation) system connects a large language model to your own documents, knowledge base, or database. When a user asks a question, the system retrieves the most relevant content using vector search, then the LLM generates an answer grounded in that content - with citations - instead of guessing. This makes answers accurate, up to date, and specific to your business.</p>
+        <p>A RAG (Retrieval-Augmented Generation) system connects a large language model to your own documents, knowledge base, or database. When a user asks a question, the system retrieves the most relevant content using vector search, then the LLM generates an answer grounded in that content, with citations, instead of guessing. This makes answers accurate, up to date, and specific to your business.</p>
       </details>
       <details>
         <summary>How is a RAG system different from a custom-built ChatGPT?</summary>
@@ -391,7 +387,7 @@
       </details>
       <details>
         <summary>How long does it take to build a production RAG system?</summary>
-        <p>A focused production-ready RAG system typically takes 3–6 weeks depending on data sources, integrations, and security needs. We start with a fixed-scope build so you get a working, measurable system rather than an open-ended demo.</p>
+        <p>A focused production-ready RAG system typically takes 3 to 6 weeks depending on data sources, integrations, and security needs. We start with a fixed-scope build so you get a working, measurable system rather than an open-ended demo.</p>
       </details>
   </div>
 </section>

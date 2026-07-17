@@ -7,6 +7,7 @@ use App\Mail\NewsletterSubscriptionMail;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\ContactUsUser;
+use App\Models\NewsletterSubscriber;
 use App\Models\Service;
 use App\Models\TeamMember;
 use Illuminate\Http\Request;
@@ -18,6 +19,24 @@ use Illuminate\Support\Str;
 class HomeController extends Controller
 {
     /**
+     * Category/service slugs that have a dedicated, hand-built page under /services/...
+     * The generic dynamic routes (/{category} and /{category}/{slug}) redirect to these
+     * instead of rendering a duplicate generic-template page for the same content.
+     */
+    private const STATIC_CATEGORY_ROUTES = [];
+
+    private const STATIC_SERVICE_ROUTES = [
+        'web-development' => [
+            'custom-website-development' => 'web_dev_custom',
+            'laravel-development' => 'web_dev_laravel',
+            'php-development' => 'web_dev_php',
+        ],
+        'web-design' => [
+            'responsive-design' => 'responsive_design',
+        ],
+    ];
+
+    /**
      * Display a listing of the resource.
      */
     public function index()
@@ -25,7 +44,6 @@ class HomeController extends Controller
         $services = Service::all();
         $blogs = Blog::with('user')
             ->where('status', 1)
-            ->where('feature_blog', 1)
             ->latest()
             ->take(3)
             ->get();
@@ -88,13 +106,33 @@ class HomeController extends Controller
     // }
     public function SingleService($category, $slug)
     {
+        // Normalize case first so /Web-Development/Laravel-Development doesn't get
+        // indexed as a separate duplicate of /web-development/laravel-development
+        // (MySQL's default collation matches slugs case-insensitively).
+        if ($category !== strtolower($category) || $slug !== strtolower($slug)) {
+            return redirect('/' . strtolower($category) . '/' . strtolower($slug), 301);
+        }
+
+        if (isset(self::STATIC_SERVICE_ROUTES[$category][$slug])) {
+            return redirect()->route(self::STATIC_SERVICE_ROUTES[$category][$slug], [], 301);
+        }
+
         $categoryService = Category::where('slug', $category)->with('service', function ($query) use ($slug) {
             $query->where('slug', $slug);
         })->first();
+
+        if (!$categoryService || $categoryService->service->isEmpty()) {
+            abort(404);
+        }
+
         return view('frontend.service-details', compact('categoryService'));
     }
     public function SingleBlog($slug)
     {
+        if ($slug !== strtolower($slug)) {
+            return redirect('/blog/' . strtolower($slug), 301);
+        }
+
         $blog = Blog::with('user')
             ->where('slug', $slug)
             ->where('status', 1)
@@ -104,6 +142,13 @@ class HomeController extends Controller
     }
     public function category($slug)
     {
+        if ($slug !== strtolower($slug)) {
+            return redirect('/' . strtolower($slug), 301);
+        }
+
+        if (isset(self::STATIC_CATEGORY_ROUTES[$slug])) {
+            return redirect()->route(self::STATIC_CATEGORY_ROUTES[$slug], [], 301);
+        }
 
         $category = Category::where('slug', $slug)->with('service')->first();
         if (isset($category->slug) && !empty($category->slug)) {
@@ -129,16 +174,6 @@ class HomeController extends Controller
         return view('frontend.team', compact('teamMembers', 'founder', 'otherMembers'));
     }
 
-    public function services()
-    {
-        return view('frontend.services');
-    }
-
-    public function aiDevelopment()
-    {
-        return view('frontend.ai-development');
-    }
-
     public function aiRagSystems()
     {
         return view('frontend.ai-rag-systems');
@@ -159,15 +194,6 @@ class HomeController extends Controller
         return view('frontend.ai-backend-deployment');
     }
 
-    public function webDevelopment()
-    {
-        $category = Category::where('slug', 'web-development')
-            ->with(['service' => fn ($query) => $query->where('status', 1)->orderBy('id')])
-            ->first();
-
-        return view('frontend.web-development', compact('category'));
-    }
-
     public function webDevCustom()
     {
         return view('frontend.web-dev-custom');
@@ -181,15 +207,6 @@ class HomeController extends Controller
     public function webDevPhp()
     {
         return view('frontend.web-dev-php');
-    }
-
-    public function webDesign()
-    {
-        $category = Category::where('slug', 'web-design')
-            ->with(['service' => fn ($query) => $query->where('status', 1)->orderBy('id')])
-            ->first();
-
-        return view('frontend.web-design', compact('category'));
     }
 
     public function uiUxDesign()
@@ -207,24 +224,6 @@ class HomeController extends Controller
         return view('frontend.responsive-design');
     }
 
-    public function seoOptimization()
-    {
-        return view('frontend.seo-optimization');
-    }
-
-    public function digitalMarketing()
-    {
-        $category = Category::where('slug', 'digital-marketing')
-            ->with(['service' => fn ($query) => $query->where('status', 1)->orderBy('id')])
-            ->first();
-
-        return view('frontend.digital-marketing', compact('category'));
-    }
-
-    public function ppcAdvertising()
-    {
-        return view('frontend.ppc-advertising');
-    }
     public function subscribeNewsletter(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -239,13 +238,30 @@ class HomeController extends Controller
             ], 422);
         }
 
+        $email = strtolower($request->email);
+
+        if (NewsletterSubscriber::where('email', $email)->exists()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'This email is already sent.',
+            ], 409);
+        }
+
         try {
-            Mail::to('munaza6961@gmail.com')->send(new NewsletterSubscriptionMail($request->email));
+            NewsletterSubscriber::create(['email' => $email]);
+
+            Mail::to('munaza6961@gmail.com')->send(new NewsletterSubscriptionMail($email));
 
             return response()->json([
                 'status' => 'success',
                 'message' => 'Thanks for contacting us! We will respond within 24 hours.',
             ]);
+        } catch (\Illuminate\Database\QueryException $e) {
+            // Unique constraint race: two simultaneous submissions for the same email.
+            return response()->json([
+                'status' => 'error',
+                'message' => 'This email is already subscribed.',
+            ], 409);
         } catch (\Exception $e) {
             Log::error('Newsletter Subscribe: ' . $e->getMessage());
 

@@ -46,7 +46,7 @@ class ServiceController extends Controller
             'slug' => ['required', 'unique:services,slug'],
             'title' => 'required|string',
             'category_id' => 'required|int',
-            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'short_description' => 'required|min:3',
             'description' => 'required|min:3',
             'meta_title' => 'required|min:3',
@@ -77,14 +77,17 @@ class ServiceController extends Controller
 
             if ($request->hasFile('image')) {
                 $uploadPath = public_path('frontend/assets/images/services');
-                if (!file_exists($uploadPath)) {
-                    mkdir($uploadPath, 0755, true);
+                if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+                    throw new Exception("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
                 }
                 $image = $request->file('image');
                 $filenameWithoutExtension = Str::beforeLast($image->getClientOriginalName(), '.');
                 $imageSlug = Str::slug($filenameWithoutExtension);
                 $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
                 $image->move($uploadPath, $imageName);
+                if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+                    throw new Exception("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+                }
                 $service->image = $imageName;
             }
             $service->save();
@@ -130,7 +133,7 @@ class ServiceController extends Controller
             'slug' => ['required', 'unique:services,slug,' . $request->service_id],
             'title' => 'required|string',
             'category_id' => 'required|int',
-            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'old_image' => 'nullable|string',
             'short_description' => 'required|min:3',
             'description' => 'required|min:3',
@@ -162,15 +165,20 @@ class ServiceController extends Controller
 
             if ($request->hasFile('image')) {
                 $uploadPath = public_path('frontend/assets/images/services');
-                if (!file_exists($uploadPath)) {
-                    mkdir($uploadPath, 0755, true);
+                if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+                    throw new Exception("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
                 }
                 $image = $request->file('image');
                 $filenameWithoutExtension = Str::beforeLast($image->getClientOriginalName(), '.');
                 $imageSlug = Str::slug($filenameWithoutExtension);
                 $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
                 $image->move($uploadPath, $imageName);
+                if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+                    throw new Exception("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+                }
                 $service->image = $imageName;
+            } elseif ($request->boolean('remove_image')) {
+                $service->image = '';
             } else {
                 $service->image = $request->old_image;
             }

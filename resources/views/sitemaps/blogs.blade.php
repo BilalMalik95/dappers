@@ -5,6 +5,9 @@
   @foreach ($blogs as $data)
        <url>
         <loc>{{ url('/').'/blog/'.$data->slug }}</loc>
+        <lastmod>{{ $data->updated_at?->toAtomString() }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
   @endforeach
 

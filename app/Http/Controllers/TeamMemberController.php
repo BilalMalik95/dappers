@@ -19,8 +19,8 @@ class TeamMemberController extends Controller
         }
 
         $uploadPath = public_path($directory);
-        if (!file_exists($uploadPath)) {
-            mkdir($uploadPath, 0755, true);
+        if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+            throw new \RuntimeException("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
         }
 
         $image = $request->file($fieldName);
@@ -28,6 +28,10 @@ class TeamMemberController extends Controller
         $imageSlug = Str::slug($filenameWithoutExtension);
         $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
         $image->move($uploadPath, $imageName);
+
+        if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+            throw new \RuntimeException("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+        }
 
         return $imageName;
     }
@@ -62,7 +66,7 @@ class TeamMemberController extends Controller
             'slug' => 'required|string|max:255|unique:team_members,slug',
             'designation' => 'required|string|max:255',
             'experience' => 'nullable|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'bio' => 'nullable|string',
             'email' => 'nullable|email|max:255',
             'phone' => 'nullable|string|max:50',
@@ -130,7 +134,7 @@ class TeamMemberController extends Controller
             'slug' => 'required|string|max:255|unique:team_members,slug,' . $request->team_member_id,
             'designation' => 'required|string|max:255',
             'experience' => 'nullable|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'bio' => 'nullable|string',
             'email' => 'nullable|email|max:255',
             'phone' => 'nullable|string|max:50',
@@ -171,6 +175,8 @@ class TeamMemberController extends Controller
 
             if ($request->hasFile('image')) {
                 $member->image = $this->storeUploadedImage($request, 'image', 'frontend/assets/images/team') ?? $request->old_image;
+            } elseif ($request->boolean('remove_image')) {
+                $member->image = '';
             } elseif ($request->filled('old_image')) {
                 $member->image = $request->old_image;
             }

@@ -5,7 +5,7 @@
         <!--begin::Copyright-->
         <div class="text-dark order-2 order-md-1">
             <span class="text-muted fw-semibold me-1">2023&copy;</span>
-            <a href="#" target="_blank" class="text-gray-800 text-hover-primary">DappersTech</a>
+            <a href="https://dapperstech.com" target="_blank" class="text-gray-800 text-hover-primary">DappersTech</a>
         </div>
         <!--end::Copyright-->
         <!--begin::Menu-->

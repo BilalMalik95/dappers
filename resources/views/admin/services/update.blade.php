@@ -128,9 +128,13 @@
                 </div>
                 @endif
             </div>
-            <div id="viewImageDev" class="">
+            <div id="viewImageDev" class="position-relative" style="width: fit-content;">
                 <img src='{{ asset("frontend/assets/images/services/$service->image") }}' alt="" id="viewImage" width="200px">
                 <input type="hidden" value="{{ $service->image }}" name="old_image">
+                <input type="hidden" id="removeImageFlag" name="remove_image" value="0">
+                <button type="button" id="removeImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove image">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
         <div class="mt-3 fv-row mb-7 fv-plugins-icon-container">
@@ -205,7 +209,13 @@
             let targetSrc = URL.createObjectURL(file);
             $('#viewImage').attr('src', targetSrc);
             $('#viewImageDev').removeClass('d-none');
-            $('#viewImageDev input').val(targetSrc);
+            $('#removeImageFlag').val('0');
+        });
+        $(document).on('click', '#removeImage', function() {
+            $('#image').val('');
+            $('#viewImage').attr('src', '');
+            $('#viewImageDev').addClass('d-none');
+            $('#removeImageFlag').val('1');
         });
         $(document).on('input', '#name', function() {
             let name = $(this).val();

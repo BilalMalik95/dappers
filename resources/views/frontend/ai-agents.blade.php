@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'AI Agents Development | Tool-Calling Agents & Workflow Automation')
-@section('meta_description', 'AI agents development - tool/function-calling agents, agentic workflows, and automation with guardrails and human-in-the-loop checkpoints. Built for production use.')
+@section('meta_description', 'AI agents development, tool/function-calling agents, agentic workflows, and automation with guardrails and human-in-the-loop checkpoints. Built for production use.')
 @section('meta_keywords', 'AI agents, AI agent development company, AI automation agency, build AI agents, custom AI agents for business, agentic workflows, AI workflow automation, n8n development services, tool calling, autonomous agents, LLM agents')
 
 @section('styles')
@@ -13,7 +13,7 @@
       "@type": "Service",
       "name": "AI Agents & Workflow Automation",
       "serviceType": "AI Agent Development",
-      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
+      "provider": {"@id": "https://dapperstech.com/#organization", "@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "Tool/function-calling AI agents that take real actions across your stack, with guardrails, fallbacks, and human-in-the-loop checkpoints where it matters.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/ai-development/ai-agents"
@@ -39,7 +39,7 @@
       "name": "What are AI agents and how do they differ from chatbots?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi-step tasks on its own - with guardrails and human-in-the-loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business."
+        "text": "AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi-step tasks on its own, with guardrails and human-in-the-loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business."
       }
     },
     {
@@ -82,35 +82,31 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 44%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/6913227/pexels-photo-6913227.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 44%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/6913227/pexels-photo-6913227.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('ai_development') }}">AI Development</a>
+                <span>AI Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>AI Agents</span>
             </nav>
             <span class="services-page-kicker">AI Agents</span>
             <h1>
-                AI agents that take real action - <br>
+                AI agents that take real action,<br>
                 with guardrails, not guesswork
             </h1>
             <p>
-                Tool and function-calling agents that read, write, and act across your existing systems - built with human-in-the-loop checkpoints, retries, and fallbacks so they don't go off the rails
+                Tool and function-calling agents that read, write, and act across your existing systems, built with human-in-the-loop checkpoints, retries, and fallbacks so they don't go off the rails
                 in production.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('ai_development') }}" class="services-page-btn services-page-btn--outline">
-                    All AI Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -125,7 +121,7 @@
                 finish the task.
             </h2>
             <p>
-                An agent that only works in a controlled demo isn't an agent - it's a liability. We build for the
+                An agent that only works in a controlled demo isn't an agent, it's a liability. We build for the
                 cases where tools fail, inputs are messy, and a human needs to step in.
             </p>
         </div>
@@ -139,7 +135,7 @@
                     <span class="service-tag">Core Service</span>
                     <h3>Tool & Function-Calling Agents</h3>
                     <p>
-                        Agents that call your APIs, databases, and internal tools to complete multi-step tasks - with structured outputs, retries, and clear error handling at every step.
+                        Agents that call your APIs, databases, and internal tools to complete multi-step tasks, with structured outputs, retries, and clear error handling at every step.
                     </p>
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> Multi-Step Tool Orchestration</span>
@@ -161,7 +157,7 @@
                     <div>
                         <span>01</span>
                         <h3>Human-in-the-Loop Checkpoints</h3>
-                        <p>Approval steps before high-stakes actions - sending emails, processing payments, or updating records - so the agent assists, not gambles.</p>
+                        <p>Approval steps before high-stakes actions, sending emails, processing payments, or updating records, so the agent assists, not gambles.</p>
                     </div>
                 </a>
 
@@ -172,7 +168,7 @@
                     <div>
                         <span>02</span>
                         <h3>Multi-Agent Orchestration</h3>
-                        <p>Specialised agents coordinated through a planner/orchestrator pattern - for workflows too complex for a single prompt to handle reliably.</p>
+                        <p>Specialised agents coordinated through a planner/orchestrator pattern, for workflows too complex for a single prompt to handle reliably.</p>
                     </div>
                 </a>
 
@@ -183,7 +179,7 @@
                     <div>
                         <span>03</span>
                         <h3>Business Process Automation</h3>
-                        <p>Replace manual, repetitive workflows - lead qualification, data entry, report generation - with agents wired into n8n, Make, or custom pipelines.</p>
+                        <p>Replace manual, repetitive workflows, lead qualification, data entry, report generation, with agents wired into n8n, Make, or custom pipelines.</p>
                     </div>
                 </a>
 
@@ -194,7 +190,7 @@
                     <div>
                         <span>04</span>
                         <h3>Agent Monitoring & Observability</h3>
-                        <p>Full trace logging of agent reasoning and tool calls, so when something goes wrong, you can see exactly why - not guess.</p>
+                        <p>Full trace logging of agent reasoning and tool calls, so when something goes wrong, you can see exactly why, not guess.</p>
                     </div>
                 </a>
             </div>
@@ -204,13 +200,13 @@
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>05</span>
                 <h3>Customer Support Agents</h3>
-                <p>Agents that triage tickets, answer from your knowledge base, and escalate to a human when confidence is low - not a chatbot that loops in circles.</p>
+                <p>Agents that triage tickets, answer from your knowledge base, and escalate to a human when confidence is low, not a chatbot that loops in circles.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>06</span>
                 <h3>Internal Ops Agents</h3>
-                <p>Agents that handle internal operations - scheduling, reporting, data reconciliation - freeing your team from repetitive coordination work.</p>
+                <p>Agents that handle internal operations, scheduling, reporting, data reconciliation, freeing your team from repetitive coordination work.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
@@ -260,7 +256,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>The agent logic, prompts, and orchestration code are yours - no proprietary platform lock-in.</p>
+                            <p>The agent logic, prompts, and orchestration code are yours, no proprietary platform lock-in.</p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +271,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating · 40+ systems shipped</span>
+                        <span>5-star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -291,7 +287,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-robot"></i>
-                    OpenAI · Claude · LangGraph · n8n
+                    OpenAI, Claude, LangGraph, n8n
                 </div>
             </div>
         </div>
@@ -304,14 +300,14 @@
         <div class="workflow-head">
             <span class="services-page-kicker">How It Works</span>
             <h2>From task definition to a deployed agent in 4 stages</h2>
-            <p>Every agent build follows the same process - because reliability comes from disciplined design, not a clever prompt.</p>
+            <p>Every agent build follows the same process, because reliability comes from disciplined design, not a clever prompt.</p>
         </div>
         <div class="workflow-layout">
             <div class="workflow-visual">
                 <img src="https://images.pexels.com/photos/4955393/pexels-photo-4955393.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI agent build process" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our Agent Flow</span>
-                    <h3>Define · Build · Guard · Deploy</h3>
+                    <h3>Define, Build, Guard, Deploy</h3>
                 </div>
             </div>
             <div class="workflow-steps">
@@ -336,7 +332,7 @@
                     <div class="workflow-content">
                         <span>Guardrails & Testing</span>
                         <h3>Add checkpoints and stress-test failure cases</h3>
-                        <p>Approval steps, retries, and edge-case testing - including what happens when a tool call fails or returns garbage.</p>
+                        <p>Approval steps, retries, and edge-case testing, including what happens when a tool call fails or returns garbage.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -355,26 +351,26 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>AI Agents Development - Frequently Asked Questions</h2>
+    <h2>AI Agents Development, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What are AI agents and how do they differ from chatbots?</summary>
-        <p>AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi-step tasks on its own - with guardrails and human-in-the-loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business.</p>
+        <p>AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi-step tasks on its own, with guardrails and human-in-the-loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business.</p>
       </details>
       <details>
         <summary>What can a custom AI agent automate for my business?</summary>

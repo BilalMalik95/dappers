@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'Graphic Design & Branding Services | Logos, Identity & Visual Assets')
-@section('meta_description', 'Professional graphic design & branding services - logos, brand guidelines, visual identity, social media graphics, and marketing materials that build trust and recognition.')
+@section('meta_description', 'Professional graphic design & branding services, logos, brand guidelines, visual identity, social media graphics, and marketing materials that build trust and recognition.')
 @section('meta_keywords', 'graphic design services, branding agency, logo design, brand identity, brand guidelines, social media graphics, marketing materials, visual identity design')
 
 @section('styles')
@@ -14,11 +14,12 @@
       "name": "Graphic Design & Branding",
       "serviceType": "Graphic Design",
       "provider": {
+        "@id": "https://dapperstech.com/#organization",
         "@type": "Organization",
         "name": "DappersTech IT Services",
         "url": "https://dapperstech.com"
       },
-      "description": "Logos, brand guidelines, visual identity, social media graphics, banners, and marketing materials - cohesive branding that builds trust and recognition across every platform.",
+      "description": "Logos, brand guidelines, visual identity, social media graphics, banners, and marketing materials, cohesive branding that builds trust and recognition across every platform.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/web-design/graphic-design-branding"
     },
@@ -52,7 +53,7 @@
       "name": "How many logo concepts will I see before we settle on a final design?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our process explores multiple logo concepts and moodboards in the Concept & Design stage, aligned to your brand personality. Once you choose a direction, we refine that concept with revisions until it's exactly right - rather than presenting one option and hoping it lands."
+        "text": "Our process explores multiple logo concepts and moodboards in the Concept & Design stage, aligned to your brand personality. Once you choose a direction, we refine that concept with revisions until it's exactly right, rather than presenting one option and hoping it lands."
       }
     },
     {
@@ -60,7 +61,7 @@
       "name": "What are brand guidelines and why do I need them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brand guidelines are a documented style guide covering logo usage, colours, typography, and tone of voice. They keep your brand consistent across every team member, freelancer, and vendor who touches your marketing - so your business looks the same everywhere, every time."
+        "text": "Brand guidelines are a documented style guide covering logo usage, colours, typography, and tone of voice. They keep your brand consistent across every team member, freelancer, and vendor who touches your marketing, so your business looks the same everywhere, every time."
       }
     },
     {
@@ -76,7 +77,7 @@
       "name": "Do you design social media graphics and marketing materials too?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Beyond logo and brand identity, we design on-brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks - all built from your brand guidelines so every asset reinforces the same visual identity."
+        "text": "Yes. Beyond logo and brand identity, we design on-brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks, all built from your brand guidelines so every asset reinforces the same visual identity."
       }
     }
   ]
@@ -87,14 +88,14 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 45%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/7675029/pexels-photo-7675029.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 45%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/7675029/pexels-photo-7675029.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('web_design') }}">Web Design</a>
+                <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Graphic Design & Branding</span>
             </nav>
@@ -105,17 +106,13 @@
             </h1>
             <p>
                 Logos, brand guidelines, visual identity, social media graphics, and marketing
-                materials - cohesive branding that builds trust and recognition everywhere.
+                materials, cohesive branding that builds trust and recognition everywhere.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('web_design') }}" class="services-page-btn services-page-btn--outline">
-                    All Design Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -132,7 +129,7 @@
             </h2>
             <p>
                 From your logo to your last social media post, every visual asset is designed
-                to feel like one cohesive brand - not a patchwork of mismatched graphics.
+                to feel like one cohesive brand, not a patchwork of mismatched graphics.
             </p>
         </div>
 
@@ -146,7 +143,7 @@
                     <span class="service-tag">Most Requested</span>
                     <h3>Logo & Brand Identity</h3>
                     <p>
-                        A distinctive, memorable logo paired with a full brand identity - colour palette,
+                        A distinctive, memorable logo paired with a full brand identity, colour palette,
                         typography, and imagery style that reflects who you are and stands out from competitors.
                     </p>
                     <div class="service-feature-points">
@@ -192,7 +189,7 @@
                     <div>
                         <span>03</span>
                         <h3>Brand Guidelines</h3>
-                        <p>A documented style guide covering logo usage, colours, typography, and tone - so your brand stays consistent across every team and vendor.</p>
+                        <p>A documented style guide covering logo usage, colours, typography, and tone, so your brand stays consistent across every team and vendor.</p>
                     </div>
                 </a>
 
@@ -225,7 +222,7 @@
                     Branding that builds trust at first glance
                 </h2>
                 <p>
-                    A strong brand identity is not just a logo - it's a consistent visual language
+                    A strong brand identity is not just a logo, it's a consistent visual language
                     that makes your business instantly recognisable and trustworthy.
                 </p>
                 <div class="why-choose-grid">
@@ -233,7 +230,7 @@
                         <div class="why-icon"><i class="fa-solid fa-palette"></i></div>
                         <div>
                             <h3>Cohesive Visual Language</h3>
-                            <p>Every asset - from logo to social posts - shares the same colours, fonts, and tone for instant recognition.</p>
+                            <p>Every asset, from logo to social posts, shares the same colours, fonts, and tone for instant recognition.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -269,7 +266,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio · 40+ brands built</span>
+                        <span>5-star design portfolio, 40+ brands built</span>
                     </div>
                 </div>
             </div>
@@ -286,7 +283,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-brush"></i>
-                    Illustrator · Photoshop · Figma
+                    Illustrator, Photoshop, Figma
                 </div>
             </div>
 
@@ -302,7 +299,7 @@
             <span class="services-page-kicker">Branding Process</span>
             <h2>A structured branding process from brief to brand book</h2>
             <p>
-                Strong branding follows a clear process - we work closely with you at every
+                Strong branding follows a clear process, we work closely with you at every
                 stage to ensure the final identity truly represents your business.
             </p>
         </div>
@@ -313,7 +310,7 @@
                 <img src="https://images.pexels.com/photos/16698508/pexels-photo-16698508.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Branding workflow moodboard and logo sketches" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our Branding Flow</span>
-                    <h3>Discover · Design · Refine · Deliver</h3>
+                    <h3>Discover, Design, Refine, Deliver</h3>
                 </div>
             </div>
 
@@ -364,22 +361,22 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>Graphic Design &amp; Branding - Frequently Asked Questions</h2>
+    <h2>Graphic Design &amp; Branding, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What's included in a logo and brand identity package?</summary>
@@ -387,11 +384,11 @@
       </details>
       <details>
         <summary>How many logo concepts will I see before we settle on a final design?</summary>
-        <p>Our process explores multiple logo concepts and moodboards in the Concept & Design stage, aligned to your brand personality. Once you choose a direction, we refine that concept with revisions until it's exactly right - rather than presenting one option and hoping it lands.</p>
+        <p>Our process explores multiple logo concepts and moodboards in the Concept & Design stage, aligned to your brand personality. Once you choose a direction, we refine that concept with revisions until it's exactly right, rather than presenting one option and hoping it lands.</p>
       </details>
       <details>
         <summary>What are brand guidelines and why do I need them?</summary>
-        <p>Brand guidelines are a documented style guide covering logo usage, colours, typography, and tone of voice. They keep your brand consistent across every team member, freelancer, and vendor who touches your marketing - so your business looks the same everywhere, every time.</p>
+        <p>Brand guidelines are a documented style guide covering logo usage, colours, typography, and tone of voice. They keep your brand consistent across every team member, freelancer, and vendor who touches your marketing, so your business looks the same everywhere, every time.</p>
       </details>
       <details>
         <summary>Can you redesign our existing logo instead of starting from scratch?</summary>
@@ -399,7 +396,7 @@
       </details>
       <details>
         <summary>Do you design social media graphics and marketing materials too?</summary>
-        <p>Yes. Beyond logo and brand identity, we design on-brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks - all built from your brand guidelines so every asset reinforces the same visual identity.</p>
+        <p>Yes. Beyond logo and brand identity, we design on-brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks, all built from your brand guidelines so every asset reinforces the same visual identity.</p>
       </details>
   </div>
 </section>

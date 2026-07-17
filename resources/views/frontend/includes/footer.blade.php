@@ -10,6 +10,24 @@ document.addEventListener('DOMContentLoaded', function () {
             toggle.closest('.footer-col--collapsible').classList.toggle('is-open');
         });
     });
+
+    document.querySelectorAll('.footer-sublink-trigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            var group = trigger.closest('.footer-sublink-group');
+            var wasOpen = group.classList.contains('is-open');
+            group.parentElement.querySelectorAll('.footer-sublink-group.is-open').forEach(function (g) {
+                g.classList.remove('is-open');
+            });
+            if (!wasOpen) group.classList.add('is-open');
+        });
+    });
+
+    document.addEventListener('click', function (e) {
+        document.querySelectorAll('.footer-sublink-group.is-open').forEach(function (g) {
+            if (!g.contains(e.target)) g.classList.remove('is-open');
+        });
+    });
 });
 
 function showSiteModal(type, message, title) {
@@ -77,85 +95,95 @@ function sendEmail() {
     <div class="container">
         <div class="footer-top">
             <div class="footer-left">
-                <h2>Let's build your next <span class="scribble">AI-powered</span><br>digital product together</h2>
+                <h2>Let's build your next <span class="scribble">AI-powered</span> <br class="footer-heading-break">digital product together</h2>
             </div>
             <div class="footer-right">
                 <div class="subscribe">
                     <input type="email" id="email" placeholder="Enter email">
                     <button type="button" onclick="sendEmail() ">Send Email</button>
                  </div>
-                <label class="footer-check">
-                    <input type="checkbox">
-                    <span>I agree to the Privacy Policy and give my permission to process my personal data for the stated purposes.</span>
-                </label>
             </div>
         </div>
 
         <div class="footer-line"></div>
 
         <div class="footer-grid">
+            <div class="footer-col footer-col--brand">
+                <a href="{{ route('home') }}" class="footer-logo">
+                    <img src="{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}" class="footer-logo-img" alt="DappersTech logo">
+                </a>
+                <p class="footer-brand-desc">A software house delivering AI integration, custom software development, and SaaS platforms for businesses worldwide.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/dapper_solutions/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61582958314198" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/dappersolutions/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
             <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">DappersTech <i class="fa-solid fa-chevron-down"></i></h4>
+                <h4 class="footer-col-toggle">Company <i class="fa-solid fa-chevron-down"></i></h4>
                 <div class="footer-col-links">
                     <a href="{{ route('home') }}">Home</a>
+                    <a href="{{ route('aboutus') }}">About Us</a>
                     <a href="{{ route('team') }}">Meet Our Team</a>
-                    <a href="{{ route('aboutus') }}">About Company</a>
                     <a href="{{ route('blogs') }}">Blogs</a>
                     <a href="{{ route('contact_us') }}">Contact Us</a>
                 </div>
             </div>
-            <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">AI Development <i class="fa-solid fa-chevron-down"></i></h4>
-                <div class="footer-col-links">
-                    <a href="{{ route('ai_rag_systems') }}">RAG Systems</a>
-                    <a href="{{ route('ai_agents') }}">AI Agents</a>
-                    <a href="{{ route('ai_llm_integration') }}">Custom GPT & LLM Integration</a>
-                    <a href="{{ route('ai_backend_deployment') }}">AI Backend & Deployment</a>
-                </div>
-            </div>
-            <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">Web Development <i class="fa-solid fa-chevron-down"></i></h4>
-                <div class="footer-col-links">
-                    <a href="{{ route('web_dev_custom') }}">Custom Website Development</a>
-                    <a href="{{ route('web_dev_laravel') }}">Laravel Development</a>
-                    <a href="{{ route('web_dev_php') }}">PHP Development</a>
-                </div>
-            </div>
-            <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">Web Design <i class="fa-solid fa-chevron-down"></i></h4>
-                <div class="footer-col-links">
-                    <a href="{{ route('ui_ux_design') }}">UI/UX Design</a>
-                    <a href="{{ route('graphic_design_branding') }}">Graphic Design</a>
-                    <a href="{{ route('responsive_design') }}">Responsive Design</a>
-                </div>
-            </div>
-            <div class="footer-col footer-col--collapsible">
-                <h4 class="footer-col-toggle">Digital Marketing <i class="fa-solid fa-chevron-down"></i></h4>
-                <div class="footer-col-links">
-                    <a href="{{ route('seo_optimization') }}">SEO Optimization</a>
-                    <a href="{{ route('digital_marketing') }}">Social Media Marketing</a>
-                    <a href="{{ route('ppc_advertising') }}">PPC Advertising</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="footer-bottom-row">
-            <p class="footer-address footer-address--row">
-                <i class="fa-solid fa-location-dot"></i>
-                Mid City Mall, Rehmanabad, Murree Road,<br>Rawalpindi, Punjab 46000,Pakistan
-            </p>
-            <a href="tel:+923339302731" class="footer-address-phone">
-                <i class="fa-solid fa-phone"></i> 051 6125246
-            </a>
-            <a href="https://mail.google.com/mail/u/0/?to=info@dapperstech.com&su=Project+Inquiry&fs=1&tf=cm" class="footer-address-phone">
-                <i class="fa-solid fa-envelope"></i> info@dapperstech.com
-            </a>
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/dapper_solutions/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61582958314198" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/dappersolutions/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="footer-col footer-col--collapsible footer-col--services">
+                <h4 class="footer-col-toggle">Services <i class="fa-solid fa-chevron-down"></i></h4>
+                <div class="footer-col-links footer-services-links">
+
+                    <div class="footer-sublink-group">
+                        <a class="footer-sublink-trigger">
+                            AI Development
+                        </a>
+                        <div class="footer-sublinks">
+                            <a href="{{ route('ai_rag_systems') }}">RAG Systems</a>
+                            <a href="{{ route('ai_agents') }}">AI Agents</a>
+                            <a href="{{ route('ai_llm_integration') }}">Custom GPT & LLM Integration</a>
+                            <a href="{{ route('ai_backend_deployment') }}">AI Backend & Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sublink-group">
+                        <a class="footer-sublink-trigger">
+                            Web Development
+                        </a>
+                        <div class="footer-sublinks">
+                            <a href="{{ route('web_dev_custom') }}">Custom Website Development</a>
+                            <a href="{{ route('web_dev_laravel') }}">Laravel Development</a>
+                            <a href="{{ route('web_dev_php') }}">PHP Development</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-sublink-group">
+                        <a class="footer-sublink-trigger">
+                            Web Design
+                        </a>
+                        <div class="footer-sublinks">
+                            <a href="{{ route('ui_ux_design') }}">UI/UX Design</a>
+                            <a href="{{ route('graphic_design_branding') }}">Graphic Design & Branding</a>
+                            <a href="{{ route('responsive_design') }}">Responsive Design</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-col footer-col--contact">
+                <h4>Get In Touch</h4>
+                <div class="footer-contact-list">
+                    <a href="https://mail.google.com/mail/u/0/?to=info@dapperstech.com&su=Project+Inquiry&fs=1&tf=cm"><i class="fa-solid fa-envelope"></i> info@dapperstech.com</a>
+                    <a href="tel:+92 516125246"><i class="fa-solid fa-phone"></i> +92 516125246</a>
+                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +92 333 9994544</a>
+                    <span><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
+                </div>
             </div>
         </div>
+        
 
         <div class="copyright">
             &copy; {{ config('app.name', 'DappersTech') }} {{ date('Y') }}. All Rights Reserved.

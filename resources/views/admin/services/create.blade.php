@@ -139,9 +139,12 @@
                         </div>
                     @endif
                 </div>
-                <div id="viewImageDev" class="d-none">
+                <div id="viewImageDev" class="d-none position-relative" style="width: fit-content;">
                     <img src="{{ old('view_url') }}" alt="" id="viewImage" width="200px">
                     <input type="hidden" name="view_url">
+                    <button type="button" id="removeImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove selected image">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
             </div>
             <div class="fv-row mb-7 fv-plugins-icon-container">
@@ -219,6 +222,12 @@
                 $('#viewImage').attr('src', targetSrc);
                 $('#viewImageDev').removeClass('d-none');
                 $('#viewImageDev input').val(targetSrc);
+            });
+            $(document).on('click', '#removeImage', function() {
+                $('#image').val('');
+                $('#viewImage').attr('src', '');
+                $('#viewImageDev').addClass('d-none');
+                $('#viewImageDev input').val('');
             });
                $(document).on('input', '#name', function() {
                 let name = $(this).val();

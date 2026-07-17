@@ -10,13 +10,18 @@ var KTCustomersList = function () {
 
     // Private functions
     var initCustomerList = function () {
-        // Set date data order
+        // Set date data order (best-effort - not every table has a parseable date in column 5)
         const tableRows = table.querySelectorAll('tbody tr');
 
         tableRows.forEach(row => {
             const dateRow = row.querySelectorAll('td');
-            const realDate = moment(dateRow[5].innerHTML, "DD MMM YYYY, LT").format(); // select date from 5th column in table
-            dateRow[5].setAttribute('data-order', realDate);
+            if (!dateRow[5]) {
+                return;
+            }
+            const parsed = moment(dateRow[5].innerHTML, "DD MMM YYYY, LT");
+            if (parsed.isValid()) {
+                dateRow[5].setAttribute('data-order', parsed.format());
+            }
         });
 
         // Init datatable --- more info on datatables: https://datatables.net/manual/
@@ -25,7 +30,7 @@ var KTCustomersList = function () {
             'order': [],
             'columnDefs': [
                 { orderable: false, targets: 0 }, // Disable ordering on column 0 (checkbox)
-                { orderable: false, targets: 6 }, // Disable ordering on column 6 (actions)
+                { orderable: false, targets: -1 }, // Disable ordering on the last column (actions) - not every page has the same column count
             ]
         });
 
@@ -40,6 +45,9 @@ var KTCustomersList = function () {
     // Search Datatable --- official docs reference: https://datatables.net/reference/api/search()
     var handleSearchDatatable = () => {
         const filterSearch = document.querySelector('[data-kt-customer-table-filter="search"]');
+        if (!filterSearch) {
+            return;
+        }
         filterSearch.addEventListener('keyup', function (e) {
             datatable.search(e.target.value).draw();
         });
@@ -51,6 +59,11 @@ var KTCustomersList = function () {
         filterMonth = $('[data-kt-customer-table-filter="month"]');
         filterPayment = document.querySelectorAll('[data-kt-customer-table-filter="payment_type"] [name="payment_type"]');
         const filterButton = document.querySelector('[data-kt-customer-table-filter="filter"]');
+
+        // Not every page has month/payment filters - skip wiring if the button isn't present
+        if (!filterButton) {
+            return;
+        }
 
         // Filter datatable on submit
         filterButton.addEventListener('click', function () {
@@ -141,6 +154,11 @@ var KTCustomersList = function () {
         // Select reset button
         const resetButton = document.querySelector('[data-kt-customer-table-filter="reset"]');
 
+        // Not every page has a reset button - skip wiring if it isn't present
+        if (!resetButton) {
+            return;
+        }
+
         // Reset datatable
         resetButton.addEventListener('click', function () {
             // Reset month
@@ -173,7 +191,10 @@ var KTCustomersList = function () {
             });
         });
 
-        // Deleted selected rows
+        // Deleted selected rows (not every page has a bulk-delete button)
+        if (!deleteSelected) {
+            return;
+        }
         deleteSelected.addEventListener('click', function () {
             // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
             Swal.fire({
@@ -231,7 +252,12 @@ var KTCustomersList = function () {
         const toolbarSelected = document.querySelector('[data-kt-customer-table-toolbar="selected"]');
         const selectedCount = document.querySelector('[data-kt-customer-table-select="selected_count"]');
 
-        // Select refreshed checkbox DOM elements 
+        // Not every page has a "selected" bulk-action toolbar - nothing to toggle
+        if (!toolbarSelected) {
+            return;
+        }
+
+        // Select refreshed checkbox DOM elements
         const allCheckboxes = table.querySelectorAll('tbody [type="checkbox"]');
 
         // Detect checkboxes state & count

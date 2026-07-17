@@ -1,15 +1,11 @@
 (function () {
     var SLIDER_SELECTORS = [
         '.home-service-bottom',
-        '.blog-grid',
-        '.services-v2-stack',
-        '.services-v2-bottom',
         '.about-capability-grid',
         '.team-person-grid',
         '.blog-listing-grid',
         '.workflow-steps',
         '.about-journey-timeline',
-        '.home-process-line',
     ];
 
     function debounce(fn, wait) {

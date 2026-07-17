@@ -1,7 +1,7 @@
 @extends('frontend.layout')
-@section('title', 'DappersTech - Software House in Rawalpindi | AI & Web Development')
-@section('meta_description', 'DappersTech is a leading software house in Rawalpindi, Pakistan, delivering AI integration, custom software development, SaaS platforms, and Laravel backend systems for businesses worldwide.')
-@section('meta_keywords', 'software house in Rawalpindi, software house Rawalpindi, IT company Rawalpindi, web development company Rawalpindi, AI software development company, AI automation agency, AI agent development company, generative AI integration services, custom built ChatGPT, RAG systems, AI-powered web development agency, custom software development company, SaaS development agency')
+@section('title', 'DappersTech | Software House for AI & Web Development')
+@section('meta_description', 'DappersTech is a software house building custom software, SaaS platforms, and AI integrations for businesses worldwide.')
+@section('meta_keywords', 'software house, AI development company, custom software development, SaaS development, AI integration services, workflow automation, Laravel development')
 
 @section('styles')
 <script type="application/ld+json">
@@ -16,15 +16,15 @@
             'url' => url('/'),
             'logo' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
             'image' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
-            'description' => 'DappersTech is a software house in Rawalpindi, Pakistan, delivering AI-powered software development, SaaS platforms, AI integration services, Laravel backend systems, and workflow automation for clients worldwide.',
+            'description' => 'DappersTech is a software house in Pakistan delivering custom software development, SaaS platforms, AI integration, and workflow automation for clients worldwide.',
             'foundingDate' => '2017',
             'founder' => ['@type' => 'Person', 'name' => 'Bilal Malik', 'url' => 'https://malikbilal.com'],
             'sameAs' => [
                 'https://malikbilal.com',
                 'https://linkedin.com/in/bilal-malik95/',
-                'https://wa.me/923339302731',
+                'https://wa.me/923339994544',
             ],
-            'telephone' => '+92-333-9302731',
+            'telephone' => '+92-51-6125246',
             'email' => 'info@dapperstech.com',
             'priceRange' => '$$',
             'address' => [
@@ -59,7 +59,7 @@
                 'AI Integration Services',
                 'Custom Software Development',
                 'SaaS Platform Development',
-                'Laravel Backend Development',
+                'Backend Development',
                 'Workflow Automation',
                 'UI/UX & Web Design',
                 'Cloud & DevOps',
@@ -70,12 +70,12 @@
                 'itemListElement' => [
                     ['@type' => 'Service', 'name' => 'AI & Automation Integration', 'description' => 'Generative AI integration, OpenAI & Claude chatbots, RAG pipelines, and vector database systems.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'Backend Development', 'description' => 'Laravel and Node.js backends, REST APIs, admin panels, and scalable database architecture.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
-                    ['@type' => 'Service', 'name' => 'SaaS Platform Development', 'description' => 'Multi-tenant SaaS architecture, subscription billing, and modern frontends.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
+                    ['@type' => 'Service', 'name' => 'SaaS Platform Development', 'description' => 'Scalable SaaS architecture, subscription billing, and modern frontends.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'UI/UX & Web Design', 'description' => 'User-centered interfaces and premium web design built for conversion.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'Workflow Automation', 'description' => 'n8n, Make, and Zapier automation pipelines for business operations.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'Digital Marketing & SEO', 'description' => 'Technical SEO, content strategy, and growth-focused digital marketing.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                     ['@type' => 'Service', 'name' => 'Cloud & DevOps', 'description' => 'Production hosting, CI/CD pipelines, and uptime monitoring.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
-                    ['@type' => 'Service', 'name' => 'API Integrations', 'description' => 'RESTful APIs, third-party integrations, and real-time data sync.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
+                    ['@type' => 'Service', 'name' => 'API Integrations', 'description' => 'RESTful APIs and real-time data sync integrations.', 'provider' => ['@id' => url('/#organization')], 'areaServed' => 'Worldwide'],
                 ],
             ],
             
@@ -96,15 +96,13 @@
 <section class="home-slider-hero">
     <div class="home-slider">
 
-        <div class="home-slide home-slide-one is-active">
+        <div class="home-slide home-slide-one is-active" role="img" aria-label="DappersTech development team engineering production-grade AI and web systems in a modern software house">
             <div class="home-slide-overlay"></div>
             <div class="home-slide-content">
-                <span class="home-slide-kicker">Software House in Rawalpindi · 7+ Years · 40+ Systems Shipped · 5-Star Upwork</span>
-                <h1>Software House in Rawalpindi Engineering Production-Grade AI &amp; Web Systems for Growing Businesses</h1>
+                <h1>Software House Engineering Production Grade AI &amp; Web Systems</h1>
                 <p>
-                    DappersTech is a software house in Rawalpindi, Pakistan delivering AI-powered software
-                    development, custom software, scalable SaaS platforms, Laravel backend systems, and
-                    end-to-end AI integration services for businesses worldwide.
+                    End to end software systems from production grade SaaS platforms to
+                    seamless AI integration.
                 </p>
 
                 <div class="home-slide-actions">
@@ -114,24 +112,16 @@
                     </a>
                     <a href="{{ route('team') }}" class="home-outline-btn">Meet Our Team</a>
                 </div>
-
-                <div class="home-trust-row">
-                    <span class="home-trust-item"><i class="fa-solid fa-location-dot"></i> Rawalpindi, Pakistan</span>
-                    <span class="home-trust-item"><i class="fa-solid fa-shield-halved"></i> 100% Code Ownership</span>
-                    <span class="home-trust-item"><i class="fa-solid fa-file-shield"></i> NDA-Protected Engagements</span>
-                    <span class="home-trust-item"><i class="fa-solid fa-user-tie"></i> Direct Access to Senior Engineers</span>
-                </div>
             </div>
         </div>
 
-        <div class="home-slide home-slide-two">
+        <div class="home-slide home-slide-two" role="img" aria-label="Data-driven SaaS analytics dashboard representing DappersTech's scalable SaaS platforms and generative AI integrations">
             <div class="home-slide-overlay"></div>
             <div class="home-slide-content">
-                <span class="home-slide-kicker">SaaS & AI Development</span>
-                <h2>Multi-tenant SaaS platforms and Generative AI integrations.</h2>
+                <h2>Scalable SaaS platforms and generative AI integrations.</h2>
                 <p>
-                    From subscription billing and user management to OpenAI & Claude AI
-                    chatbots, RAG systems, and vector database integrations.
+                    From subscription billing to OpenAI &amp; Claude AI chatbots
+                    and RAG systems.
                 </p>
 
                 <div class="home-slide-actions">
@@ -139,19 +129,17 @@
                         Discuss Your Idea
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="{{ route('ai_development') }}" class="home-outline-btn">Explore AI Services</a>
                 </div>
             </div>
         </div>
 
-        <div class="home-slide home-slide-three">
+        <div class="home-slide home-slide-three" role="img" aria-label="Workflow automation planning session representing DappersTech's business process automation and project rescue services">
             <div class="home-slide-overlay"></div>
             <div class="home-slide-content">
-                <span class="home-slide-kicker">Workflow Automation & Project Rescue</span>
                 <h2>Automate your business and rescue broken projects.</h2>
                 <p>
-                    We build n8n, Make, and Zapier automation pipelines. We also rescue
-                    stalled or failing projects with a structured audit and recovery plan.
+                    We build n8n, Make, and Zapier pipelines, and rescue stalled
+                    projects with a structured audit.
                 </p>
 
                 <div class="home-slide-actions">
@@ -166,11 +154,12 @@
 
     </div>
 
-    <div class="home-slider-dots">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <button type="button" class="home-slider-arrow home-slider-arrow--prev" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" class="home-slider-arrow home-slider-arrow--next" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
 </section>
 
 <script>
@@ -183,15 +172,27 @@
     });
 
     function activate(i) {
+        current = (i + slides.length) % slides.length;
         slides.forEach(function (s, idx) {
-            s.classList.toggle('is-active', idx === i);
+            s.classList.toggle('is-active', idx === current);
         });
     }
 
-    setInterval(function () {
-        current = (current + 1) % slides.length;
-        activate(current);
+    var timer = setInterval(function () {
+        activate(current + 1);
     }, 6000);
+
+    function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            activate(current + 1);
+        }, 6000);
+    }
+
+    var prevBtn = document.querySelector('.home-slider-arrow--prev');
+    var nextBtn = document.querySelector('.home-slider-arrow--next');
+    if (prevBtn) prevBtn.addEventListener('click', function () { activate(current - 1); resetTimer(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { activate(current + 1); resetTimer(); });
 })();
 </script>
 <section class="section believe">
@@ -206,19 +207,19 @@
         <div class="counter-banner">
             <div class="stats-box">
                 <div class="stat-item">
-                    <strong>7+</strong>
+                    <strong data-count-to="9" data-count-suffix="+">9+</strong>
                     <span>Years Experience</span>
                 </div>
                 <div class="stat-item">
-                    <strong>40+</strong>
+                    <strong data-count-to="40" data-count-suffix="+">40+</strong>
                     <span>Systems Shipped</span>
                 </div>
                 <div class="stat-item">
-                    <strong>5★</strong>
+                    <strong data-count-to="5" data-count-suffix="★">5★</strong>
                     <span>Upwork Rating</span>
                 </div>
                 <div class="stat-item">
-                    <strong>24h</strong>
+                    <strong data-count-to="24" data-count-suffix="h">24h</strong>
                     <span>Response Time</span>
                 </div>
             </div>
@@ -234,87 +235,68 @@
             <span class="home-section-label">Core Services</span>
             <h2>AI Software Development Services Built for Real Business Growth</h2>
             <p>
-                From AI integration services and SaaS platforms to Laravel backends, payment systems,
+                From AI integration services and SaaS platforms to custom backend systems, payment systems,
                 workflow automation, and project rescue every engagement is scoped before work begins.
             </p>
         </div>
 
         <div class="home-services-v3-grid">
 
-            <a href="{{ route('services') }}" class="home-service-feature">
+            <div class="home-service-feature">
                 <div class="home-service-feature-img">
-                    <img src="https://images.pexels.com/photos/31177212/pexels-photo-31177212.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Laravel backend development and scalable system architecture" width="700" height="467" loading="lazy" decoding="async">
+                    <img src="https://images.pexels.com/photos/31177212/pexels-photo-31177212.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Backend development and scalable system architecture" width="700" height="467" loading="lazy" decoding="async">
                 </div>
 
                 <div class="home-service-feature-content">
                     <span>Core Expertise</span>
                     <h3>Backend Development & System Architecture</h3>
                     <p>
-                        Laravel, PHP, MySQL - scalable backends, REST APIs, admin panels,
-                        multi-tenant systems, and secure database architecture.
+                        Robust backend engineering in Node.js, Laravel, or PHP,
+                        with REST APIs, admin panels, and secure, scalable
+                        database architecture.
                     </p>
-
-                    <div class="home-service-feature-link">
-                        Explore Service
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
                 </div>
-            </a>
+            </div>
 
             <div class="home-service-list">
 
-                <a href="{{ route('ai_development') }}" class="home-service-row">
+                <div class="home-service-row">
                     <span>01</span>
                     <div>
                         <h3>Generative AI Integration</h3>
-                        <p>OpenAI & Claude chatbots, RAG pipelines, and vector database systems.</p>
+                        <p>Custom OpenAI and Claude-powered chatbots, RAG pipelines, and vector database systems.</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="{{ route('services') }}" class="home-service-row">
+                <div class="home-service-row">
                     <span>02</span>
                     <div>
                         <h3>SaaS Platform Development</h3>
-                        <p>Multi-tenant architecture, subscription billing, and Vue.js frontends.</p>
+                        <p>Scalable architecture with subscription billing and modern Vue.js frontends.</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="{{ route('services') }}" class="home-service-row">
+                <div class="home-service-row">
                     <span>03</span>
                     <div>
                         <h3>Payment Systems & Billing</h3>
-                        <p>Stripe & PayPal integrations, webhooks, invoicing, and subscription flows.</p>
+                        <p>Stripe and PayPal integrations with webhooks, invoicing, and subscription billing flows.</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="{{ route('services') }}" class="home-service-row">
+                <div class="home-service-row">
                     <span>04</span>
                     <div>
                         <h3>Workflow Automation</h3>
-                        <p>n8n, Make, and Zapier pipelines to automate your business operations.</p>
+                        <p>Custom n8n, Make, and Zapier pipelines that automate your day-to-day operations.</p>
                     </div>
-                </a>
+                </div>
 
             </div>
 
         </div>
 
-        <div class="home-service-bottom">
-            <div>
-                <strong>API Integration Services</strong>
-                <span>RESTful APIs, third-party integrations, and real-time data sync.</span>
-            </div>
-
-            <div>
-                <strong>Cloud Deployment & DevOps</strong>
-                <span>Production hosting, CI/CD pipelines, security hardening, and uptime monitoring.</span>
-            </div>
-
-            <div>
-                <strong>Project Rescue & Recovery</strong>
-                <span>Structured audit and recovery for stalled or broken software projects.</span>
-            </div>
-        </div>
+       
 
     </div>
 </section>
@@ -324,7 +306,7 @@
 
         <div class="home-process-head">
             <span class="home-section-label">Our Process</span>
-            <h2>Our AI-Powered Software Development Process From Discovery to Launch</h2>
+            <h2>Our Software Development Process From Discovery to Launch</h2>
         </div>
 
         <div class="home-process-line">
@@ -352,7 +334,7 @@
                 <h3>Develop</h3>
                 <p>
                     We build frontend, backend, APIs, admin panels, databases,
-                    and third-party integrations.
+                    and external integrations.
                 </p>
             </div>
 
@@ -369,7 +351,7 @@
 
         <div class="home-process-banner">
             <div>
-                <span>Clear Scope · Full Code Ownership · 24h Response</span>
+                <span>Clear Scope, Full Code Ownership, 24h Response</span>
                 <h3>Every project is scoped and delivered on a written agreement.</h3>
             </div>
 
@@ -458,7 +440,7 @@
             </div>
             <blockquote>
                 "We treat every project like it's our own product. From the first call to final
-                deployment, our focus stays on building AI-powered software that performs, scales,
+                deployment, our focus stays on building software that performs, scales,
                 and earns your users' trust."
             </blockquote>
         </div>
@@ -476,11 +458,11 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> OpenAI / Claude AI</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> SaaS Architecture</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Stripe & PayPal</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> n8n · Make · Zapier</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> n8n, Make, Zapier</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> Multi-Tenant Systems</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> Node.js</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Subscription Billing</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Workflow Automation</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Laravel</div>
@@ -492,14 +474,14 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> OpenAI / Claude AI</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> SaaS Architecture</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Stripe & PayPal</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> n8n · Make · Zapier</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> n8n, Make, Zapier</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> Multi-Tenant Systems</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> Node.js</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Subscription Billing</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Workflow Automation</div>
-        </div>s
+        </div>
     </div>
 {{-- 
 <section class="section partners">

@@ -79,11 +79,14 @@
                                     {{ $errors->first('image') }}
                                 </div>
                                 @endif
-                                <div id="previewImageDev" class="mt-3 d-none">
+                                <div id="previewImageDev" class="mt-3 d-none position-relative">
                                     <img id="previewImage" src="@if ($errors->any())
                                         {{ old('preview_url') }}
                                     @endif" alt="Preview" style="max-width: 100%; max-height: 200px;">
                                     <input type="hidden" name="preview_url">
+                                    <button type="button" id="removePreviewImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove selected image">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-12 mb-4">
@@ -157,6 +160,12 @@
                 $('#previewImage').attr('src', targetSrc);
                 $('#previewImageDev').removeClass('d-none');
                 $('#previewImageDev input').val(targetSrc);
+            });
+            $(document).on('click', '#removePreviewImage', function() {
+                $('#Image').val('');
+                $('#previewImage').attr('src', '');
+                $('#previewImageDev').addClass('d-none');
+                $('#previewImageDev input').val('');
             });
             $(document).on('input', '#name', function() {
                 let name = $(this).val();

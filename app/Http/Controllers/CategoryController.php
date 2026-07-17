@@ -41,7 +41,7 @@ class CategoryController extends Controller
             'name' => 'required|string',
             'slug' => 'required|string',
             'title' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'preview_url' => 'nullable|string',
             'description' => 'required|string',
             'meta_title' => 'required|string',
@@ -66,14 +66,17 @@ class CategoryController extends Controller
                 $category->meta_description = $request->meta_description;
                 if ($request->hasFile('image')) {
                     $uploadPath = public_path('frontend/assets/images');
-                    if (!file_exists($uploadPath)) {
-                        mkdir($uploadPath, 0755, true);
+                    if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+                        throw new Exception("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
                     }
                     $image = $request->file('image');
                       $filenameWithoutExtension = Str::beforeLast($image->getClientOriginalName(), '.');
                     $imageSlug = Str::slug($filenameWithoutExtension);
                     $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
                     $image->move($uploadPath, $imageName);
+                    if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+                        throw new Exception("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+                    }
                     $category->image = $imageName;
                 }
                 $category->save();
@@ -129,7 +132,7 @@ class CategoryController extends Controller
             'edit_slug' => 'required|string',
             'edit_title' => 'required|string',
             'edit_old_image' => 'nullable|string',
-            'edit_image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'edit_image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'edit_description' => 'required|string',
             'edit_meta_title' => 'required|string',
             'edit_meta_keywords' => 'required|string',
@@ -153,15 +156,20 @@ class CategoryController extends Controller
                 $category->meta_description = $request->edit_meta_description;
                 if ($request->hasFile('edit_image')) {
                     $uploadPath = public_path('frontend/assets/images');
-                    if (!file_exists($uploadPath)) {
-                        mkdir($uploadPath, 0755, true);
+                    if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+                        throw new Exception("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
                     }
                     $image = $request->file('edit_image');
                     $filenameWithoutExtension = Str::beforeLast($image->getClientOriginalName(), '.');
                     $imageSlug = Str::slug($filenameWithoutExtension);
                     $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
                     $image->move($uploadPath, $imageName);
+                    if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+                        throw new Exception("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+                    }
                     $category->image = $imageName;
+                } elseif ($request->boolean('remove_edit_image')) {
+                    $category->image = '';
                 } else {
                     $category->image = $request->edit_old_image;
                 }

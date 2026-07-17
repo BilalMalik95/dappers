@@ -183,7 +183,7 @@
 
         <div class="contact-socials">
           <a href="https://linkedin.com/in/bilal-malik95/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://wa.me/923339302731" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/923339994544" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           <a href="https://malikbilal.com" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
           <a href="mailto:imbilalmalik95@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
@@ -387,8 +387,8 @@
  --}}
 @extends('frontend.layout')
 
-@section('title', 'Contact DappersTech | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'Contact DappersTech, a software house in Rawalpindi, Pakistan (Mid City Mall, Rehmanabad, Murree Road), for premium web development, software development, mobile apps, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
+@section('title', 'Contact Us | Software House in Rawalpindi, Pakistan')
+@section('meta_description', 'Contact DappersTech, a software house in Rawalpindi, Pakistan (Mid City Mall, Rehmanabad, Murree Road), for premium web development, software development, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
 @section('meta_keywords', 'contact DappersTech, software house in Rawalpindi, software house Rawalpindi contact, IT services contact, software development company contact, web development agency, app development company, custom software, digital marketing services')
 
 @section('styles')
@@ -403,7 +403,7 @@
             'alternateName' => 'DappersTech Software House',
             'url' => url('/'),
             'logo' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
-            'telephone' => '+92-333-9302731',
+            'telephone' => '+92-51-6125246',
             'email' => 'info@dapperstech.com',
             'address' => [
                 '@type' => 'PostalAddress',
@@ -420,7 +420,7 @@
             ],
             'contactPoint' => [
                 '@type' => 'ContactPoint',
-                'telephone' => '+92-333-9302731',
+                'telephone' => '+92-51-6125246',
                 'email' => 'info@dapperstech.com',
                 'contactType' => 'customer service',
                 'areaServed' => 'Worldwide',
@@ -452,7 +452,7 @@
                 </h1>
 
                 <p>
-                    Have an idea for a website, mobile app, ecommerce store, custom software,
+                    Have an idea for a website, ecommerce store, custom software,
                     API integration, or business automation system? Share your requirements and
                     our team will guide you with the right digital solution.
                 </p>
@@ -495,12 +495,12 @@
 
         <div class="contact-info-grid">
 
-            <a href="tel:+923339302731" class="contact-info-card">
+            <a href="tel:+92516125246" class="contact-info-card">
                 <div class="contact-info-icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
                 <span>Call Us</span>
-                <h3>+92 333 930 2731</h3>
+                <h3>+9251 6125246</h3>
                 <p>Speak directly with our team about your project requirements.</p>
             </a>
 
@@ -518,9 +518,8 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <span>Office Location</span>
-                <h3>Mid City Mall, Rehmanabad, Rawalpindi</h3>
-                <p>Murree Road, Rawalpindi, Punjab 46000, Pakistan. Serving local and international clients with premium IT services.</p>
-            </div>
+                <h3>Islamabad, Pakistan</h3>
+        </div>
 
             <div class="contact-info-card">
                 <div class="contact-info-icon">
@@ -578,7 +577,6 @@
                             <select name="service">
                                 <option value="">Select a service</option>
                                 <option value="Web Development">Web Development</option>
-                                <option value="Mobile App Development">Mobile App Development</option>
                                 <option value="UI/UX Design">UI/UX Design</option>
                                 <option value="Custom Software">Custom Software</option>
                                 <option value="Ecommerce Solution">Ecommerce Solution</option>
@@ -618,14 +616,14 @@
                             info@dapperstech.com
                         </a>
 
-                        <a href="tel:+923339302731">
+                        <a href="tel:+92516125246">
                             <i class="fa-solid fa-phone"></i>
-                            +92 333 930 2731
+                            +92 51 6125246
                         </a>
 
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
-                            Mid City Mall, Rehmanabad, Murree Road, Rawalpindi
+                            Islamabad, Pakistan
                         </span>
                     </div>
                 </div>
@@ -635,7 +633,6 @@
 
                     <div class="contact-service-tags">
                         <span>Web Development</span>
-                        <span>Mobile Apps</span>
                         <span>UI/UX Design</span>
                         <span>Custom Software</span>
                         <span>Ecommerce</span>
@@ -652,36 +649,6 @@
     </div>
 </secstion>
 
-
-<section class="contact-map-section">
-    <div class="container">
-
-        <div class="contact-map-head">
-            <div>
-                <span class="contact-label">Find Us</span>
-                <h2>Our office location</h2>
-            </div>
-
-            <p>
-                We work with clients locally and globally. You can contact us online or visit
-                our office for project discussion and consultation.
-            </p>
-        </div>
-
-        <div class="contact-map-box">
-            <iframe
-                src="https://www.google.com/maps?q=Mid+City+Mall+Rehmanabad+Murree+Road+Rawalpindi+Pakistan&output=embed"
-                width="100%"
-                height="500"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
-    </div>
-</section>
 
 @endsection
 

@@ -91,7 +91,7 @@
         <div class="blog-featured-card">
             <div class="blog-featured-image">
                 <img src="{{ asset('frontend/assets/images/blog/' . $featured->image) }}"
-                     alt="{{ $featured->title }}">
+                     alt="{{ $featured->title }}" fetchpriority="high" decoding="async">
             </div>
 
             <div class="blog-featured-content">
@@ -168,16 +168,18 @@
 
                     </a>
                 @empty
-                    <div class="blog-empty-premium">
-                        <h3>No blogs found</h3>
-                        <p>
-                            @if(request('search'))
-                                No articles match "{{ request('search') }}". Try a different search term.
-                            @else
-                                No blogs are available right now. Please check back later.
-                            @endif
-                        </p>
-                    </div>
+                    @if ($blogs->isEmpty())
+                        <div class="blog-empty-premium">
+                            <h3>No blogs found</h3>
+                            <p>
+                                @if(request('search'))
+                                    No articles match "{{ request('search') }}". Try a different search term.
+                                @else
+                                    No blogs are available right now. Please check back later.
+                                @endif
+                            </p>
+                        </div>
+                    @endif
                 @endforelse
 
             </div>

@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'Meet Our Team | DappersTech Software & IT Experts')
-@section('meta_description', 'Meet the DappersTech team - the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.')
+@section('meta_description', 'Meet the DappersTech team: the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.')
 @section('meta_keywords', 'DappersTech team, Bilal Malik, software development team, web development experts, UI UX designers, IT services team, Laravel developers, digital marketing team')
 
 @section('styles')
@@ -11,7 +11,7 @@
             '@type' => 'Person',
             'name' => $member->name,
             'jobTitle' => $member->designation,
-            'worksFor' => ['@type' => 'Organization', 'name' => 'DappersTech IT Services'],
+            'worksFor' => ['@id' => url('/#organization'), '@type' => 'Organization', 'name' => 'DappersTech IT Services'],
         ];
 
         if ($member->image) {
@@ -38,8 +38,9 @@
             '@type' => 'AboutPage',
             'name' => 'Meet Our Team | DappersTech',
             'url' => url('/team'),
-            'description' => 'Meet the DappersTech team the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.',
+            'description' => 'Meet the DappersTech team: the founders, engineers, designers, and growth specialists behind every project we deliver worldwide.',
             'mainEntity' => [
+                '@id' => url('/#organization'),
                 '@type' => 'Organization',
                 'name' => 'DappersTech IT Services',
                 'url' => url('/'),
@@ -75,7 +76,7 @@
 
                 <p>
                     @if ($founder)
-                        DappersTech is founded by {{ $founder->name }} - {{ $founder->designation }} specialising in
+                        DappersTech is founded by {{ $founder->name }}, {{ $founder->designation }}, specialising in
                         backend systems, SaaS platforms, Generative AI integration, payment systems, and workflow automation.
                         40+ software systems shipped. 5-star Upwork rating.
                     @else
@@ -101,39 +102,60 @@
         <div class="team-person-grid">
 
             @forelse ($teamMembers as $member)
-                <article class="team-person-card {{ $member->is_founder ? 'team-person-card--founder' : '' }} {{ $member->is_placeholder ? 'team-person-card--placeholder' : '' }}"
-                    @if (!$member->is_placeholder) itemscope itemtype="https://schema.org/Person" @endif>
-                    <div class="team-person-photo">
-                        @if ($member->image)
-                            <img src="{{ asset('frontend/assets/images/team/' . $member->image) }}"
-                                 alt="{{ $member->name }}, {{ $member->designation }} at DappersTech"
-                                 width="320" height="320" loading="lazy" decoding="async" @if (!$member->is_placeholder) itemprop="image" @endif>
-                        @else
-                            <span class="team-person-fallback" aria-hidden="true">{{ Illuminate\Support\Str::of($member->name)->explode(' ')->map(fn($w) => mb_substr($w, 0, 1))->take(2)->implode('') }}</span>
-                        @endif
+                @if ($member->is_founder)
+                    <article class="founder-card" itemscope itemtype="https://schema.org/Person">
+                        <div class="founder-card-photo">
+                            @if ($member->image)
+                                <img src="{{ asset('frontend/assets/images/team/' . $member->image) }}"
+                                     alt="{{ $member->name }}, {{ $member->designation }} at DappersTech"
+                                     width="320" height="320" loading="lazy" decoding="async" itemprop="image">
+                            @else
+                                <span class="founder-card-fallback" aria-hidden="true">{{ Illuminate\Support\Str::of($member->name)->explode(' ')->map(fn($w) => mb_substr($w, 0, 1))->take(2)->implode('') }}</span>
+                            @endif
 
-                        @if ($member->is_founder)
-                            <span class="team-person-founder-tag">Founder</span>
-                        @elseif ($member->is_placeholder)
-                            <span class="team-person-founder-tag team-person-founder-tag--placeholder">Open Role</span>
-                        @endif
-                    </div>
+                            <span class="founder-card-tag">Founder</span>
+                        </div>
 
-                    <div class="team-person-body">
-                        <h3 @if (!$member->is_placeholder) itemprop="name" @endif>{{ $member->name }}</h3>
-                        <span class="team-person-role" @if (!$member->is_placeholder) itemprop="jobTitle" @endif>{{ $member->designation }}</span>
+                        <div class="founder-card-body">
+                            <h3 itemprop="name">{{ $member->name }}</h3>
+                            <span class="founder-card-role" itemprop="jobTitle">{{ $member->designation }}</span>
 
-                        @if ($member->bio)
-                            <p class="team-person-bio" @if (!$member->is_placeholder) itemprop="description" @endif>{{ $member->bio }}</p>
-                        @endif
+                            @if ($member->bio)
+                                <p class="founder-card-bio" itemprop="description">{{ $member->bio }}</p>
+                            @endif
 
-                        @if ($member->is_founder)
-                            <a href="https://malikbilal.com" target="_blank" rel="noopener" class="team-person-portfolio" itemprop="url">
+                            <a href="https://malikbilal.com" target="_blank" rel="noopener" class="founder-card-link" itemprop="url">
                                 <i class="fa-solid fa-globe"></i> View Portfolio
                             </a>
-                        @endif
-                   </div>
-                </article>
+                        </div>
+                    </article>
+                @else
+                    <article class="team-person-card {{ $member->is_placeholder ? 'team-person-card--placeholder' : '' }}"
+                        @if (!$member->is_placeholder) itemscope itemtype="https://schema.org/Person" @endif>
+                        <div class="team-person-photo">
+                            @if ($member->image)
+                                <img src="{{ asset('frontend/assets/images/team/' . $member->image) }}"
+                                     alt="{{ $member->name }}, {{ $member->designation }} at DappersTech"
+                                     width="320" height="320" loading="lazy" decoding="async" @if (!$member->is_placeholder) itemprop="image" @endif>
+                            @else
+                                <span class="team-person-fallback" aria-hidden="true">{{ Illuminate\Support\Str::of($member->name)->explode(' ')->map(fn($w) => mb_substr($w, 0, 1))->take(2)->implode('') }}</span>
+                            @endif
+
+                            @if ($member->is_placeholder)
+                                <span class="team-person-founder-tag team-person-founder-tag--placeholder">Open Role</span>
+                            @endif
+                        </div>
+
+                        <div class="team-person-body">
+                            <h3 @if (!$member->is_placeholder) itemprop="name" @endif>{{ $member->name }}</h3>
+                            <span class="team-person-role" @if (!$member->is_placeholder) itemprop="jobTitle" @endif>{{ $member->designation }}</span>
+
+                            @if ($member->bio)
+                                <p class="team-person-bio" @if (!$member->is_placeholder) itemprop="description" @endif>{{ $member->bio }}</p>
+                            @endif
+                       </div>
+                    </article>
+                @endif
             @empty
                 <p class="team-empty-state">Team profiles are being updated check back shortly.</p>
             @endforelse
@@ -223,7 +245,7 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> OpenAI / Claude AI</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> SaaS Architecture</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Stripe & PayPal</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> n8n · Make · Zapier</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> n8n, Make, Zapier</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>
@@ -239,7 +261,7 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> OpenAI / Claude AI</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> SaaS Architecture</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Stripe & PayPal</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> n8n · Make · Zapier</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> n8n, Make, Zapier</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>

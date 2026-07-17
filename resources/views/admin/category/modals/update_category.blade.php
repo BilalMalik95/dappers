@@ -82,9 +82,13 @@
                                     {{ $errors->first('edit_image') }}
                                 </div>
                                 @endif
-                                <div id="EditPreviewImageDev" class="mt-3">
+                                <div id="EditPreviewImageDev" class="mt-3 position-relative">
                                     <img id="EditPreviewImage" src="@if($errors->any())/frontend/assets/images/{{ old('edit_old_image') }}@endif" alt="Preview" style="max-width: 100%; max-height: 200px;">
                                     <input type="hidden" id="EditOldImage" value="{{ old('edit_old_image') }}" name="edit_old_image">
+                                    <input type="hidden" id="removeEditImageFlag" name="remove_edit_image" value="0">
+                                    <button type="button" id="removeEditPreviewImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove image">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-12 mb-4">
@@ -160,7 +164,13 @@
                 let targetSrc = URL.createObjectURL(file);
                 $('#EditPreviewImage').attr('src', targetSrc);
                 $('#EditPreviewImageDev').removeClass('d-none');
-                $('#EditPreviewImageDev input').val(targetSrc);
+                $('#removeEditImageFlag').val('0');
+            });
+            $(document).on('click', '#removeEditPreviewImage', function() {
+                $('#EditImage').val('');
+                $('#EditPreviewImage').attr('src', '');
+                $('#EditPreviewImageDev').addClass('d-none');
+                $('#removeEditImageFlag').val('1');
             });
             $(document).on('input', '#EditName', function() {
                 let name = $(this).val();

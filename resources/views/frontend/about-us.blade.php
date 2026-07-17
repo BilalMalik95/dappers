@@ -1,9 +1,8 @@
 @extends('frontend.layout')
 
 @section('title', 'About DappersTech | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'DappersTech is a premium software house in Rawalpindi, Pakistan providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
-@section('meta_keywords', 'about DappersTech, software house in Rawalpindi, software house Rawalpindi, software development company, IT services company, web development, custom software, mobile app development, UI UX design, ecommerce development, API development, cloud solutions')
-@section('og_image', 'https://images.pexels.com/photos/6804612/pexels-photo-6804612.jpeg?auto=compress&cs=tinysrgb&w=1200')
+@section('meta_description', 'DappersTech is a premium software house in Rawalpindi, Pakistan providing web development, custom software, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
+@section('meta_keywords', 'about DappersTech, software house in Rawalpindi, software house Rawalpindi, software development company, IT services company, web development, custom software, UI UX design, ecommerce development, API development, cloud solutions')
 
 @section('styles')
 <script type="application/ld+json">
@@ -13,17 +12,18 @@
     {
       "@type": "AboutPage",
       "name": "About DappersTech",
-      "url": "https://dapperstech.com/about-us",
-      "description": "DappersTech is a premium IT services and software development company providing web development, custom software, mobile apps, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.",
+      "url": "https://dapperstech.com/aboutus",
+      "description": "DappersTech is a premium IT services and software development company providing web development, custom software, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.",
       "mainEntity": {
+        "@id": "https://dapperstech.com/#organization",
         "@type": ["Organization", "ProfessionalService"],
         "name": "DappersTech IT Services",
         "alternateName": "DappersTech Software House",
         "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"},
-        "description": "Software house in Rawalpindi, Pakistan helping businesses build premium websites, ecommerce platforms, custom dashboards, APIs, mobile apps, automation systems, and digital growth solutions.",
-        "telephone": "+92-333-9302731",
+        "description": "Software house in Rawalpindi, Pakistan helping businesses build premium websites, ecommerce platforms, custom dashboards, APIs, automation systems, and digital growth solutions.",
+        "telephone": "+92-51-6125246",
         "email": "info@dapperstech.com",
         "address": {
           "@type": "PostalAddress",
@@ -44,7 +44,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://dapperstech.com/about-us"}
+        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://dapperstech.com/aboutus"}
       ]
     }
   ]
@@ -68,7 +68,7 @@
       "name": "What does DappersTech actually do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies."
+        "text": "DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, AI integrations, and automation systems for startups, service businesses, and growing companies."
       }
     },
     {
@@ -76,7 +76,7 @@
       "name": "How long has DappersTech been in business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DappersTech has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects."
+        "text": "DappersTech has been delivering software and IT services since 2017 - over 9 years of production experience across web development, custom software, and digital growth projects."
       }
     },
     {
@@ -92,7 +92,7 @@
       "name": "Do you only build websites, or also custom software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, mobile apps, AI-powered features, and workflow automation - anything that needs to function as real software, not just a page."
+        "text": "Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, AI-powered features, and workflow automation - anything that needs to function as real software, not just a page."
       }
     },
     {
@@ -125,7 +125,7 @@
             <div class="about-editorial-right">
                 <p>
                     DappersTech is a software house in Rawalpindi, Pakistan helping businesses build premium
-                    websites, ecommerce platforms, custom dashboards, APIs, mobile apps, automation systems,
+                    websites, ecommerce platforms, custom dashboards, APIs, automation systems,
                     and digital growth solutions for clients locally and worldwide.
                 </p>
 
@@ -134,7 +134,6 @@
                         Start a Project
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="{{ route('services') }}" class="about-text-link">View Services</a>
                 </div>
             </div>
 
@@ -157,7 +156,7 @@
     <div class="container">
         <div class="about-metrics">
             <div>
-                <strong>7+</strong>
+                <strong>9+</strong>
                 <span>Years of Experience</span>
             </div>
 
@@ -297,8 +296,8 @@
             </div>
 
             <div class="about-capability-item">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>Mobile App Development</span>
+                <i class="fa-solid fa-brain"></i>
+                <span>AI Development</span>
             </div>
 
             <div class="about-capability-item">
@@ -405,11 +404,11 @@
       </details>
       <details>
         <summary>What does DappersTech actually do?</summary>
-        <p>DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, mobile apps, AI integrations, and automation systems for startups, service businesses, and growing companies.</p>
+        <p>DappersTech is a software house and IT services company. We build websites, ecommerce platforms, custom dashboards, APIs, AI integrations, and automation systems for startups, service businesses, and growing companies.</p>
       </details>
       <details>
         <summary>How long has DappersTech been in business?</summary>
-        <p>DappersTech has been delivering software and IT services since 2017 - over 7 years of production experience across web development, custom software, and digital growth projects.</p>
+        <p>DappersTech has been delivering software and IT services since 2017 - over 9 years of production experience across web development, custom software, and digital growth projects.</p>
       </details>
       <details>
         <summary>What industries or business sizes do you work with?</summary>
@@ -417,7 +416,7 @@
       </details>
       <details>
         <summary>Do you only build websites, or also custom software?</summary>
-        <p>Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, mobile apps, AI-powered features, and workflow automation - anything that needs to function as real software, not just a page.</p>
+        <p>Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, AI-powered features, and workflow automation - anything that needs to function as real software, not just a page.</p>
       </details>
       <details>
         <summary>What happens after my project launches?</summary>

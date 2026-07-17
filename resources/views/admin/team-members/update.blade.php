@@ -112,9 +112,13 @@
                                     @error('image')
                                         <div class="text-danger mt-2">{{ $message }}</div>
                                     @enderror
-                                    <div id="viewImageDev" class="mt-4 {{ $teamMember->image ? '' : 'd-none' }}">
+                                    <div id="viewImageDev" class="mt-4 position-relative {{ $teamMember->image ? '' : 'd-none' }}" style="width: fit-content;">
                                         <img src="{{ $teamMember->image ? asset('frontend/assets/images/team/' . $teamMember->image) : '' }}" alt="Preview" id="viewImage" width="160">
+                                        <button type="button" id="removeImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove photo">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
                                     </div>
+                                    <input type="hidden" id="removeImageFlag" name="remove_image" value="0">
                                 </div>
 
                                 <div class="col-md-12">
@@ -146,6 +150,8 @@
             const imageInput = document.getElementById('image');
             const previewWrap = document.getElementById('viewImageDev');
             const previewImage = document.getElementById('viewImage');
+            const removeImageBtn = document.getElementById('removeImage');
+            const removeImageFlag = document.getElementById('removeImageFlag');
 
             imageInput.addEventListener('change', function() {
                 const file = this.files[0];
@@ -153,8 +159,16 @@
                     return;
                 }
 
+                removeImageFlag.value = '0';
                 previewImage.src = URL.createObjectURL(file);
                 previewWrap.classList.remove('d-none');
+            });
+
+            removeImageBtn.addEventListener('click', function() {
+                imageInput.value = '';
+                previewImage.src = '';
+                previewWrap.classList.add('d-none');
+                removeImageFlag.value = '1';
             });
 
             document.getElementById('slug').addEventListener('input', function() {

@@ -19,6 +19,7 @@
       "dateModified": "{{ $blog->updated_at->toIso8601String() }}",
       "author": {"@type": "Person", "name": "{{ addslashes($blog->user->name ?? 'DappersTech Team') }}"},
       "publisher": {
+        "@id": "https://dapperstech.com/#organization",
         "@type": "Organization",
         "name": "DappersTech IT Services",
         "logo": {"@type": "ImageObject", "url": "{{ asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png') }}"}
@@ -60,7 +61,7 @@
   <section class="section blog-details">
     <div class="container">
       <div class="blog-details-image">
-        <img src="{{ asset('frontend/assets/images/blog/' . $blog->image) }}" alt="{{ $blog->title }}">
+        <img src="{{ asset('frontend/assets/images/blog/' . $blog->image) }}" alt="{{ $blog->title }}" fetchpriority="high" decoding="async">
       </div>
 
       <div class="blog-detail-summary-card">
@@ -76,6 +77,26 @@
       <div class="blog-detail-content">
         {!! $blog->description !!}
       </div>
+
+      @php
+        $relatedServiceMap = [
+          'Web Development' => ['route' => 'web_development', 'label' => 'Web Development Services'],
+          'UI/UX Design' => ['route' => 'web_design', 'label' => 'Web Design Services'],
+          'Design' => ['route' => 'web_design', 'label' => 'Web Design Services'],
+          'AI Development' => ['route' => 'ai_development', 'label' => 'AI Development Services'],
+        ];
+        $relatedService = $relatedServiceMap[$blog->category] ?? null;
+      @endphp
+      @if ($relatedService)
+        <div class="blog-related-service-cta">
+          <p>Need help with this? Explore our <a href="{{ route($relatedService['route']) }}">{{ $relatedService['label'] }}</a>.</p>
+        </div>
+        <style>
+          .blog-related-service-cta { margin-top: 32px; padding: 20px 24px; border-left: 3px solid currentColor; border-radius: 8px; background: rgba(255,255,255,0.04); }
+          .blog-related-service-cta p { margin: 0; }
+          .blog-related-service-cta a { font-weight: 600; text-decoration: underline; }
+        </style>
+      @endif
     </div>
   </section>
 

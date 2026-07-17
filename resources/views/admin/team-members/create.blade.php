@@ -110,8 +110,11 @@
                                     @error('image')
                                         <div class="text-danger mt-2">{{ $message }}</div>
                                     @enderror
-                                    <div id="viewImageDev" class="d-none mt-4">
+                                    <div id="viewImageDev" class="d-none mt-4 position-relative" style="width: fit-content;">
                                         <img src="" alt="Preview" id="viewImage" width="160">
+                                        <button type="button" id="removeImage" class="btn btn-icon btn-circle btn-sm btn-danger position-absolute" style="top: -10px; right: -10px;" title="Remove selected image">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -145,6 +148,7 @@
             const imageInput = document.getElementById('image');
             const previewWrap = document.getElementById('viewImageDev');
             const previewImage = document.getElementById('viewImage');
+            const removeImageBtn = document.getElementById('removeImage');
 
             imageInput.addEventListener('change', function() {
                 const file = this.files[0];
@@ -154,6 +158,12 @@
 
                 previewImage.src = URL.createObjectURL(file);
                 previewWrap.classList.remove('d-none');
+            });
+
+            removeImageBtn.addEventListener('click', function() {
+                imageInput.value = '';
+                previewImage.src = '';
+                previewWrap.classList.add('d-none');
             });
 
             document.getElementById('name').addEventListener('input', function() {

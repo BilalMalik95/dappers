@@ -21,23 +21,16 @@ Route::post('/lead-store', [LandingPageController::class, 'store'])->name('lead.
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/team', [HomeController::class, 'team'])->name('team');
-Route::get('/services', [HomeController::class, 'services'])->name('services');
-Route::get('/services/ai-development', [HomeController::class, 'aiDevelopment'])->name('ai_development');
 Route::get('/services/ai-development/rag-systems', [HomeController::class, 'aiRagSystems'])->name('ai_rag_systems');
 Route::get('/services/ai-development/ai-agents', [HomeController::class, 'aiAgents'])->name('ai_agents');
 Route::get('/services/ai-development/llm-integration', [HomeController::class, 'aiLlmIntegration'])->name('ai_llm_integration');
 Route::get('/services/ai-development/ai-backend-deployment', [HomeController::class, 'aiBackendDeployment'])->name('ai_backend_deployment');
-Route::get('/services/web-development', [HomeController::class, 'webDevelopment'])->name('web_development');
 Route::get('/services/web-development/custom-website-development', [HomeController::class, 'webDevCustom'])->name('web_dev_custom');
 Route::get('/services/web-development/laravel-development', [HomeController::class, 'webDevLaravel'])->name('web_dev_laravel');
 Route::get('/services/web-development/php-development', [HomeController::class, 'webDevPhp'])->name('web_dev_php');
-Route::get('/services/web-design', [HomeController::class, 'webDesign'])->name('web_design');
 Route::get('/services/web-design/ui-ux-design', [HomeController::class, 'uiUxDesign'])->name('ui_ux_design');
 Route::get('/services/web-design/graphic-design-branding', [HomeController::class, 'graphicDesignBranding'])->name('graphic_design_branding');
 Route::get('/services/web-design/responsive-design', [HomeController::class, 'responsiveDesign'])->name('responsive_design');
-Route::get('/services/seo-optimization', [HomeController::class, 'seoOptimization'])->name('seo_optimization');
-Route::get('/services/digital-marketing', [HomeController::class, 'digitalMarketing'])->name('digital_marketing');
-Route::get('/services/digital-marketing/ppc-advertising', [HomeController::class, 'ppcAdvertising'])->name('ppc_advertising');
 Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
 // Route::get('/about-us',[HomeController::class,'aboutus'])->name('about-us');
 Route::post('/contact-us', [HomeController::class, 'form_submit_contact'])->name('contact.save');
@@ -59,7 +52,7 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
-    });
+    })->name('dashboard');
     // ____USERS______
     Route::get('/admin/users', [UserController::class, 'index'])->name('admin.users.index');
     Route::post('/admin/users/store', [UserController::class, 'store'])->name('admin.users.store');

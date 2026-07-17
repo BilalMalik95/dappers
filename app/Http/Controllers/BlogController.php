@@ -22,8 +22,8 @@ class BlogController extends Controller
         }
 
         $uploadPath = public_path($directory);
-        if (!file_exists($uploadPath)) {
-            mkdir($uploadPath, 0755, true);
+        if (!file_exists($uploadPath) && !mkdir($uploadPath, 0755, true) && !is_dir($uploadPath)) {
+            throw new \RuntimeException("Could not create upload directory: {$uploadPath}. Check folder permissions on the server.");
         }
 
         $image = $request->file($fieldName);
@@ -31,6 +31,10 @@ class BlogController extends Controller
         $imageSlug = Str::slug($filenameWithoutExtension);
         $imageName = $imageSlug . '-' . time() . '.' . $image->extension();
         $image->move($uploadPath, $imageName);
+
+        if (!file_exists($uploadPath . DIRECTORY_SEPARATOR . $imageName)) {
+            throw new \RuntimeException("Image upload appeared to succeed but the file is missing at {$uploadPath}. Check folder write permissions on the server.");
+        }
 
         return $imageName;
     }
@@ -61,9 +65,9 @@ class BlogController extends Controller
             'status' => 'required|in:0,1',
             'feature_blog' => 'required|in:0,1',
             'category' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:blogs,slug',
+            'slug' => 'required|string|max:255|alpha_dash|unique:blogs,slug',
             'title' => 'required|string|max:255',
-            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'required|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'short_description' => 'required|string',
             'description' => 'required|string',
         ]);
@@ -130,10 +134,10 @@ class BlogController extends Controller
             'blog_id' => 'required|integer',
             'category' => 'required|string|max:255',
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:blogs,slug,' . $request->blog_id,
+            'slug' => 'required|string|max:255|alpha_dash|unique:blogs,slug,' . $request->blog_id,
             'short_description' => 'required|string',
             'description' => 'required|string',
-            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,webp,svg,png,jpg,gif|max:5120',
             'status' => 'required|in:0,1',
             'feature_blog' => 'required|in:0,1',
         ]);
@@ -161,6 +165,8 @@ class BlogController extends Controller
 
             if ($request->hasFile('image')) {
                 $blog->image = $this->storeUploadedImage($request, 'image', 'frontend/assets/images/blog') ?? $request->old_image;
+            } elseif ($request->boolean('remove_image')) {
+                $blog->image = '';
             } elseif ($request->filled('old_image')) {
                 $blog->image = $request->old_image;
             }

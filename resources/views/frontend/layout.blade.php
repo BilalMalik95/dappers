@@ -15,7 +15,7 @@
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('meta_description')">
-    <meta property="og:image" content="@yield('og_image', asset('frontend/assets/images/logo/og-image.png'))">
+    <meta property="og:image" content="@yield('og_image', asset('frontend/assets/images/logo/avatar-512.png'))">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="{{ Request::url() }}">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title')">
     <meta name="twitter:description" content="@yield('meta_description')">
-    <meta name="twitter:image" content="@yield('og_image', asset('frontend/assets/images/logo/og-image.png'))">
+    <meta name="twitter:image" content="@yield('og_image', asset('frontend/assets/images/logo/dapperstech-logo-black.png'))">
 
     <link rel="canonical" href="{{ Request::url() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +39,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-
-    {{-- Preload critical logo asset --}}
-    <link rel="preload" as="image" href="{{ asset('frontend/assets/images/logo/dapperstech-lockup-dark-bg-transparent.png') }}">
+    {{-- Several service pages hotlink hero/section images from Pexels; this
+         shaves the DNS+TLS handshake off whichever one ends up being the LCP element. --}}
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
 
     {{-- Critical CSS first --}}
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
@@ -106,6 +106,81 @@
 
     @include('frontend.includes.footer')
     <script src="{{ asset('frontend/assets/js/mobile-sliders.js') }}" defer></script>
+    <script>
+    (function () {
+        // Two rAFs so the browser paints the hero's initial (hidden) state
+        // before we flip it to visible - otherwise the CSS transition never
+        // has a "from" state to animate from, since is-active is on the
+        // first slide from the very first paint.
+        requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+                document.body.classList.add('hero-ready');
+            });
+        });
+
+        var revealSelectors = '.service-feature-card, .service-mini-card, .service-wide-card, .home-service-feature, .home-service-row, .home-process-card, .blog-card, .stat-item, .home-process-banner, .testimonial-card';
+
+        if (!('IntersectionObserver' in window)) {
+            document.querySelectorAll(revealSelectors).forEach(function (el) { el.classList.add('is-visible'); });
+            document.querySelectorAll('[data-count-to]').forEach(function (el) {
+                el.textContent = el.dataset.countTo + (el.dataset.countSuffix || '');
+            });
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        function reveal(selector, stepSeconds, maxSteps) {
+            document.querySelectorAll(selector).forEach(function (el, i) {
+                el.style.transitionDelay = Math.min(i, maxSteps) * stepSeconds + 's';
+                observer.observe(el);
+            });
+        }
+
+        reveal('.service-feature-card, .service-mini-card, .service-wide-card', 0.08, 3);
+        reveal('.home-service-feature', 0, 0);
+        reveal('.home-service-row', 0.15, 3);
+        reveal('.home-process-card', 0.2, 3);
+        reveal('.blog-card', 0.2, 2);
+        reveal('.stat-item', 0.1, 3);
+        reveal('.home-process-banner', 0, 0);
+        reveal('.testimonial-card', 0, 0);
+
+        // Count up each stat number (9+, 40+, 5*, 24h ...) once it scrolls into view.
+        var countEls = document.querySelectorAll('[data-count-to]');
+        if (countEls.length) {
+            var countObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    countObserver.unobserve(entry.target);
+
+                    var el = entry.target;
+                    var target = parseInt(el.dataset.countTo, 10);
+                    var suffix = el.dataset.countSuffix || '';
+                    var duration = 1100;
+                    var start = null;
+
+                    function step(timestamp) {
+                        if (start === null) start = timestamp;
+                        var progress = Math.min((timestamp - start) / duration, 1);
+                        var eased = 1 - Math.pow(1 - progress, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (progress < 1) requestAnimationFrame(step);
+                    }
+                    requestAnimationFrame(step);
+                });
+            }, { threshold: 0.6 });
+            countEls.forEach(function (el) { countObserver.observe(el); });
+        }
+    })();
+    </script>
     @yield('scripts')
 </body>
 

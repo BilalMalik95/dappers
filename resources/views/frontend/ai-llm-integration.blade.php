@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title', 'Custom GPT & LLM Integration Services | OpenAI & Claude Experts')
-@section('meta_description', 'Custom GPT and LLM integration services - OpenAI and Claude integration, prompt engineering, and chatbot interfaces wired into your product or CRM.')
+@section('meta_description', 'Custom GPT and LLM integration services, OpenAI and Claude integration, prompt engineering, and chatbot interfaces wired into your product or CRM.')
 @section('meta_keywords', 'custom built ChatGPT, custom ChatGPT development, ChatGPT integration services, custom GPT, OpenAI integration, Claude integration, LLM integration services, AI chatbot development, prompt engineering, GPT developer')
 
 @section('styles')
@@ -13,7 +13,7 @@
       "@type": "Service",
       "name": "Custom GPT & LLM Integration",
       "serviceType": "LLM Integration Development",
-      "provider": {"@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
+      "provider": {"@id": "https://dapperstech.com/#organization", "@type": "Organization", "name": "DappersTech IT Services", "url": "https://dapperstech.com"},
       "description": "OpenAI and Claude integration, custom GPTs, prompt engineering, and chatbot interfaces wired directly into your existing product or CRM.",
       "areaServed": "Worldwide",
       "url": "https://dapperstech.com/services/ai-development/llm-integration"
@@ -47,7 +47,7 @@
       "name": "Can you integrate ChatGPT or Claude into our existing app or CRM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide ChatGPT integration and Claude integration services that connect to your existing app, website, Slack, or CRM through secure APIs - no rebuild required. We handle prompt engineering, context handling, and the chat interface."
+        "text": "Yes. We provide ChatGPT integration and Claude integration services that connect to your existing app, website, Slack, or CRM through secure APIs, no rebuild required. We handle prompt engineering, context handling, and the chat interface."
       }
     },
     {
@@ -55,7 +55,7 @@
       "name": "Will our custom ChatGPT answer only from our own data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes - by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off-topic or made-up answers."
+        "text": "Yes, by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off-topic or made-up answers."
       }
     },
     {
@@ -68,10 +68,10 @@
     },
     {
       "@type": "Question",
-      "name": "Which is better for my use case - OpenAI GPT or Anthropic Claude?",
+      "name": "Which is better for my use case, OpenAI GPT or Anthropic Claude?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the task. OpenAI GPT models are strong all-rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety-sensitive work. We help you choose - and many of our builds use both, routing each request to the best model."
+        "text": "It depends on the task. OpenAI GPT models are strong all-rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety-sensitive work. We help you choose, and many of our builds use both, routing each request to the best model."
       }
     }
   ]
@@ -82,14 +82,14 @@
 @section('content')
 
 <section class="services-page-hero">
-    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.78) 44%, rgba(0,0,0,.36) 100%), url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="services-page-hero__bg" style="background-image: linear-gradient(90deg, rgba(0, 0, 0,.96) 0%, rgba(0, 0, 0,.78) 44%, rgba(0, 0, 0,.36) 100%), url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=2200'); background-size: cover; background-position: center;"></div>
     <div class="services-page-hero__overlay"></div>
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <a href="{{ route('ai_development') }}">AI Development</a>
+                <span>AI Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Custom GPT & LLM Integration</span>
             </nav>
@@ -100,17 +100,13 @@
             </h1>
             <p>
                 Custom GPTs, prompt engineering, and chatbot interfaces that plug directly into your existing
-                app, website, or CRM - not a bolt-on widget, a properly integrated feature.
+                app, website, or CRM, not a bolt-on widget, a properly integrated feature.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                     Get a Free Consultation
                     <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('ai_development') }}" class="services-page-btn services-page-btn--outline">
-                    All AI Services
-                </a>
-            </div>
+                </a>            </div>
         </div>
     </div>
 </section>
@@ -126,7 +122,7 @@
             </h2>
             <p>
                 Whether it's OpenAI, Claude, or an open-source model, the integration is built around your actual
-                product flow, data, and brand voice - not a copy-pasted widget.
+                product flow, data, and brand voice, not a copy-pasted widget.
             </p>
         </div>
 
@@ -139,7 +135,7 @@
                     <span class="service-tag">Core Service</span>
                     <h3>OpenAI & Claude API Integration</h3>
                     <p>
-                        Direct integration with OpenAI and Anthropic Claude APIs - streaming responses, function
+                        Direct integration with OpenAI and Anthropic Claude APIs, streaming responses, function
                         calling, structured outputs, and proper error handling built into your product's backend.
                     </p>
                     <div class="service-feature-points">
@@ -162,7 +158,7 @@
                     <div>
                         <span>01</span>
                         <h3>Custom GPT Development</h3>
-                        <p>Purpose-built custom GPTs for internal tools, customer support, or content workflows - configured with your knowledge, tone, and guardrails.</p>
+                        <p>Purpose-built custom GPTs for internal tools, customer support, or content workflows, configured with your knowledge, tone, and guardrails.</p>
                     </div>
                 </a>
 
@@ -173,7 +169,7 @@
                     <div>
                         <span>02</span>
                         <h3>Prompt Engineering & Optimisation</h3>
-                        <p>Systematic prompt design and testing - not trial and error - to get consistent, on-brand outputs from the model you're using.</p>
+                        <p>Systematic prompt design and testing, not trial and error, to get consistent, on-brand outputs from the model you're using.</p>
                     </div>
                 </a>
 
@@ -184,7 +180,7 @@
                     <div>
                         <span>03</span>
                         <h3>Chatbot Interface Development</h3>
-                        <p>Chat UI built into your existing website or app - not an embedded third-party iframe - matching your design system and user flow.</p>
+                        <p>Chat UI built into your existing website or app, not an embedded third-party iframe, matching your design system and user flow.</p>
                     </div>
                 </a>
 
@@ -195,7 +191,7 @@
                     <div>
                         <span>04</span>
                         <h3>Zoho AI Integration</h3>
-                        <p>AI-assisted data entry, intelligent lead routing, and Zoho Analytics dashboards - bringing LLM capability directly into your CRM workflow.</p>
+                        <p>AI-assisted data entry, intelligent lead routing, and Zoho Analytics dashboards, bringing LLM capability directly into your CRM workflow.</p>
                     </div>
                 </a>
             </div>
@@ -205,13 +201,13 @@
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>05</span>
                 <h3>Document & Content Generation</h3>
-                <p>LLM-powered drafting for reports, emails, and content - with templates and review steps so output stays on-brand and accurate.</p>
+                <p>LLM-powered drafting for reports, emails, and content, with templates and review steps so output stays on-brand and accurate.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
                 <span>06</span>
                 <h3>Multi-Model Strategy</h3>
-                <p>Routing logic between models - using cheaper models for simple tasks and stronger models only where the task actually needs it.</p>
+                <p>Routing logic between models, using cheaper models for simple tasks and stronger models only where the task actually needs it.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="{{ route('contact_us') }}" class="service-wide-card">
@@ -240,14 +236,14 @@
                         <div class="why-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
                         <div>
                             <h3>Native Product Integration</h3>
-                            <p>Built into your existing frontend and backend - not an embedded third-party script that breaks your design.</p>
+                            <p>Built into your existing frontend and backend, not an embedded third-party script that breaks your design.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-comment-dots"></i></div>
                         <div>
                             <h3>On-Brand Prompt Design</h3>
-                            <p>Prompts engineered and tested for your tone, domain, and edge cases - not a default system prompt.</p>
+                            <p>Prompts engineered and tested for your tone, domain, and edge cases, not a default system prompt.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -261,7 +257,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>Integration code, prompts, and configuration belong to you - switch providers any time without rebuilding.</p>
+                            <p>Integration code, prompts, and configuration belong to you, switch providers any time without rebuilding.</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +272,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating · 40+ systems shipped</span>
+                        <span>5-star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -292,7 +288,7 @@
                 </div>
                 <div class="why-tech-pill">
                     <i class="fa-solid fa-comments"></i>
-                    OpenAI · Claude · Zoho · LangChain
+                    OpenAI, Claude, Zoho, LangChain
                 </div>
             </div>
         </div>
@@ -305,14 +301,14 @@
         <div class="workflow-head">
             <span class="services-page-kicker">How It Works</span>
             <h2>From prompt draft to a live integration in 4 stages</h2>
-            <p>Every LLM integration follows the same process - because consistent output comes from disciplined prompt design, not luck.</p>
+            <p>Every LLM integration follows the same process, because consistent output comes from disciplined prompt design, not luck.</p>
         </div>
         <div class="workflow-layout">
             <div class="workflow-visual">
                 <img src="https://images.pexels.com/photos/8566467/pexels-photo-8566467.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Prompt engineering and LLM integration process" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Our Integration Flow</span>
-                    <h3>Design · Prompt · Integrate · Tune</h3>
+                    <h3>Design, Prompt, Integrate, Tune</h3>
                 </div>
             </div>
             <div class="workflow-steps">
@@ -356,22 +352,22 @@
 
 
 <style>
-.hd-faq{padding:80px 0;background:linear-gradient(180deg,rgba(20,141,255,.04),transparent);}
+.hd-faq{padding:80px 0;background:linear-gradient(180deg, rgba(20,141,255,.04), transparent);}
 .hd-faq .hd-faq-inner{max-width:900px;margin:0 auto;padding:0 20px;}
-.hd-faq h2{font-family:"Kanit",sans-serif;font-size:clamp(28px,4vw,40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
-.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins",sans-serif;margin-bottom:40px;}
+.hd-faq h2{font-family:"Kanit", sans-serif;font-size:clamp(28px, 4vw, 40px);color:#fff;text-align:center;margin-bottom:14px;font-weight:700;}
+.hd-faq .hd-faq-sub{text-align:center;color:rgba(255,255,255,.6);font-family:"Poppins", sans-serif;margin-bottom:40px;}
 .hd-faq details{background:#171821;border:1px solid rgba(255,255,255,.08);border-radius:16px;margin-bottom:14px;padding:0 22px;transition:border-color .25s ease;}
 .hd-faq details[open]{border-color:rgba(20,141,255,.5);}
-.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit",sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hd-faq summary{cursor:pointer;list-style:none;padding:22px 0;font-family:"Kanit", sans-serif;font-size:18px;font-weight:500;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;}
 .hd-faq summary::-webkit-details-marker{display:none;}
 .hd-faq summary::after{content:"+";font-size:26px;color:#148dff;font-weight:300;line-height:1;transition:transform .25s ease;}
 .hd-faq details[open] summary::after{transform:rotate(45deg);}
-.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins",sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
+.hd-faq details p{color:rgba(255,255,255,.7);font-family:"Poppins", sans-serif;font-size:15px;line-height:1.7;padding:0 0 24px;margin:0;}
 </style>
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>Custom-Built ChatGPT & LLM Integration - Frequently Asked Questions</h2>
+    <h2>Custom-Built ChatGPT & LLM Integration, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What does a “custom-built ChatGPT” mean for my business?</summary>
@@ -379,19 +375,19 @@
       </details>
       <details>
         <summary>Can you integrate ChatGPT or Claude into our existing app or CRM?</summary>
-        <p>Yes. We provide ChatGPT integration and Claude integration services that connect to your existing app, website, Slack, or CRM through secure APIs - no rebuild required. We handle prompt engineering, context handling, and the chat interface.</p>
+        <p>Yes. We provide ChatGPT integration and Claude integration services that connect to your existing app, website, Slack, or CRM through secure APIs, no rebuild required. We handle prompt engineering, context handling, and the chat interface.</p>
       </details>
       <details>
         <summary>Will our custom ChatGPT answer only from our own data?</summary>
-        <p>Yes - by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off-topic or made-up answers.</p>
+        <p>Yes, by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off-topic or made-up answers.</p>
       </details>
       <details>
         <summary>How much does a custom ChatGPT integration cost?</summary>
         <p>Pricing is fixed-scope based on the integrations, data sources, and interface you need. A focused ChatGPT integration is an affordable, fast project; larger multi-system builds are quoted up front. Contact us for a free, no-obligation estimate.</p>
       </details>
       <details>
-        <summary>Which is better for my use case - OpenAI GPT or Anthropic Claude?</summary>
-        <p>It depends on the task. OpenAI GPT models are strong all-rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety-sensitive work. We help you choose - and many of our builds use both, routing each request to the best model.</p>
+        <summary>Which is better for my use case, OpenAI GPT or Anthropic Claude?</summary>
+        <p>It depends on the task. OpenAI GPT models are strong all-rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety-sensitive work. We help you choose, and many of our builds use both, routing each request to the best model.</p>
       </details>
   </div>
 </section>
