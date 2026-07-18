@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\PreventHtmlPageCaching;
 use App\Http\Middleware\RoleMiddleware;
 use App\Http\Middleware\SecurityHeaders;
 use Illuminate\Foundation\Application;
@@ -17,6 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'role' => RoleMiddleware::class,
         ]);
         $middleware->append(SecurityHeaders::class);
+        $middleware->append(PreventHtmlPageCaching::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
