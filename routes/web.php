@@ -21,6 +21,7 @@ Route::post('/lead-store', [LandingPageController::class, 'store'])->name('lead.
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/team', [HomeController::class, 'team'])->name('team');
+Route::get('/ai-development', [HomeController::class, 'aiDevelopment'])->name('ai_development');
 Route::get('/services/ai-development/rag-systems', [HomeController::class, 'aiRagSystems'])->name('ai_rag_systems');
 Route::get('/services/ai-development/ai-agents', [HomeController::class, 'aiAgents'])->name('ai_agents');
 Route::get('/services/ai-development/llm-integration', [HomeController::class, 'aiLlmIntegration'])->name('ai_llm_integration');

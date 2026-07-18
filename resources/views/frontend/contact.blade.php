@@ -387,9 +387,9 @@
  --}}
 @extends('frontend.layout')
 
-@section('title', 'Contact Us | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'Contact DappersTech, a software house in Rawalpindi, Pakistan (Mid City Mall, Rehmanabad, Murree Road), for premium web development, software development, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
-@section('meta_keywords', 'contact DappersTech, software house in Rawalpindi, software house Rawalpindi contact, IT services contact, software development company contact, web development agency, app development company, custom software, digital marketing services')
+@section('title', 'Contact DappersTech | Software House in Islamabad')
+@section('meta_description', 'Contact DappersTech, a software house in Islamabad, Pakistan, for premium web development, software development, UI/UX design, ecommerce solutions, APIs, cloud services, SEO, and business automation.')
+@section('meta_keywords', 'contact DappersTech, software house in Islamabad, software house Islamabad contact, IT services contact, software development company contact, web development agency, app development company, custom software, digital marketing services')
 
 @section('styles')
 <script type="application/ld+json">
@@ -403,24 +403,16 @@
             'alternateName' => 'DappersTech Software House',
             'url' => url('/'),
             'logo' => asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'),
-            'telephone' => '+92-51-6125246',
+            'telephone' => '+92-333-9994544',
             'email' => 'info@dapperstech.com',
             'address' => [
                 '@type' => 'PostalAddress',
-                'streetAddress' => 'Mid City Mall, Rehmanabad, Murree Road',
-                'addressLocality' => 'Rawalpindi',
-                'addressRegion' => 'Punjab',
-                'postalCode' => '46000',
+                'addressLocality' => 'Islamabad',
                 'addressCountry' => 'PK',
-            ],
-            'geo' => [
-                '@type' => 'GeoCoordinates',
-                'latitude' => '33.6352256',
-                'longitude' => '73.0739544',
             ],
             'contactPoint' => [
                 '@type' => 'ContactPoint',
-                'telephone' => '+92-51-6125246',
+                'telephone' => '+92-333-9994544',
                 'email' => 'info@dapperstech.com',
                 'contactType' => 'customer service',
                 'areaServed' => 'Worldwide',
@@ -495,12 +487,12 @@
 
         <div class="contact-info-grid">
 
-            <a href="tel:+92516125246" class="contact-info-card">
+            <a href="tel:+923339994544" class="contact-info-card">
                 <div class="contact-info-icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                <span>Call Us</span>
-                <h3>+9251 6125246</h3>
+                <span>Call or WhatsApp</span>
+                <h3>+92 333 9994544</h3>
                 <p>Speak directly with our team about your project requirements.</p>
             </a>
 
@@ -616,9 +608,14 @@
                             info@dapperstech.com
                         </a>
 
-                        <a href="tel:+92516125246">
+                        <a href="tel:+923339994544">
                             <i class="fa-solid fa-phone"></i>
-                            +92 51 6125246
+                            +92 333 9994544
+                        </a>
+
+                        <a href="https://wa.me/923339994544" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp us
                         </a>
 
                         <span>

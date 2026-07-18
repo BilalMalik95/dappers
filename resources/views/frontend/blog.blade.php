@@ -79,17 +79,26 @@
       </div>
 
       @php
+        // Keyed by category slug, not route name: there are no web_development /
+        // web_design / ai_development routes, and route() on a missing name throws,
+        // which 500s the whole post. Category pages are served by the /{category} route.
         $relatedServiceMap = [
-          'Web Development' => ['route' => 'web_development', 'label' => 'Web Development Services'],
-          'UI/UX Design' => ['route' => 'web_design', 'label' => 'Web Design Services'],
-          'Design' => ['route' => 'web_design', 'label' => 'Web Design Services'],
-          'AI Development' => ['route' => 'ai_development', 'label' => 'AI Development Services'],
+          'Web Development' => ['slug' => 'web-development', 'label' => 'Web Development Services'],
+          'UI/UX Design' => ['slug' => 'web-design', 'label' => 'Web Design Services'],
+          'Design' => ['slug' => 'web-design', 'label' => 'Web Design Services'],
+          'AI Development' => ['slug' => 'ai-development', 'label' => 'AI Development Services'],
         ];
         $relatedService = $relatedServiceMap[$blog->category] ?? null;
+
+        // Drop the CTA when the category has no page (currently ai-development),
+        // so a post in that category still renders instead of linking to a 404.
+        if ($relatedService && !\App\Models\Category::where('slug', $relatedService['slug'])->exists()) {
+            $relatedService = null;
+        }
       @endphp
       @if ($relatedService)
         <div class="blog-related-service-cta">
-          <p>Need help with this? Explore our <a href="{{ route($relatedService['route']) }}">{{ $relatedService['label'] }}</a>.</p>
+          <p>Need help with this? Explore our <a href="{{ route('category', $relatedService['slug']) }}">{{ $relatedService['label'] }}</a>.</p>
         </div>
         <style>
           .blog-related-service-cta { margin-top: 32px; padding: 20px 24px; border-left: 3px solid currentColor; border-radius: 8px; background: rgba(255,255,255,0.04); }

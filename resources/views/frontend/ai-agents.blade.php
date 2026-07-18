@@ -22,7 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/services/ai-development"},
+        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/ai-development"},
         {"@type": "ListItem", "position": 3, "name": "AI Agents", "item": "https://dapperstech.com/services/ai-development/ai-agents"}
       ]
     }
@@ -89,7 +89,7 @@
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <span>AI Development</span>
+                <a href="{{ route('ai_development') }}">AI Development</a>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>AI Agents</span>
             </nav>

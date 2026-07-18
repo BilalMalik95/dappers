@@ -174,6 +174,11 @@ class HomeController extends Controller
         return view('frontend.team', compact('teamMembers', 'founder', 'otherMembers'));
     }
 
+    public function aiDevelopment()
+    {
+        return view('frontend.ai-development');
+    }
+
     public function aiRagSystems()
     {
         return view('frontend.ai-rag-systems');

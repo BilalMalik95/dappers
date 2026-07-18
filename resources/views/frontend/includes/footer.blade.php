@@ -177,8 +177,8 @@ function sendEmail() {
                 <h4>Get In Touch</h4>
                 <div class="footer-contact-list">
                     <a href="https://mail.google.com/mail/u/0/?to=info@dapperstech.com&su=Project+Inquiry&fs=1&tf=cm"><i class="fa-solid fa-envelope"></i> info@dapperstech.com</a>
-                    <a href="tel:+92 516125246"><i class="fa-solid fa-phone"></i> +92 516125246</a>
-                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +92 333 9994544</a>
+                    <a href="tel:+923339994544"><i class="fa-solid fa-phone"></i> +92 333 9994544</a>
+                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
                     <span><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
                 </div>
             </div>

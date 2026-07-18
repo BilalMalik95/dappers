@@ -22,7 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/services/web-development"},
+        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/web-development"},
         {"@type": "ListItem", "position": 3, "name": "Custom Website Development", "item": "https://dapperstech.com/services/web-development/custom-website-development"}
       ]
     }

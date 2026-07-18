@@ -27,9 +27,8 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://dapperstech.com/services"},
-        {"@type": "ListItem", "position": 3, "name": "Web Design", "item": "https://dapperstech.com/services/web-design"},
-        {"@type": "ListItem", "position": 4, "name": "Graphic Design & Branding", "item": "https://dapperstech.com/services/web-design/graphic-design-branding"}
+        {"@type": "ListItem", "position": 2, "name": "Web Design", "item": "https://dapperstech.com/web-design"},
+        {"@type": "ListItem", "position": 3, "name": "Graphic Design & Branding", "item": "https://dapperstech.com/services/web-design/graphic-design-branding"}
       ]
     }
   ]

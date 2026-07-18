@@ -27,6 +27,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>{{ route('ai_development') }}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>{{ route('ai_rag_systems') }}</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

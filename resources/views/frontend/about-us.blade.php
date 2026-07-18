@@ -1,8 +1,8 @@
 @extends('frontend.layout')
 
-@section('title', 'About DappersTech | Software House in Rawalpindi, Pakistan')
-@section('meta_description', 'DappersTech is a premium software house in Rawalpindi, Pakistan providing web development, custom software, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
-@section('meta_keywords', 'about DappersTech, software house in Rawalpindi, software house Rawalpindi, software development company, IT services company, web development, custom software, UI UX design, ecommerce development, API development, cloud solutions')
+@section('title', 'About DappersTech | Software House in Islamabad, Pakistan')
+@section('meta_description', 'DappersTech is a premium software house in Islamabad, Pakistan providing web development, custom software, UI/UX design, ecommerce, SEO, APIs, cloud and automation solutions.')
+@section('meta_keywords', 'about DappersTech, software house in Islamabad, software house Islamabad, software development company, IT services company, web development, custom software, UI UX design, ecommerce development, API development, cloud solutions')
 
 @section('styles')
 <script type="application/ld+json">
@@ -22,21 +22,13 @@
         "url": "https://dapperstech.com",
         "foundingDate": "2017",
         "founder": {"@type": "Person", "name": "Bilal Malik", "url": "https://malikbilal.com"},
-        "description": "Software house in Rawalpindi, Pakistan helping businesses build premium websites, ecommerce platforms, custom dashboards, APIs, automation systems, and digital growth solutions.",
-        "telephone": "+92-51-6125246",
+        "description": "Software house in Islamabad, Pakistan helping businesses build premium websites, ecommerce platforms, custom dashboards, APIs, automation systems, and digital growth solutions.",
+        "telephone": "+92-333-9994544",
         "email": "info@dapperstech.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Mid City Mall, Rehmanabad, Murree Road",
-          "addressLocality": "Rawalpindi",
-          "addressRegion": "Punjab",
-          "postalCode": "46000",
+          "addressLocality": "Islamabad",
           "addressCountry": "PK"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "33.6352256",
-          "longitude": "73.0739544"
         }
       }
     },
@@ -60,7 +52,7 @@
       "name": "Where is DappersTech located?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DappersTech is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely."
+        "text": "DappersTech is a software house based in Islamabad, Pakistan. We work with clients across Islamabad, Rawalpindi, and worldwide, both on-site and remotely."
       }
     },
     {
@@ -124,7 +116,7 @@
 
             <div class="about-editorial-right">
                 <p>
-                    DappersTech is a software house in Rawalpindi, Pakistan helping businesses build premium
+                    DappersTech is a software house in Islamabad, Pakistan helping businesses build premium
                     websites, ecommerce platforms, custom dashboards, APIs, automation systems,
                     and digital growth solutions for clients locally and worldwide.
                 </p>
@@ -400,7 +392,7 @@
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>Where is DappersTech located?</summary>
-        <p>DappersTech is a software house based in Rawalpindi, Pakistan, at Mid City Mall, Rehmanabad, Murree Road. We work with clients in Rawalpindi, Islamabad, and worldwide, both on-site and remotely.</p>
+        <p>DappersTech is a software house based in Islamabad, Pakistan. We work with clients across Islamabad, Rawalpindi, and worldwide, both on-site and remotely.</p>
       </details>
       <details>
         <summary>What does DappersTech actually do?</summary>

@@ -1,6 +1,6 @@
 # DappersTech
 
-> DappersTech is a software house based in Rawalpindi, Pakistan, delivering web development, web design, AI development, and digital marketing services to clients in Rawalpindi, Islamabad, and worldwide since 2017.
+> DappersTech is a software house based in Islamabad, Pakistan, delivering web development, web design, AI development, and digital marketing services to clients in Islamabad, Rawalpindi, and worldwide since 2017.
 
 DappersTech builds custom websites, SaaS platforms, backend APIs, AI integrations (RAG systems, AI agents, LLM integration), and runs digital marketing campaigns (SEO, PPC, social media). Full code ownership is transferred to clients on every project; there is no vendor lock-in.
 
@@ -12,10 +12,18 @@ DappersTech builds custom websites, SaaS platforms, backend APIs, AI integration
 
 ## Services
 
-- [Web Development](https://dapperstech.com/services/web-development): Custom websites, SaaS platforms, backend APIs, e-commerce.
-- [Web Design](https://dapperstech.com/services/web-design): UI/UX design, Figma to HTML, custom website design, branding.
-- [AI Development](https://dapperstech.com/services/ai-development): RAG systems, AI agents, LLM integration, AI backend deployment.
-- [Digital Marketing](https://dapperstech.com/services/digital-marketing): SEO, PPC advertising, content and social media marketing.
+- [AI Development](https://dapperstech.com/ai-development): RAG systems, AI agents, LLM integration, and AI backend deployment.
+- [Web Development](https://dapperstech.com/web-development): Custom websites, SaaS platforms, backend APIs, e-commerce.
+- [Web Design](https://dapperstech.com/web-design): UI/UX design, Figma to HTML, custom website design, branding.
+- [Digital Marketing](https://dapperstech.com/digital-marketing): SEO, PPC advertising, content and social media marketing.
+
+## AI Development
+
+- [AI Development](https://dapperstech.com/ai-development): Overview of all AI development services, built for production.
+- [RAG Systems](https://dapperstech.com/services/ai-development/rag-systems): Retrieval-augmented generation over your own documents and data.
+- [AI Agents](https://dapperstech.com/services/ai-development/ai-agents): Tool-calling agents and workflow automation.
+- [Custom GPT & LLM Integration](https://dapperstech.com/services/ai-development/llm-integration): OpenAI and Claude integration into existing products.
+- [AI Backend & Deployment](https://dapperstech.com/services/ai-development/ai-backend-deployment): Production AI infrastructure, hosting, and scaling.
 
 ## Blog
 
@@ -23,6 +31,6 @@ DappersTech builds custom websites, SaaS platforms, backend APIs, AI integration
 
 ## Contact
 
-- Phone: +92-51-6125246
+- Phone / WhatsApp: +92-333-9994544
 - Email: info@dapperstech.com
-- Address: Mid City Mall, Rehmanabad, Murree Road, Rawalpindi, Punjab, Pakistan
+- Address: Islamabad, Pakistan

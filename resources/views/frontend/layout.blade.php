@@ -2,9 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>
-        @yield('title') - {{ config('app.name', 'DappersTech') }}
-    </title>
+    @php
+        $brand = config('app.name', 'DappersTech');
+        // Blade runs e() over inline @section content, so yieldContent() hands back
+        // already-escaped HTML. Everything derived from it must be echoed with {!! !!}
+        // or the entities get escaped twice ("&" -> "&amp;amp;").
+        $brandEscaped = e($brand);
+        $rawTitle = trim($__env->yieldContent('title'));
+        // Blog/category/service titles come from the DB and rarely carry the brand,
+        // while the static pages already end in it. Only append where it's missing.
+        $pageTitle = $rawTitle === ''
+            ? $brandEscaped
+            : (\Illuminate\Support\Str::contains($rawTitle, $brandEscaped) ? $rawTitle : $rawTitle . ' - ' . $brandEscaped);
+
+        $defaultOgImage = asset('frontend/assets/images/logo/og-image-1200x630.png');
+        $ogImage = trim($__env->yieldContent('og_image')) ?: e($defaultOgImage);
+        // Only the default card is known to be 1200x630; blog images are arbitrary,
+        // so declaring dimensions for them would misreport the aspect to scrapers.
+        $ogImageIsDefault = $ogImage === e($defaultOgImage);
+    @endphp
+    <title>{!! $pageTitle !!}</title>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#07090d">
     <meta name="color-scheme" content="dark">
@@ -13,18 +30,23 @@
     <meta name="keywords" content="@yield('meta_keywords')" />
 
     <meta property="og:type" content="@yield('og_type', 'website')">
-    <meta property="og:title" content="@yield('title')">
+    <meta property="og:title" content="{!! $pageTitle !!}">
     <meta property="og:description" content="@yield('meta_description')">
-    <meta property="og:image" content="@yield('og_image', asset('frontend/assets/images/logo/avatar-512.png'))">
+    <meta property="og:image" content="{!! $ogImage !!}">
+    @if ($ogImageIsDefault)
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ $brand }} - Software House for AI &amp; Web Development">
+    @else
+    <meta property="og:image:alt" content="{!! $pageTitle !!}">
+    @endif
     <meta property="og:url" content="{{ Request::url() }}">
-    <meta property="og:site_name" content="{{ config('app.name') }}">
+    <meta property="og:site_name" content="{{ $brand }}">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title')">
+    <meta name="twitter:title" content="{!! $pageTitle !!}">
     <meta name="twitter:description" content="@yield('meta_description')">
-    <meta name="twitter:image" content="@yield('og_image', asset('frontend/assets/images/logo/dapperstech-logo-black.png'))">
+    <meta name="twitter:image" content="{!! $ogImage !!}">
 
     <link rel="canonical" href="{{ Request::url() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
