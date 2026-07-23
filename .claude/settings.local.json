@@ -92,7 +92,11 @@
       "Bash(node shot_hero2b.js)",
       "Bash(node shot_blog.js)",
       "Bash(php \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-User-Desktop-Office-work-dappers\\\\2cb97f19-3e82-4ba7-8c4c-dd1756b5f203\\\\scratchpad\\\\remove_blog_hyphens.php\")",
-      "Bash(node check_card3.js)"
+      "Bash(node check_card3.js)",
+      "Bash(git status *)",
+      "Bash(grep -n *)",
+      "Bash(git merge *)",
+      "Bash(git add *)"
     ],
     "additionalDirectories": [
       "c:\\c\\Users\\User\\Desktop\\Office work\\DappersTech Website\\dapperstech"
