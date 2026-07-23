@@ -173,7 +173,7 @@
         <h2>Let's discuss your next project</h2>
         <p class="contact-intro">
           Share your requirements and Bilal Malik and the DappersTech team will guide you
-          to the right digital solution - with a written scope before any work begins.
+          to the right digital solution – with a written scope before any work begins.
         </p>
 
         <div class="contact-meta">
@@ -518,7 +518,7 @@
                     <i class="fa-solid fa-clock"></i>
                 </div>
                 <span>Working Hours</span>
-                <h3>Mon - Sat</h3>
+                <h3>Mon – Sat</h3>
                 <p>Available for project consultation, support, and development work.</p>
             </div>
 

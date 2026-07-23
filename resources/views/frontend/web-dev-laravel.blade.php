@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Laravel Development Services | Custom Web Applications')
+@section('title', 'Laravel Development Services')
 @section('meta_description', 'Expert Laravel development services,100% custom Laravel web apps, REST APIs, SaaS platforms, CRM/CMS, and full-stack Laravel + Vue.js solutions. Full code ownership. Get a free quote.')
 @section('meta_keywords', 'Laravel development, Laravel developer Pakistan, custom Laravel application, Laravel REST API, Laravel SaaS, Laravel CRM, full stack Laravel Vue.js, hire Laravel developer')
 
@@ -34,8 +34,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "Laravel Development", "item": "https://dapperstech.com/services/web-development/laravel-development"}
+        {"@type": "ListItem", "position": 2, "name": "Laravel Development", "item": "https://dapperstech.com/services/web-development/laravel-development"}
       ]
     }
   ]
@@ -99,8 +98,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Laravel Development</span>
@@ -112,7 +109,7 @@
             </h1>
             <p>
                 100% custom Laravel web development, RESTful APIs, SaaS platforms, CRM/CMS systems,
-                full-stack Laravel + Vue.js/React apps, and legacy migration services. Full code ownership.
+                full stack Laravel + Vue.js/React apps, and legacy migration services. Full code ownership.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
@@ -129,12 +126,12 @@
         <div class="services-v2-head">
             <span class="services-page-kicker">Laravel Capabilities</span>
             <h2>
-                Expert-level Laravel development<br>
+                Expert level Laravel development<br>
                 built for growing businesses.
             </h2>
             <p>
                 From rapid MVP builds to complex enterprise platforms, our Laravel expertise covers everything from
-                database architecture and REST APIs to full-stack SaaS applications and cloud deployment.
+                database architecture and REST APIs to full stack SaaS applications and cloud deployment.
             </p>
         </div>
 
@@ -147,8 +144,8 @@
                     <span class="service-tag">Core Expertise</span>
                     <h3>Custom Laravel Web Applications</h3>
                     <p>
-                        Scalable, production-grade Laravel applications built with clean architecture, eloquent ORM,
-                        queues, events, and modern best practices. From MVPs to enterprise-level platforms.
+                        Scalable, production grade Laravel applications built with clean architecture, eloquent ORM,
+                        queues, events, and modern best practices. From MVPs to enterprise level platforms.
                     </p>
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> Laravel 10/11 + PHP 8+</span>
@@ -170,7 +167,7 @@
                     <div>
                         <span>01</span>
                         <h3>RESTful API Development</h3>
-                        <p>Well-structured, documented REST APIs with authentication (Sanctum/Passport), rate limiting, versioning, and third-party integration support.</p>
+                        <p>Well structured, documented REST APIs with authentication (Sanctum/Passport), rate limiting, versioning, and third party integration support.</p>
                     </div>
                 </a>
 
@@ -181,7 +178,7 @@
                     <div>
                         <span>02</span>
                         <h3>SaaS Platform Development</h3>
-                        <p>Full SaaS platforms with multi-tenancy, Stripe subscription billing, role-based permissions, Vue.js/React frontends, and scalable cloud infrastructure.</p>
+                        <p>Full SaaS platforms with multi tenancy, Stripe subscription billing, role based permissions, Vue.js/React frontends, and scalable cloud infrastructure.</p>
                     </div>
                 </a>
 
@@ -210,24 +207,30 @@
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/31177212/pexels-photo-31177212.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Backend development and scalable system architecture" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
-                <h3>Full-Stack Laravel + Vue.js / React</h3>
-                <p>Complete full-stack applications combining Laravel backend APIs with Vue.js or React frontends, SPA architecture, real-time features, and excellent UX.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+                <h3>Full Stack Laravel + Vue.js / React</h3>
+                <p>Complete full stack applications combining Laravel backend APIs with Vue.js or React frontends, SPA architecture, real time features, and excellent UX.</p>
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/18935831/pexels-photo-18935831.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Laravel e-commerce platform development" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
-                <h3>E-commerce with Laravel</h3>
-                <p>Custom e-commerce platforms on Laravel, product catalogues, Stripe & PayPal integrations, inventory management, subscription billing, and order workflows.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+                <h3>Ecommerce with Laravel</h3>
+                <p>Custom ecommerce platforms on Laravel, product catalogues, Stripe & PayPal integrations, inventory management, subscription billing, and order workflows.</p>
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/7988089/pexels-photo-7988089.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Laravel application maintenance with clean code" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>Laravel Maintenance & Optimisation</h3>
                 <p>Performance audits, N+1 query fixes, caching strategies, security patches, package updates, and ongoing support to keep your Laravel app fast and secure.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -243,7 +246,7 @@
                 </h2>
                 <p>
                     Laravel is the world's most popular PHP framework, and for good reason. It combines developer
-                    productivity with enterprise-grade power, making it perfect for businesses that want to move fast without compromising quality.
+                    productivity with enterprise grade power, making it perfect for businesses that want to move fast without compromising quality.
                 </p>
                 <div class="why-choose-grid">
                     <div class="why-item">
@@ -257,21 +260,21 @@
                         <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
                         <div>
                             <h3>Enterprise Security</h3>
-                            <p>Built-in CSRF protection, SQL injection prevention, bcrypt hashing, and authentication scaffolding, security is a first-class citizen in Laravel.</p>
+                            <p>Built in CSRF protection, SQL injection prevention, bcrypt hashing, and authentication scaffolding, security is a first class citizen in Laravel.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-expand"></i></div>
                         <div>
                             <h3>Infinitely Scalable</h3>
-                            <p>From a 10-user MVP to a 100,000-user platform, Laravel scales horizontally and vertically, queues, caching, and microservices support built in.</p>
+                            <p>From a 10 user MVP to a 100,000 user platform, Laravel scales horizontally and vertically, queues, caching, and microservices support built in.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-users"></i></div>
                         <div>
                             <h3>Massive Ecosystem</h3>
-                            <p>Thousands of battle-tested packages via Packagist, active community, regular security updates, and long-term support releases.</p>
+                            <p>Thousands of battle tested packages via Packagist, active community, regular security updates, and long term support releases.</p>
                         </div>
                     </div>
                 </div>
@@ -336,16 +339,16 @@
                 <img src="https://images.pexels.com/photos/4623113/pexels-photo-4623113.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Laravel web development across multiple industries" loading="lazy" decoding="async">
                 <div class="workflow-visual-content">
                     <span>Industry Expertise</span>
-                    <h3>E-commerce, Healthcare, SaaS, FinTech</h3>
+                    <h3>Ecommerce, Healthcare, SaaS, FinTech</h3>
                 </div>
             </div>
             <div class="workflow-steps">
                 <div class="workflow-step">
                     <div class="workflow-no"><i class="fa-solid fa-cart-shopping"></i></div>
                     <div class="workflow-content">
-                        <span>E-commerce & Retail</span>
+                        <span>Ecommerce & Retail</span>
                         <h3>Custom stores and marketplace platforms</h3>
-                        <p>Product management, Stripe/PayPal integrations, inventory systems, multi-vendor marketplaces, and subscription commerce.</p>
+                        <p>Product management, Stripe/PayPal integrations, inventory systems, multi vendor marketplaces, and subscription commerce.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -360,8 +363,8 @@
                     <div class="workflow-no"><i class="fa-solid fa-laptop"></i></div>
                     <div class="workflow-content">
                         <span>SaaS & Software</span>
-                        <h3>Multi-tenant SaaS platforms</h3>
-                        <p>Subscription management, tenant isolation, API-first architecture, Stripe billing, and scalable cloud infrastructure.</p>
+                        <h3>Multi tenant SaaS platforms</h3>
+                        <p>Subscription management, tenant isolation, API first architecture, Stripe billing, and scalable cloud infrastructure.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -369,7 +372,7 @@
                     <div class="workflow-content">
                         <span>Finance & Subscriptions</span>
                         <h3>Billing systems and financial dashboards</h3>
-                        <p>Recurring billing, invoice generation, payment reconciliation, financial reporting dashboards, and compliance-ready data handling.</p>
+                        <p>Recurring billing, invoice generation, payment reconciliation, financial reporting dashboards, and compliance ready data handling.</p>
                     </div>
                 </div>
             </div>
@@ -397,15 +400,15 @@
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>Why is Laravel a better choice than other PHP frameworks?</summary>
-        <p>Laravel combines an elegant, expressive syntax with enterprise-grade features, built-in authentication, queues, caching, and a massive package ecosystem via Packagist. That lets us build faster than with a bare-metal framework, without compromising on security or scalability.</p>
+        <p>Laravel combines an elegant, expressive syntax with enterprise grade features, built in authentication, queues, caching, and a massive package ecosystem via Packagist. That lets us build faster than with a bare metal framework, without compromising on security or scalability.</p>
       </details>
       <details>
         <summary>Can Laravel work with Vue.js or React on the frontend?</summary>
-        <p>Yes, full-stack Laravel plus Vue.js or React is one of our most common builds. Laravel handles the backend API, authentication, and database layer while Vue.js or React powers a fast, interactive single-page frontend, communicating over a clean REST API.</p>
+        <p>Yes, full stack Laravel plus Vue.js or React is one of our most common builds. Laravel handles the backend API, authentication, and database layer while Vue.js or React powers a fast, interactive single page frontend, communicating over a clean REST API.</p>
       </details>
       <details>
         <summary>What hosting does a Laravel application need?</summary>
-        <p>Laravel runs well on any standard Linux server with PHP 8+ and MySQL or PostgreSQL, from shared hosting for small sites up to cloud infrastructure with Redis queues and caching for high-traffic SaaS platforms. We recommend the right hosting tier based on expected traffic and budget.</p>
+        <p>Laravel runs well on any standard Linux server with PHP 8+ and MySQL or PostgreSQL, from shared hosting for small sites up to cloud infrastructure with Redis queues and caching for high traffic SaaS platforms. We recommend the right hosting tier based on expected traffic and budget.</p>
       </details>
       <details>
         <summary>Can you upgrade or migrate our application to a newer Laravel version?</summary>
@@ -423,7 +426,7 @@
         <div class="services-cta-box">
             <div>
                 <span class="services-page-kicker">Let's Build</span>
-                <h2>Have a Laravel project in mind? Let's turn it into a production-ready application.</h2>
+                <h2>Have a Laravel project in mind? Let's turn it into a production ready application.</h2>
             </div>
             <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
                 Get a Free Consultation

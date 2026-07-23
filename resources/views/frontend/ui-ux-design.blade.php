@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'UI/UX Design Services | Wireframes, Prototypes & Design Systems')
+@section('title', 'UI/UX Design & Prototyping Services')
 @section('meta_description', 'Professional UI/UX design services, user research, wireframes, interactive prototypes, and design systems that reduce friction and maximise conversions.')
 @section('meta_keywords', 'UI UX design services, user interface design, user experience design, wireframes, interactive prototypes, design systems, Figma design, conversion focused design')
 
@@ -27,8 +27,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Design", "item": "https://dapperstech.com/web-design"},
-        {"@type": "ListItem", "position": 3, "name": "UI/UX Design", "item": "https://dapperstech.com/services/web-design/ui-ux-design"}
+        {"@type": "ListItem", "position": 2, "name": "UI/UX Design", "item": "https://dapperstech.com/services/web-design/ui-ux-design"}
       ]
     }
   ]
@@ -92,8 +91,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>UI/UX Design</span>
@@ -123,7 +120,7 @@
         <div class="services-v2-head">
             <span class="services-page-kicker">What's Included</span>
             <h2>
-                Research-led design.<br>
+                Research led design.<br>
                 Every screen built to convert.
             </h2>
             <p>
@@ -143,11 +140,11 @@
                     <h3>User Research & Wireframes</h3>
                     <p>
                         We study your audience, their goals, and pain points, then translate findings into
-                        low-fidelity wireframes that map out a clear, frictionless user journey.
+                        low fidelity wireframes that map out a clear, frictionless user journey.
                     </p>
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> User Personas & Journey Maps</span>
-                        <span><i class="fa-solid fa-check"></i> Low-Fidelity Wireframes</span>
+                        <span><i class="fa-solid fa-check"></i> Low Fidelity Wireframes</span>
                         <span><i class="fa-solid fa-check"></i> Information Architecture</span>
                     </div>
                     <div class="service-card-action">
@@ -198,8 +195,8 @@
                     </div>
                     <div>
                         <span>04</span>
-                        <h3>Accessibility-First UI</h3>
-                        <p>Designs built to WCAG guidelines, readable contrast, keyboard navigation, and screen-reader friendly structure for every user.</p>
+                        <h3>Accessibility First UI</h3>
+                        <p>Designs built to WCAG guidelines, readable contrast, keyboard navigation, and screen reader friendly structure for every user.</p>
                     </div>
                 </a>
 
@@ -228,14 +225,14 @@
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-users"></i></div>
                         <div>
-                            <h3>User-Centric Strategy</h3>
-                            <p>Research-backed designs that understand your audience, their goals, and the journey they take from first visit to conversion.</p>
+                            <h3>User Centric Strategy</h3>
+                            <p>Research backed designs that understand your audience, their goals, and the journey they take from first visit to conversion.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                         <div>
-                            <h3>Mobile-First Approach</h3>
+                            <h3>Mobile First Approach</h3>
                             <p>Every design starts on mobile and scales up beautifully, because over 60% of your visitors are on a smartphone.</p>
                         </div>
                     </div>
@@ -265,7 +262,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio, 40+ projects delivered</span>
+                        <span>5 star design portfolio, 40+ projects delivered</span>
                     </div>
                 </div>
             </div>
@@ -329,7 +326,7 @@
                     <div class="workflow-content">
                         <span>Wireframing & Structure</span>
                         <h3>Map out the user journey and page layouts</h3>
-                        <p>Low-fidelity wireframes and user flow diagrams establish the structure and logic of every screen before visual design begins.</p>
+                        <p>Low fidelity wireframes and user flow diagrams establish the structure and logic of every screen before visual design begins.</p>
                     </div>
                 </div>
 
@@ -338,7 +335,7 @@
                     <div class="workflow-content">
                         <span>Prototyping</span>
                         <h3>Build interactive, clickable prototypes</h3>
-                        <p>High-fidelity Figma prototypes that simulate real interactions, ready for stakeholder review and usability testing.</p>
+                        <p>High fidelity Figma prototypes that simulate real interactions, ready for stakeholder review and usability testing.</p>
                     </div>
                 </div>
 
@@ -346,7 +343,7 @@
                     <div class="workflow-no">04</div>
                     <div class="workflow-content">
                         <span>Testing & Handoff</span>
-                        <h3>Validate with users, then deliver dev-ready files</h3>
+                        <h3>Validate with users, then deliver dev ready files</h3>
                         <p>Usability testing refines the design, then a fully documented Figma file and design system is handed off to development.</p>
                     </div>
                 </div>
@@ -383,7 +380,7 @@
       </details>
       <details>
         <summary>Do you build wireframes and prototypes before the final design?</summary>
-        <p>Yes. Every project starts with low-fidelity wireframes that map the user journey and information architecture, then moves into high-fidelity, clickable Figma prototypes. This lets you test flows and gather feedback before a single line of code is written.</p>
+        <p>Yes. Every project starts with low fidelity wireframes that map the user journey and information architecture, then moves into high fidelity, clickable Figma prototypes. This lets you test flows and gather feedback before a single line of code is written.</p>
       </details>
       <details>
         <summary>Do you run usability testing on the designs?</summary>
@@ -395,7 +392,7 @@
       </details>
       <details>
         <summary>How does UI/UX design improve conversions?</summary>
-        <p>Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters, whether that's a purchase, a signup, or a contact form. Research-backed, tested design consistently outperforms designs built on guesswork.</p>
+        <p>Every wireframe, prototype, and interaction we design is built to reduce friction and guide users toward the action that matters, whether that's a purchase, a signup, or a contact form. Research backed, tested design consistently outperforms designs built on guesswork.</p>
       </details>
   </div>
 </section>

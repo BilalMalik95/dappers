@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'PHP Development Services | Dynamic Websites & Web Applications')
+@section('title', 'PHP Development Services')
 @section('meta_description', 'Reliable and high-performance PHP development services, dynamic websites, web applications, custom APIs, CMS solutions, and e-commerce platforms. Expert PHP developers.')
 @section('meta_keywords', 'PHP development services, PHP developer Pakistan, custom PHP application, PHP web development, PHP CMS, PHP e-commerce, hire PHP developer, PHP API development')
 
@@ -22,8 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "PHP Development", "item": "https://dapperstech.com/services/web-development/php-development"}
+        {"@type": "ListItem", "position": 2, "name": "PHP Development", "item": "https://dapperstech.com/services/web-development/php-development"}
       ]
     }
   ]
@@ -87,15 +86,13 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>PHP Development</span>
             </nav>
             <span class="services-page-kicker">PHP Development</span>
             <h1>
-                Reliable & high-performance PHP<br>
+                Reliable & high performance PHP<br>
                 development for dynamic web solutions
             </h1>
             <p>
@@ -117,7 +114,7 @@
         <div class="services-v2-head">
             <span class="services-page-kicker">PHP Services</span>
             <h2>
-                Full-spectrum PHP development.<br>
+                Full spectrum PHP development.<br>
                 From simple sites to complex applications.
             </h2>
             <p>
@@ -135,7 +132,7 @@
                     <span class="service-tag">Core Service</span>
                     <h3>Custom PHP Web Application Development</h3>
                     <p>
-                        High-performance custom PHP web applications built with clean object-oriented code, MVC architecture,
+                        High performance custom PHP web applications built with clean object oriented code, MVC architecture,
                         robust database design, and secure API integrations, tailored exactly to your business requirements.
                     </p>
                     <div class="service-feature-points">
@@ -158,7 +155,7 @@
                     <div>
                         <span>01</span>
                         <h3>Dynamic Website Development</h3>
-                        <p>Data-driven, dynamic websites with custom back-end logic, product catalogues, real-time content, user portals, and personalised experiences.</p>
+                        <p>Data driven, dynamic websites with custom back end logic, product catalogues, real time content, user portals, and personalised experiences.</p>
                     </div>
                 </a>
 
@@ -169,7 +166,7 @@
                     <div>
                         <span>02</span>
                         <h3>PHP API Development & Integration</h3>
-                        <p>Custom RESTful APIs in PHP, plus integration with third-party APIs (payment gateways, CRMs, social platforms, shipping services, and more).</p>
+                        <p>Custom RESTful APIs in PHP, plus integration with third party APIs (payment gateways, CRMs, social platforms, shipping services, and more).</p>
                     </div>
                 </a>
 
@@ -180,7 +177,7 @@
                     <div>
                         <span>03</span>
                         <h3>WordPress Custom Development</h3>
-                        <p>Custom WordPress themes and plugins, WooCommerce builds, advanced custom fields, and bespoke functionality, beyond what off-the-shelf themes can do.</p>
+                        <p>Custom WordPress themes and plugins, WooCommerce builds, advanced custom fields, and bespoke functionality, beyond what off the shelf themes can do.</p>
                     </div>
                 </a>
 
@@ -190,32 +187,38 @@
                     </div>
                     <div>
                         <span>04</span>
-                        <h3>PHP E-commerce Development</h3>
-                        <p>Custom PHP-powered e-commerce solutions, product management, payment processing, inventory tracking, order management, and customer dashboards.</p>
+                        <h3>PHP Ecommerce Development</h3>
+                        <p>Custom PHP powered ecommerce solutions, product management, payment processing, inventory tracking, order management, and customer dashboards.</p>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="CRM CMS custom dashboard development" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
                 <h3>CMS Development</h3>
-                <p>Custom CMS solutions in PHP, content management interfaces, media libraries, multi-user editorial workflows, and role-based access control for your team.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+                <p>Custom CMS solutions in PHP, content management interfaces, media libraries, multi user editorial workflows, and role based access control for your team.</p>
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/6804604/pexels-photo-6804604.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Legacy PHP application migration and modernisation" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
                 <h3>Legacy PHP Modernisation</h3>
                 <p>Refactor or rewrite outdated PHP codebases, upgrade to PHP 8+, improve security, increase performance, and add modern features without rebuilding from scratch.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Usability and bug testing session" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>PHP Maintenance & Bug Fixing</h3>
                 <p>Ongoing PHP maintenance, security patches, performance optimisation, bug investigation, and technical support, keep your PHP applications healthy and fast.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -228,20 +231,20 @@
                 <span class="services-page-kicker">Why Choose Us</span>
                 <h2>Expert PHP developers who write code that lasts</h2>
                 <p>
-                    With 9+ years building PHP applications, we bring the discipline of a senior engineer to every project, clean architecture, thorough testing, security-first mindset, and documentation you can actually use.
+                    With 9+ years building PHP applications, we bring the discipline of a senior engineer to every project, clean architecture, thorough testing, security first mindset, and documentation you can actually use.
                 </p>
                 <div class="why-choose-grid">
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-code"></i></div>
                         <div>
                             <h3>Clean, Documented Code</h3>
-                            <p>PSR-12 compliant, well-commented, and structured for long-term maintainability, hand it to any developer and they'll understand it immediately.</p>
+                            <p>PSR-12 compliant, well commented, and structured for long term maintainability, hand it to any developer and they'll understand it immediately.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
                         <div>
-                            <h3>Security-First Development</h3>
+                            <h3>Security First Development</h3>
                             <p>Input validation, prepared statements, CSRF tokens, XSS prevention, and proper session management, security baked in, not bolted on.</p>
                         </div>
                     </div>
@@ -249,14 +252,14 @@
                         <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
                         <div>
                             <h3>Performance Optimised</h3>
-                            <p>Efficient database queries, opcode caching, query optimisation, and CDN-ready output, PHP applications that are genuinely fast.</p>
+                            <p>Efficient database queries, opcode caching, query optimisation, and CDN ready output, PHP applications that are genuinely fast.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>Every line of PHP we write belongs to you, full source code delivery, no vendor lock-in, and complete freedom to take your project anywhere.</p>
+                            <p>Every line of PHP we write belongs to you, full source code delivery, no vendor lock in, and complete freedom to take your project anywhere.</p>
                         </div>
                     </div>
                 </div>
@@ -271,7 +274,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 9+ years PHP experience</span>
+                        <span>5 star Upwork rating, 9+ years PHP experience</span>
                     </div>
                 </div>
             </div>
@@ -314,11 +317,11 @@
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>Why choose PHP for a new web project instead of another language?</summary>
-        <p>PHP powers a huge share of the web, has a mature ecosystem of frameworks and libraries, and is fast to develop in without sacrificing performance. For most websites, web applications, and APIs it gives you a faster build time and lower long-term maintenance cost than less established alternatives.</p>
+        <p>PHP powers a huge share of the web, has a mature ecosystem of frameworks and libraries, and is fast to develop in without sacrificing performance. For most websites, web applications, and APIs it gives you a faster build time and lower long term maintenance cost than less established alternatives.</p>
       </details>
       <details>
         <summary>Do you build with a PHP framework or plain PHP?</summary>
-        <p>It depends on the project. For full applications and APIs we typically use a framework for structure, security, and maintainability. For smaller, performance-critical scripts or tight WordPress customisations, hand-written PHP with clean OOP architecture is often the better fit. We choose based on what the project actually needs.</p>
+        <p>It depends on the project. For full applications and APIs we typically use a framework for structure, security, and maintainability. For smaller, performance critical scripts or tight WordPress customisations, hand written PHP with clean OOP architecture is often the better fit. We choose based on what the project actually needs.</p>
       </details>
       <details>
         <summary>Can you modernise or fix our existing legacy PHP codebase?</summary>
@@ -330,7 +333,7 @@
       </details>
       <details>
         <summary>Will my PHP application be fast under real traffic?</summary>
-        <p>We optimise database queries, use opcode caching, and build CDN-ready output as standard practice, not an afterthought. If you already have a slow PHP application, we can profile it and fix the specific bottlenecks rather than guessing.</p>
+        <p>We optimise database queries, use opcode caching, and build CDN ready output as standard practice, not an afterthought. If you already have a slow PHP application, we can profile it and fix the specific bottlenecks rather than guessing.</p>
       </details>
   </div>
 </section>

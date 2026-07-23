@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Graphic Design & Branding Services | Logos, Identity & Visual Assets')
+@section('title', 'Graphic Design & Branding Services')
 @section('meta_description', 'Professional graphic design & branding services, logos, brand guidelines, visual identity, social media graphics, and marketing materials that build trust and recognition.')
 @section('meta_keywords', 'graphic design services, branding agency, logo design, brand identity, brand guidelines, social media graphics, marketing materials, visual identity design')
 
@@ -27,8 +27,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Design", "item": "https://dapperstech.com/web-design"},
-        {"@type": "ListItem", "position": 3, "name": "Graphic Design & Branding", "item": "https://dapperstech.com/services/web-design/graphic-design-branding"}
+        {"@type": "ListItem", "position": 2, "name": "Graphic Design & Branding", "item": "https://dapperstech.com/services/web-design/graphic-design-branding"}
       ]
     }
   ]
@@ -92,8 +91,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Graphic Design & Branding</span>
@@ -166,7 +163,7 @@
                     <div>
                         <span>01</span>
                         <h3>Social Media Graphics</h3>
-                        <p>On-brand post templates, story designs, and cover graphics that keep your social presence consistent and professional.</p>
+                        <p>On brand post templates, story designs, and cover graphics that keep your social presence consistent and professional.</p>
                     </div>
                 </a>
 
@@ -235,7 +232,7 @@
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <div>
-                            <h3>Competitor-Aware Design</h3>
+                            <h3>Competitor Aware Design</h3>
                             <p>We research your market first, so your brand stands apart instead of blending in with competitors.</p>
                         </div>
                     </div>
@@ -265,7 +262,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio, 40+ brands built</span>
+                        <span>5 star design portfolio, 40+ brands built</span>
                     </div>
                 </div>
             </div>
@@ -395,7 +392,7 @@
       </details>
       <details>
         <summary>Do you design social media graphics and marketing materials too?</summary>
-        <p>Yes. Beyond logo and brand identity, we design on-brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks, all built from your brand guidelines so every asset reinforces the same visual identity.</p>
+        <p>Yes. Beyond logo and brand identity, we design on brand social media post templates, story graphics, brochures, banners, business cards, and presentation decks, all built from your brand guidelines so every asset reinforces the same visual identity.</p>
       </details>
   </div>
 </section>

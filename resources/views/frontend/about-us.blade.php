@@ -185,7 +185,7 @@
                 <p>
                     We help startups, service companies, ecommerce brands, and growing businesses turn ideas
                     into functional digital products. Our work is not only about making things look attractive;
-                    we focus on speed, usability, security, clean backend logic, and long-term scalability.
+                    we focus on speed, usability, security, clean backend logic, and long term scalability.
                 </p>
 
                 <p>
@@ -229,7 +229,7 @@
             <div class="about-difference-row">
                 <div class="about-row-number">01</div>
                 <div>
-                    <h3>Business-first planning</h3>
+                    <h3>Business first planning</h3>
                     <p>
                         We understand your business model, users, goals, and operations before writing code.
                     </p>
@@ -241,7 +241,7 @@
                 <div>
                     <h3>Premium interface design</h3>
                     <p>
-                        We create clean, modern, market-based layouts that make your brand look trustworthy.
+                        We create clean, modern, market based layouts that make your brand look trustworthy.
                     </p>
                 </div>
             </div>
@@ -259,7 +259,7 @@
             <div class="about-difference-row">
                 <div class="about-row-number">04</div>
                 <div>
-                    <h3>Long-term support</h3>
+                    <h3>Long term support</h3>
                     <p>
                         We help after launch with updates, improvements, maintenance, performance, and new features.
                     </p>
@@ -388,11 +388,11 @@
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>About DappersTech - Frequently Asked Questions</h2>
+    <h2>About DappersTech – Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>Where is DappersTech located?</summary>
-        <p>DappersTech is a software house based in Islamabad, Pakistan. We work with clients across Islamabad, Rawalpindi, and worldwide, both on-site and remotely.</p>
+        <p>DappersTech is a software house based in Islamabad, Pakistan. We work with clients across Islamabad, Rawalpindi, and worldwide, both on site and remotely.</p>
       </details>
       <details>
         <summary>What does DappersTech actually do?</summary>
@@ -400,19 +400,19 @@
       </details>
       <details>
         <summary>How long has DappersTech been in business?</summary>
-        <p>DappersTech has been delivering software and IT services since 2017 - over 9 years of production experience across web development, custom software, and digital growth projects.</p>
+        <p>DappersTech has been delivering software and IT services since 2017 – over 9 years of production experience across web development, custom software, and digital growth projects.</p>
       </details>
       <details>
         <summary>What industries or business sizes do you work with?</summary>
-        <p>We work with startups, service companies, ecommerce brands, and growing businesses across a range of industries. Our projects range from single-page marketing sites to complex multi-tenant SaaS platforms.</p>
+        <p>We work with startups, service companies, ecommerce brands, and growing businesses across a range of industries. Our projects range from single page marketing sites to complex multi tenant SaaS platforms.</p>
       </details>
       <details>
         <summary>Do you only build websites, or also custom software?</summary>
-        <p>Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, AI-powered features, and workflow automation - anything that needs to function as real software, not just a page.</p>
+        <p>Both. Alongside websites and ecommerce stores, we build custom dashboards, backend APIs, AI powered features, and workflow automation – anything that needs to function as real software, not just a page.</p>
       </details>
       <details>
         <summary>What happens after my project launches?</summary>
-        <p>Every project includes post-launch support - monitoring, updates, performance improvements, and new features as your business grows. We treat each engagement as a long-term partnership, not a one-off handoff.</p>
+        <p>Every project includes post launch support – monitoring, updates, performance improvements, and new features as your business grows. We treat each engagement as a long term partnership, not a one off handoff.</p>
       </details>
   </div>
 </section>

@@ -1187,7 +1187,7 @@
                 <span class="text-accent">Into Customers</span>
             </h1>
             <p class="hero-subtitle">
-                We help 100+ businesses generate more leads with high-converting<br>
+                We help 100+ businesses generate more leads with high converting<br>
                 websites and smart marketing strategies that matter to your ROI.
             </p>
             <div class="hero-cta">
@@ -1213,7 +1213,7 @@
                         <circle cx="12" cy="12" r="6"></circle>
                         <circle cx="12" cy="12" r="2"></circle>
                     </svg>
-                    <span>Results-Focused</span>
+                    <span>Results Focused</span>
                 </div>
 
                 <div class="feature-item">
@@ -1239,7 +1239,7 @@
                 Trusted by Businesses <span class="text-accent">Across the US</span>
             </h2>
             <p class="section-subtitle">
-                Join 100+ satisfied clients - Over 250+ projects delivered - Average 4.9/5 stars<br>
+                Join 100+ satisfied clients – Over 250+ projects delivered – Average 4.9/5 stars<br>
                 reviews, and a 95% client retention rate
             </p>
 
@@ -1296,7 +1296,7 @@
                         <p class="testimonial-text">
                             "Outstanding service! They transformed<br>
                             our outdated website into a modern,<br>
-                            conversion-focused platform."
+                            conversion focused platform."
                         </p>
                         <div class="testimonial-rating">
                             <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1347,7 +1347,7 @@
                             <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                             <div class="testimonial-author">
                                 <strong>Cameron Williamson</strong><br>
-                                <span class="text-muted">E-commerce Owner</span>
+                                <span class="text-muted">Ecommerce Owner</span>
                             </div>
                         </div>
                     </div>
@@ -1410,8 +1410,8 @@
                     </div>
                     <h3 class="service-title">Web Development</h3>
                     <p class="service-description">
-                        High-quality websites crafted by a web design firm you can count on. Fast, scalable, and
-                        SEO-optimized for exceptional results.
+                        High quality websites crafted by a web design firm you can count on. Fast, scalable, and
+                        SEO optimized for exceptional results.
                     </p>
                 </div>
                 <div class="service-card">
@@ -1436,8 +1436,8 @@
                     </div>
                     <h3 class="service-title">App Development</h3>
                     <p class="service-description">
-                        Custom mobile and web apps that bring your ideas to life. Scalable, user-friendly, and built
-                        with cutting-edge technology.
+                        Custom mobile and web apps that bring your ideas to life. Scalable, user friendly, and built
+                        with cutting edge technology.
                     </p>
                 </div>
             </div>
@@ -1495,7 +1495,7 @@
                     </div>
                     <h3 class="process-title">Free Audit</h3>
                     <p class="process-description">
-                        We analyze your current website or idea - 100% free. We uncover gaps and identify opportunities
+                        We analyze your current website or idea – 100% free. We uncover gaps and identify opportunities
                         for growth.
                     </p>
                 </div>
@@ -1510,7 +1510,7 @@
                     <h3 class="process-title">Strategy Call</h3>
                     <p class="process-description">
                         We walk you through a custom plan based on your business needs, goals, and budget. Zero
-                        pressure - just real value.
+                        pressure – just real value.
                     </p>
                 </div>
                 <div class="process-card">
@@ -1538,7 +1538,7 @@
                     Get Your <span class="text-accent">FREE</span> Website Audit
                 </h2>
                 <p class="section-subtitle">
-                    Find out exactly where you're losing website traffic - and how to fix it in 3<br>
+                    Find out exactly where you're losing website traffic – and how to fix it in 3<br>
                     days or less (normally over 2 weeks).
                 </p>
                 <div class="checklist">
@@ -1554,7 +1554,7 @@
                             <circle cx="12" cy="12" r="10" fill="#EF4444" />
                             <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" />
                         </svg>
-                        <span>Get no-fluff tips to improve<br>performance</span>
+                        <span>Get no fluff tips to improve<br>performance</span>
                     </div>
                     <div class="checklist-item">
                         <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1582,7 +1582,7 @@
                             <circle cx="12" cy="12" r="10" fill="#EF4444" />
                             <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" />
                         </svg>
-                        <span>Page-by-page UX Audit</span>
+                        <span>Page by page UX Audit</span>
                     </div>
                 </div>
                 <a href="#form" class="btn btn-primary btn-lg">Claim Your Free Audit</a>
@@ -1651,7 +1651,7 @@
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 1L10.5 6L16 7L12 11L13 16L8 13.5L3 16L4 11L0 7L5.5 6L8 1Z" fill="#10B981" />
                         </svg>
-                        No spam, ever. - 24-hour response time. - 100% free - no strings attached.
+                        No spam, ever. – 24 hour response time. – 100% free – no strings attached.
                     </p>
                 </div>
             </form>

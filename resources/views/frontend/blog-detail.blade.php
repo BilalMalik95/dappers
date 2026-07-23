@@ -30,11 +30,11 @@
     <!-- Intro paragraph -->
     {{-- <p class="blog-details-text">
       Get the best themes and templates for the fitness and food category We strive
-      to deliver best in-class software solutions that generate best trailing total
+      to deliver best in class software solutions that generate best trailing total
       return for business services across great mission goals generating billion
       net incomeWell aware of the existing mobile app market trends to keep tabs
-      on the evolving trend of the industry, to developing high-gradequality at
-      the top positions,to developing high-gradequality at the top positions
+      on the evolving trend of the industry, to developing high gradequality at
+      the top positions,to developing high gradequality at the top positions
     </p> --}}
 
     <!-- Quote block -->
@@ -59,11 +59,11 @@
 
     <!-- Body paragraph -->
     <p class="blog-details-text">
-      We strive to deliver best in-class software solutions that generate best
+      We strive to deliver best in class software solutions that generate best
       trailing total return for business services across great mission goals
       generating billion net incomeWell aware of the existing mobile app market
       trends to keep tabs on the evolving trend of the industry, to developing
-      high-gradequality at the top positions,to developing high-gradequality at
+      high gradequality at the top positions,to developing high gradequality at
       the top positions.
     </p>
 
@@ -72,7 +72,7 @@
       <div class="blog-tags">
         <strong>Tags:</strong>
         <a href="#">Cyber,</a>
-        <a href="#">IT-Solution,</a>
+        <a href="#">IT Solution,</a>
         <a href="#">Object</a>
       </div>
       <div class="blog-share">

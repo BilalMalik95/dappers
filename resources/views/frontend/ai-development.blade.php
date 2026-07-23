@@ -99,8 +99,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>AI Development</span>
             </nav>
             <span class="services-page-kicker">AI Development</span>
@@ -109,8 +107,8 @@
                 not just impressive demos
             </h1>
             <p>
-                We design and ship the AI that businesses actually run on, retrieval-augmented generation
-                grounded in your own data, tool-calling agents that automate real workflows, custom GPT and
+                We design and ship the AI that businesses actually run on, retrieval augmented generation
+                grounded in your own data, tool calling agents that automate real workflows, custom GPT and
                 LLM integrations inside your product, and the backend to deploy it reliably.
             </p>
             <div class="services-page-hero__actions">
@@ -130,7 +128,7 @@
             <span class="services-page-kicker">What We Build</span>
             <h2>
                 Four AI capabilities,<br>
-                one production-ready delivery.
+                one production ready delivery.
             </h2>
             <p>
                 Most AI projects stall between a working prototype and something a business can depend on.
@@ -143,7 +141,7 @@
                 <div class="aidev-card__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <h3>RAG Systems</h3>
                 <p>
-                    Retrieval-augmented generation that answers from your own documents, knowledge base, or
+                    Retrieval augmented generation that answers from your own documents, knowledge base, or
                     database, with vector search, proper chunking, and citations so answers are accurate, not hallucinated.
                 </p>
                 <span class="aidev-card__action">Explore RAG Systems <i class="fa-solid fa-arrow-right"></i></span>
@@ -153,8 +151,8 @@
                 <div class="aidev-card__icon"><i class="fa-solid fa-robot"></i></div>
                 <h3>AI Agents</h3>
                 <p>
-                    Tool-calling agents that take actions, not just chat, connecting to your APIs, databases, and
-                    tools to automate multi-step workflows with the right guardrails and human oversight.
+                    Tool calling agents that take actions, not just chat, connecting to your APIs, databases, and
+                    tools to automate multi step workflows with the right guardrails and human oversight.
                 </p>
                 <span class="aidev-card__action">Explore AI Agents <i class="fa-solid fa-arrow-right"></i></span>
             </a>
@@ -219,7 +217,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>Pipelines, prompts, and configuration are yours, no vendor lock-in, no black box.</p>
+                            <p>Pipelines, prompts, and configuration are yours, no vendor lock in, no black box.</p>
                         </div>
                     </div>
                 </div>
@@ -234,7 +232,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 40+ systems shipped</span>
+                        <span>5 star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -278,19 +276,19 @@
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What does an AI development company actually build?</summary>
-        <p>DappersTech builds production AI systems, not demos: retrieval-augmented generation (RAG) pipelines that answer from your own data, tool-calling AI agents that automate workflows, custom GPT and LLM integrations inside your existing product, and the AI backend and deployment infrastructure to run it all reliably.</p>
+        <p>DappersTech builds production AI systems, not demos: retrieval augmented generation (RAG) pipelines that answer from your own data, tool calling AI agents that automate workflows, custom GPT and LLM integrations inside your existing product, and the AI backend and deployment infrastructure to run it all reliably.</p>
       </details>
       <details>
         <summary>Which AI models and platforms do you work with?</summary>
-        <p>We work with OpenAI (GPT) and Anthropic (Claude) as primary models, alongside open-source models where self-hosting is required. On the infrastructure side we use vector databases like Pinecone and pgvector, orchestration with LangChain, and automation platforms such as n8n, Make, and Zapier.</p>
+        <p>We work with OpenAI (GPT) and Anthropic (Claude) as primary models, alongside open source models where self hosting is required. On the infrastructure side we use vector databases like Pinecone and pgvector, orchestration with LangChain, and automation platforms such as n8n, Make, and Zapier.</p>
       </details>
       <details>
         <summary>Do we get full ownership of the AI system you build?</summary>
-        <p>Yes. Full code ownership is transferred to you on every project, the pipelines, prompts, vector store configuration, and deployment. There is no vendor lock-in and no black box.</p>
+        <p>Yes. Full code ownership is transferred to you on every project, the pipelines, prompts, vector store configuration, and deployment. There is no vendor lock in and no black box.</p>
       </details>
       <details>
         <summary>How long does an AI development project take?</summary>
-        <p>A focused, production-ready AI build typically takes 3 to 6 weeks depending on data sources, integrations, and security requirements. We start with a fixed-scope build so you get a working, measurable system rather than an open-ended experiment.</p>
+        <p>A focused, production ready AI build typically takes 3 to 6 weeks depending on data sources, integrations, and security requirements. We start with a fixed scope build so you get a working, measurable system rather than an open ended experiment.</p>
       </details>
   </div>
 </section>

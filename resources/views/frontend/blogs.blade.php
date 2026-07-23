@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Latest Blogs | Web Development, Software & Digital Marketing Insights')
+@section('title', 'Latest Blogs | Web & AI Development Insights')
 @section('meta_description', 'Read the latest insights from DappersTech about web development, software development, UI/UX design, ecommerce, SEO, APIs, cloud solutions, and business automation.')
 @section('meta_keywords', 'IT blog, software development blog, web development articles, SEO tips, digital marketing insights, ecommerce development, UI UX design, API development, DappersTech blog')
 @section('og_image', $blogs->first() ? asset('frontend/assets/images/blog/' . $blogs->first()->image) : asset('frontend/assets/images/logo/dapperstech-logo-trimmed.png'))

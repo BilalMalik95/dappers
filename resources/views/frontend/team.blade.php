@@ -177,7 +177,7 @@
                 <h2>We work with clarity, creativity, and technical responsibility.</h2>
 
                 <p>
-                    Our team culture is built on communication, learning, clean execution, and long-term client success.
+                    Our team culture is built on communication, learning, clean execution, and long term client success.
                     We believe every project should be easy to manage, simple to scale, and valuable for the business.
                 </p>
             </div>
@@ -204,14 +204,14 @@
                     <div class="team-culture-icon"><i class="fa-solid fa-lightbulb"></i></div>
                     <div>
                         <h3>Design Thinking</h3>
-                        <p>We create digital experiences that are modern, simple, and user-friendly.</p>
+                        <p>We create digital experiences that are modern, simple, and user friendly.</p>
                     </div>
                 </div>
 
                 <div class="team-culture-item">
                     <div class="team-culture-icon"><i class="fa-solid fa-life-ring"></i></div>
                     <div>
-                        <h3>Long-Term Support</h3>
+                        <h3>Long Term Support</h3>
                         <p>We help clients improve, update, and scale their digital products after launch.</p>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> Multi-Tenant Systems</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> Multi Tenant Systems</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Subscription Billing</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Workflow Automation</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Laravel</div>
@@ -265,7 +265,7 @@
             <div class="marquee-item"><span class="marquee-star">✱</span> RAG & Vector DBs</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Cloud Deployment</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Security Hardening</div>
-            <div class="marquee-item"><span class="marquee-star">✱</span> Multi-Tenant Systems</div>
+            <div class="marquee-item"><span class="marquee-star">✱</span> Multi Tenant Systems</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Subscription Billing</div>
             <div class="marquee-item"><span class="marquee-star">✱</span> Workflow Automation</div>
         </div>
@@ -274,8 +274,6 @@
 
 
 <section class="section testimonial">
-    <div class="quote-big quote-left">“</div>
-    <div class="quote-big quote-right">”</div>
     <div class="container">
 
         <div class="testimonial-card">

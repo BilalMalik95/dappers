@@ -6,6 +6,7 @@
         '.blog-listing-grid',
         '.workflow-steps',
         '.about-journey-timeline',
+        '.services-v2-stack',
     ];
 
     function debounce(fn, wait) {

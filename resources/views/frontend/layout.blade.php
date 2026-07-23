@@ -170,7 +170,6 @@
         reveal('.home-service-feature', 0, 0);
         reveal('.home-service-row', 0.15, 3);
         reveal('.home-process-card', 0.2, 3);
-        reveal('.blog-card', 0.2, 2);
         reveal('.stat-item', 0.1, 3);
         reveal('.home-process-banner', 0, 0);
         reveal('.testimonial-card', 0, 0);
@@ -200,6 +199,50 @@
                 });
             }, { threshold: 0.6 });
             countEls.forEach(function (el) { countObserver.observe(el); });
+        }
+    })();
+    </script>
+
+    <script>
+    (function () {
+        // On mobile/tablet the "01-04" and "05/06/07" service cards scroll as
+        // two separate horizontal strips. Below desktop width they should read
+        // as one continuous swipeable line, so we reparent the second group's
+        // cards into the first group's scroller and restore them on resize
+        // back to desktop, where the two-section layout is intentional.
+        var stack = document.querySelector('.services-v2-stack');
+        var bottom = document.querySelector('.services-v2-bottom');
+        if (!stack || !bottom) return;
+
+        var extraCards = Array.prototype.slice.call(bottom.children);
+        if (!extraCards.length) return;
+
+        var mql = window.matchMedia('(max-width: 1200px)');
+        var merged = false;
+
+        function merge() {
+            if (merged) return;
+            extraCards.forEach(function (card) { stack.appendChild(card); });
+            bottom.style.display = 'none';
+            merged = true;
+        }
+
+        function unmerge() {
+            if (!merged) return;
+            extraCards.forEach(function (card) { bottom.appendChild(card); });
+            bottom.style.display = '';
+            merged = false;
+        }
+
+        function sync() {
+            if (mql.matches) merge(); else unmerge();
+        }
+
+        sync();
+        if (mql.addEventListener) {
+            mql.addEventListener('change', sync);
+        } else if (mql.addListener) {
+            mql.addListener(sync);
         }
     })();
     </script>

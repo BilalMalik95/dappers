@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Custom GPT & LLM Integration Services | OpenAI & Claude Experts')
+@section('title', 'Custom GPT & LLM Integration Services')
 @section('meta_description', 'Custom GPT and LLM integration services, OpenAI and Claude integration, prompt engineering, and chatbot interfaces wired into your product or CRM.')
 @section('meta_keywords', 'custom built ChatGPT, custom ChatGPT development, ChatGPT integration services, custom GPT, OpenAI integration, Claude integration, LLM integration services, AI chatbot development, prompt engineering, GPT developer')
 
@@ -22,8 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "Custom GPT & LLM Integration", "item": "https://dapperstech.com/services/ai-development/llm-integration"}
+        {"@type": "ListItem", "position": 2, "name": "Custom GPT & LLM Integration", "item": "https://dapperstech.com/services/ai-development/llm-integration"}
       ]
     }
   ]
@@ -87,8 +86,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <a href="{{ route('ai_development') }}">AI Development</a>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Custom GPT & LLM Integration</span>
@@ -100,7 +97,7 @@
             </h1>
             <p>
                 Custom GPTs, prompt engineering, and chatbot interfaces that plug directly into your existing
-                app, website, or CRM, not a bolt-on widget, a properly integrated feature.
+                app, website, or CRM, not a bolt on widget, a properly integrated feature.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
@@ -121,8 +118,8 @@
                 product, not a generic chatbot.
             </h2>
             <p>
-                Whether it's OpenAI, Claude, or an open-source model, the integration is built around your actual
-                product flow, data, and brand voice, not a copy-pasted widget.
+                Whether it's OpenAI, Claude, or an open source model, the integration is built around your actual
+                product flow, data, and brand voice, not a copy pasted widget.
             </p>
         </div>
 
@@ -158,7 +155,7 @@
                     <div>
                         <span>01</span>
                         <h3>Custom GPT Development</h3>
-                        <p>Purpose-built custom GPTs for internal tools, customer support, or content workflows, configured with your knowledge, tone, and guardrails.</p>
+                        <p>Purpose built custom GPTs for internal tools, customer support, or content workflows, configured with your knowledge, tone, and guardrails.</p>
                     </div>
                 </a>
 
@@ -169,7 +166,7 @@
                     <div>
                         <span>02</span>
                         <h3>Prompt Engineering & Optimisation</h3>
-                        <p>Systematic prompt design and testing, not trial and error, to get consistent, on-brand outputs from the model you're using.</p>
+                        <p>Systematic prompt design and testing, not trial and error, to get consistent, on brand outputs from the model you're using.</p>
                     </div>
                 </a>
 
@@ -180,7 +177,7 @@
                     <div>
                         <span>03</span>
                         <h3>Chatbot Interface Development</h3>
-                        <p>Chat UI built into your existing website or app, not an embedded third-party iframe, matching your design system and user flow.</p>
+                        <p>Chat UI built into your existing website or app, not an embedded third party iframe, matching your design system and user flow.</p>
                     </div>
                 </a>
 
@@ -191,31 +188,37 @@
                     <div>
                         <span>04</span>
                         <h3>Zoho AI Integration</h3>
-                        <p>AI-assisted data entry, intelligent lead routing, and Zoho Analytics dashboards, bringing LLM capability directly into your CRM workflow.</p>
+                        <p>AI assisted data entry, intelligent lead routing, and Zoho Analytics dashboards, bringing LLM capability directly into your CRM workflow.</p>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/19400118/pexels-photo-19400118.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Marketing materials and content generation" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
                 <h3>Document & Content Generation</h3>
-                <p>LLM-powered drafting for reports, emails, and content, with templates and review steps so output stays on-brand and accurate.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+                <p>LLM powered drafting for reports, emails, and content, with templates and review steps so output stays on brand and accurate.</p>
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/33441868/pexels-photo-33441868.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Multi agent and multi-model system orchestration" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
-                <h3>Multi-Model Strategy</h3>
+                <h3>Multi Model Strategy</h3>
                 <p>Routing logic between models, using cheaper models for simple tasks and stronger models only where the task actually needs it.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/17489160/pexels-photo-17489160.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI observability and incident monitoring dashboard" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>LLM Feature Audits</h3>
                 <p>Already shipped an AI feature that's inconsistent or expensive? We audit the prompts, model choice, and architecture and fix what's broken.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -236,20 +239,20 @@
                         <div class="why-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
                         <div>
                             <h3>Native Product Integration</h3>
-                            <p>Built into your existing frontend and backend, not an embedded third-party script that breaks your design.</p>
+                            <p>Built into your existing frontend and backend, not an embedded third party script that breaks your design.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-comment-dots"></i></div>
                         <div>
-                            <h3>On-Brand Prompt Design</h3>
+                            <h3>On Brand Prompt Design</h3>
                             <p>Prompts engineered and tested for your tone, domain, and edge cases, not a default system prompt.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-coins"></i></div>
                         <div>
-                            <h3>Cost-Aware Architecture</h3>
+                            <h3>Cost Aware Architecture</h3>
                             <p>Token usage, caching, and model selection designed so AI features don't quietly drain your budget.</p>
                         </div>
                     </div>
@@ -272,7 +275,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 40+ systems shipped</span>
+                        <span>5 star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -325,7 +328,7 @@
                     <div class="workflow-content">
                         <span>Prompt Engineering</span>
                         <h3>Design and test prompts systematically</h3>
-                        <p>Prompt drafts tested against real inputs and edge cases until outputs are consistent and on-brand.</p>
+                        <p>Prompt drafts tested against real inputs and edge cases until outputs are consistent and on brand.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -367,11 +370,11 @@
 
 <section class="hd-faq">
   <div class="hd-faq-inner">
-    <h2>Custom-Built ChatGPT & LLM Integration, Frequently Asked Questions</h2>
+    <h2>Custom Built ChatGPT & LLM Integration, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>What does a “custom-built ChatGPT” mean for my business?</summary>
-        <p>A custom-built ChatGPT is a chat assistant trained on your tone, rules, and data and wired into your product, website, or CRM. Unlike the public ChatGPT, it answers only from your approved information, follows your brand voice, and can trigger actions in your systems.</p>
+        <summary>What does a “custom built ChatGPT” mean for my business?</summary>
+        <p>A custom built ChatGPT is a chat assistant trained on your tone, rules, and data and wired into your product, website, or CRM. Unlike the public ChatGPT, it answers only from your approved information, follows your brand voice, and can trigger actions in your systems.</p>
       </details>
       <details>
         <summary>Can you integrate ChatGPT or Claude into our existing app or CRM?</summary>
@@ -379,15 +382,15 @@
       </details>
       <details>
         <summary>Will our custom ChatGPT answer only from our own data?</summary>
-        <p>Yes, by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off-topic or made-up answers.</p>
+        <p>Yes, by pairing the LLM with a retrieval (RAG) layer, your custom ChatGPT draws answers from your documents and database, with citations, instead of generic internet knowledge. This keeps responses accurate and prevents off topic or made up answers.</p>
       </details>
       <details>
         <summary>How much does a custom ChatGPT integration cost?</summary>
-        <p>Pricing is fixed-scope based on the integrations, data sources, and interface you need. A focused ChatGPT integration is an affordable, fast project; larger multi-system builds are quoted up front. Contact us for a free, no-obligation estimate.</p>
+        <p>Pricing is fixed scope based on the integrations, data sources, and interface you need. A focused ChatGPT integration is an affordable, fast project; larger multi system builds are quoted up front. Contact us for a free, no obligation estimate.</p>
       </details>
       <details>
         <summary>Which is better for my use case, OpenAI GPT or Anthropic Claude?</summary>
-        <p>It depends on the task. OpenAI GPT models are strong all-rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety-sensitive work. We help you choose, and many of our builds use both, routing each request to the best model.</p>
+        <p>It depends on the task. OpenAI GPT models are strong all rounders with broad tooling; Anthropic Claude often excels at long documents, careful reasoning, and safety sensitive work. We help you choose, and many of our builds use both, routing each request to the best model.</p>
       </details>
   </div>
 </section>

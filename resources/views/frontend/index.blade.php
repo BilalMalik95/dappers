@@ -120,6 +120,7 @@
                         Discuss Your Idea
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
+                    <a href="{{ route('blogs') }}" class="home-outline-btn">View Blog</a>
                 </div>
             </div>
         </div>
@@ -198,19 +199,19 @@
         <div class="counter-banner">
             <div class="stats-box">
                 <div class="stat-item">
-                    <strong data-count-to="9" data-count-suffix="+">9+</strong>
+                    <strong data-count-to="9" data-count-suffix="+">9<span class="stat-suffix">+</span></strong>
                     <span>Years Experience</span>
                 </div>
                 <div class="stat-item">
-                    <strong data-count-to="40" data-count-suffix="+">40+</strong>
+                    <strong data-count-to="40" data-count-suffix="+">40<span class="stat-suffix">+</span></strong>
                     <span>Systems Shipped</span>
                 </div>
                 <div class="stat-item">
-                    <strong data-count-to="5" data-count-suffix="★">5★</strong>
+                    <strong data-count-to="5" data-count-suffix="★">5<span class="stat-suffix">★</span></strong>
                     <span>Upwork Rating</span>
                 </div>
                 <div class="stat-item">
-                    <strong data-count-to="24" data-count-suffix="h">24h</strong>
+                    <strong data-count-to="24" data-count-suffix="h">24<span class="stat-suffix">h</span></strong>
                     <span>Response Time</span>
                 </div>
             </div>
@@ -255,7 +256,7 @@
                     <span>01</span>
                     <div>
                         <h3>Generative AI Integration</h3>
-                        <p>Custom OpenAI and Claude-powered chatbots, RAG pipelines, and vector database systems.</p>
+                        <p>Custom OpenAI and Claude powered chatbots, RAG pipelines, and vector database systems.</p>
                     </div>
                 </div>
 
@@ -279,7 +280,7 @@
                     <span>04</span>
                     <div>
                         <h3>Workflow Automation</h3>
-                        <p>Custom n8n, Make, and Zapier pipelines that automate your day-to-day operations.</p>
+                        <p>Custom n8n, Make, and Zapier pipelines that automate your day to day operations.</p>
                     </div>
                 </div>
 
@@ -342,7 +343,7 @@
 
         <div class="home-process-banner">
             <div>
-                <span>Clear Scope, Full Code Ownership, 24h Response</span>
+                <p style="font-weight: bold; color: #25f2c5;">Clear Scope, Full Code Ownership, 24h &nbsp;Response</p>
                 <h3>Every project is scoped and delivered on a written agreement.</h3>
             </div>
 
@@ -419,8 +420,6 @@
     </div>
 </section>
 <section class="section testimonial">
-    <div class="quote-big quote-left">“</div>
-    <div class="quote-big quote-right">”</div>
     <div class="container">
 
         <div class="testimonial-card">

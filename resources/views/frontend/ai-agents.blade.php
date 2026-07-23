@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'AI Agents Development | Tool-Calling Agents & Workflow Automation')
+@section('title', 'AI Agents Development Services')
 @section('meta_description', 'AI agents development, tool/function-calling agents, agentic workflows, and automation with guardrails and human-in-the-loop checkpoints. Built for production use.')
 @section('meta_keywords', 'AI agents, AI agent development company, AI automation agency, build AI agents, custom AI agents for business, agentic workflows, AI workflow automation, n8n development services, tool calling, autonomous agents, LLM agents')
 
@@ -22,8 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "AI Agents", "item": "https://dapperstech.com/services/ai-development/ai-agents"}
+        {"@type": "ListItem", "position": 2, "name": "AI Agents", "item": "https://dapperstech.com/services/ai-development/ai-agents"}
       ]
     }
   ]
@@ -87,8 +86,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <a href="{{ route('ai_development') }}">AI Development</a>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>AI Agents</span>
@@ -99,7 +96,7 @@
                 with guardrails, not guesswork
             </h1>
             <p>
-                Tool and function-calling agents that read, write, and act across your existing systems, built with human-in-the-loop checkpoints, retries, and fallbacks so they don't go off the rails
+                Tool and function calling agents that read, write, and act across your existing systems, built with human in the loop checkpoints, retries, and fallbacks so they don't go off the rails
                 in production.
             </p>
             <div class="services-page-hero__actions">
@@ -133,12 +130,12 @@
                 </div>
                 <div class="service-feature-content">
                     <span class="service-tag">Core Service</span>
-                    <h3>Tool & Function-Calling Agents</h3>
+                    <h3>Tool & Function Calling Agents</h3>
                     <p>
-                        Agents that call your APIs, databases, and internal tools to complete multi-step tasks, with structured outputs, retries, and clear error handling at every step.
+                        Agents that call your APIs, databases, and internal tools to complete multi step tasks, with structured outputs, retries, and clear error handling at every step.
                     </p>
                     <div class="service-feature-points">
-                        <span><i class="fa-solid fa-check"></i> Multi-Step Tool Orchestration</span>
+                        <span><i class="fa-solid fa-check"></i> Multi Step Tool Orchestration</span>
                         <span><i class="fa-solid fa-check"></i> Structured Output Validation</span>
                         <span><i class="fa-solid fa-check"></i> Retry & Error Handling</span>
                     </div>
@@ -156,8 +153,8 @@
                     </div>
                     <div>
                         <span>01</span>
-                        <h3>Human-in-the-Loop Checkpoints</h3>
-                        <p>Approval steps before high-stakes actions, sending emails, processing payments, or updating records, so the agent assists, not gambles.</p>
+                        <h3>Human in the Loop Checkpoints</h3>
+                        <p>Approval steps before high stakes actions, sending emails, processing payments, or updating records, so the agent assists, not gambles.</p>
                     </div>
                 </a>
 
@@ -167,7 +164,7 @@
                     </div>
                     <div>
                         <span>02</span>
-                        <h3>Multi-Agent Orchestration</h3>
+                        <h3>Multi Agent Orchestration</h3>
                         <p>Specialised agents coordinated through a planner/orchestrator pattern, for workflows too complex for a single prompt to handle reliably.</p>
                     </div>
                 </a>
@@ -197,24 +194,30 @@
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/18799047/pexels-photo-18799047.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI integration and CRM analytics for customer support" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
                 <h3>Customer Support Agents</h3>
                 <p>Agents that triage tickets, answer from your knowledge base, and escalate to a human when confidence is low, not a chatbot that loops in circles.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/5203849/pexels-photo-5203849.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI infrastructure monitoring and deployment dashboard" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
                 <h3>Internal Ops Agents</h3>
                 <p>Agents that handle internal operations, scheduling, reporting, data reconciliation, freeing your team from repetitive coordination work.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/8217311/pexels-photo-8217311.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI agent reliability audit and monitoring" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>Agent Reliability Audits</h3>
                 <p>Already have an agent that misbehaves in production? We audit the failure modes and add the guardrails it's missing.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -241,7 +244,7 @@
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-rotate"></i></div>
                         <div>
-                            <h3>Built-In Retry Logic</h3>
+                            <h3>Built In Retry Logic</h3>
                             <p>Tool failures and malformed outputs are handled with retries and fallbacks, not a silent crash.</p>
                         </div>
                     </div>
@@ -256,7 +259,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>The agent logic, prompts, and orchestration code are yours, no proprietary platform lock-in.</p>
+                            <p>The agent logic, prompts, and orchestration code are yours, no proprietary platform lock in.</p>
                         </div>
                     </div>
                 </div>
@@ -271,7 +274,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 40+ systems shipped</span>
+                        <span>5 star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -324,15 +327,15 @@
                     <div class="workflow-content">
                         <span>Build</span>
                         <h3>Build the agent and tool integrations</h3>
-                        <p>Tool/function-calling logic, structured outputs, and orchestration built around your actual systems.</p>
+                        <p>Tool/function calling logic, structured outputs, and orchestration built around your actual systems.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-no">03</div>
                     <div class="workflow-content">
                         <span>Guardrails & Testing</span>
-                        <h3>Add checkpoints and stress-test failure cases</h3>
-                        <p>Approval steps, retries, and edge-case testing, including what happens when a tool call fails or returns garbage.</p>
+                        <h3>Add checkpoints and stress test failure cases</h3>
+                        <p>Approval steps, retries, and edge case testing, including what happens when a tool call fails or returns garbage.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -370,7 +373,7 @@
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
         <summary>What are AI agents and how do they differ from chatbots?</summary>
-        <p>AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi-step tasks on its own, with guardrails and human-in-the-loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business.</p>
+        <p>AI agents are systems that can take actions, not just chat. Where a chatbot answers questions, an AI agent can call tools, query APIs, update records, and complete multi step tasks on its own, with guardrails and human in the loop checkpoints. As an AI agent development company, we build agents that actually do work inside your business.</p>
       </details>
       <details>
         <summary>What can a custom AI agent automate for my business?</summary>
@@ -378,15 +381,15 @@
       </details>
       <details>
         <summary>Do you build AI agents with n8n, or with custom frameworks?</summary>
-        <p>Both. For fast workflow automation we use n8n, Make, and Zapier; for complex, production-grade agents we build custom solutions with frameworks like LangChain and the OpenAI and Anthropic tool-calling APIs. As an AI automation agency we recommend the lightest tool that reliably does the job.</p>
+        <p>Both. For fast workflow automation we use n8n, Make, and Zapier; for complex, production grade agents we build custom solutions with frameworks like LangChain and the OpenAI and Anthropic tool calling APIs. As an AI automation agency we recommend the lightest tool that reliably does the job.</p>
       </details>
       <details>
         <summary>How much does AI agent development cost?</summary>
-        <p>Cost depends on the number of tools the agent connects to, the complexity of the workflow, and reliability requirements. Simple automation agents start small; multi-step production agents are scoped as projects so you know the cost before we start. Book a free consultation for an estimate.</p>
+        <p>Cost depends on the number of tools the agent connects to, the complexity of the workflow, and reliability requirements. Simple automation agents start small; multi step production agents are scoped as projects so you know the cost before we start. Book a free consultation for an estimate.</p>
       </details>
       <details>
         <summary>How do you keep AI agents safe and reliable in production?</summary>
-        <p>We add guardrails, permission limits, validation steps, logging, and human-in-the-loop approval for sensitive actions. Agents are tested against real scenarios before launch and monitored after, so they stay reliable as your data and needs change.</p>
+        <p>We add guardrails, permission limits, validation steps, logging, and human in the loop approval for sensitive actions. Agents are tested against real scenarios before launch and monitored after, so they stay reliable as your data and needs change.</p>
       </details>
   </div>
 </section>

@@ -95,7 +95,7 @@ function sendEmail() {
     <div class="container">
         <div class="footer-top">
             <div class="footer-left">
-                <h2>Let's build your next <span class="scribble">AI-powered</span> <br class="footer-heading-break">digital product together</h2>
+                <h2>Let's build your next <span class="scribble">AI powered</span> <br class="footer-heading-break">digital product together</h2>
             </div>
             <div class="footer-right">
                 <div class="subscribe">
@@ -178,8 +178,8 @@ function sendEmail() {
                 <div class="footer-contact-list">
                     <a href="https://mail.google.com/mail/u/0/?to=info@dapperstech.com&su=Project+Inquiry&fs=1&tf=cm"><i class="fa-solid fa-envelope"></i> info@dapperstech.com</a>
                     <a href="tel:+923339994544"><i class="fa-solid fa-phone"></i> +92 333 9994544</a>
-                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
-                    <span><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
+                    <a href="https://wa.me/923339994544" target="_blank" rel="noopener"><i class="fa-brands fa-solid fa-whatsapp"></i> WhatsApp us</a>
+                    <a style="color:var(--muted)"><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</a>
                 </div>
             </div>
         </div>

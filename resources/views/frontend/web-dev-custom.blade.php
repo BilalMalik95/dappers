@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Custom Website Development | Tailored Web Solutions')
+@section('title', 'Custom Website Development')
 @section('meta_description', 'Custom website development tailored to your brand, corporate sites, startup MVPs, e-commerce platforms, and web applications. Clean code, SEO-ready, responsive design. Get a free quote.')
 @section('meta_keywords', 'custom website development, custom web development, bespoke website, corporate website development, startup website, web development company Pakistan, hire web developer')
 
@@ -22,8 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Development", "item": "https://dapperstech.com/web-development"},
-        {"@type": "ListItem", "position": 3, "name": "Custom Website Development", "item": "https://dapperstech.com/services/web-development/custom-website-development"}
+        {"@type": "ListItem", "position": 2, "name": "Custom Website Development", "item": "https://dapperstech.com/services/web-development/custom-website-development"}
       ]
     }
   ]
@@ -87,8 +86,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Development</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Custom Website Development</span>
@@ -99,8 +96,8 @@
                 that aligns perfectly with your business
             </h1>
             <p>
-                Tailored web solutions, from corporate websites and startup MVPs to e-commerce platforms and admin systems.
-                Built with clean code, SEO-ready architecture, and responsive design that grows with your business.
+                Tailored web solutions, from corporate websites and startup MVPs to ecommerce platforms and admin systems.
+                Built with clean code, SEO ready architecture, and responsive design that grows with your business.
             </p>
             <div class="services-page-hero__actions">
                 <a href="{{ route('contact_us') }}" class="services-page-btn services-page-btn--primary">
@@ -168,8 +165,8 @@
                     </div>
                     <div>
                         <span>02</span>
-                        <h3>E-commerce Development</h3>
-                        <p>Custom e-commerce platforms with product management, secure payment gateways (Stripe & PayPal), inventory tracking, order workflows, and customer portals.</p>
+                        <h3>Ecommerce Development</h3>
+                        <p>Custom ecommerce platforms with product management, secure payment gateways (Stripe & PayPal), inventory tracking, order workflows, and customer portals.</p>
                     </div>
                 </a>
 
@@ -198,24 +195,30 @@
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/6278758/pexels-photo-6278758.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Responsive website design across multiple devices and locales" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
-                <h3>Multi-Language Websites</h3>
+                <h3>Multi Language Websites</h3>
                 <p>Multilingual websites with proper hreflang implementation, localised content, and RTL language support, reach a global or regional audience effectively.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Cross browser device testing lab" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
                 <h3>Website Maintenance & Support</h3>
-                <p>Ongoing technical support, security updates, performance monitoring, bug fixes, and content updates, keep your website fast, secure, and up-to-date.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+                <p>Ongoing technical support, security updates, performance monitoring, bug fixes, and content updates, keep your website fast, secure, and up to date.</p>
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/37880101/pexels-photo-37880101.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Developer rebuilding a platform on a professional setup" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>Platform Migration</h3>
                 <p>Migrate from any platform to a custom Laravel or WordPress solution, zero downtime, full SEO preservation, data migration, and improved performance.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -257,7 +260,7 @@
                         <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
                         <div>
                             <h3>Full Code Ownership</h3>
-                            <p>You own every line of code we write. No vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform.</p>
+                            <p>You own every line of code we write. No vendor lock in, no recurring licensing fees, and no dependency on a third party platform.</p>
                         </div>
                     </div>
                 </div>
@@ -272,7 +275,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 40+ websites shipped</span>
+                        <span>5 star Upwork rating, 40+ websites shipped</span>
                     </div>
                 </div>
             </div>
@@ -333,7 +336,7 @@
                     <div class="workflow-content">
                         <span>Development</span>
                         <h3>Build, test, and optimise your website</h3>
-                        <p>Clean, semantic code, cross-browser testing, performance optimisation, and security hardening, then a staging review with you.</p>
+                        <p>Clean, semantic code, cross browser testing, performance optimisation, and security hardening, then a staging review with you.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -368,7 +371,7 @@
     <h2>Custom Website Development, Frequently Asked Questions</h2>
     <p class="hd-faq-sub">Answers to the questions US &amp; UK clients ask us most.</p>
       <details>
-        <summary>What's the difference between a custom website and a WordPress or template-based site?</summary>
+        <summary>What's the difference between a custom website and a WordPress or template based site?</summary>
         <p>A template or WordPress theme forces your brand into someone else's design and code structure, with bloated theme code you didn't choose. A fully custom website is built from scratch around your brand, your users, and your specific business goals, with no plugin limitations and no shared codebase with thousands of other sites.</p>
       </details>
       <details>
@@ -381,7 +384,7 @@
       </details>
       <details>
         <summary>Do I fully own my custom website once it's delivered?</summary>
-        <p>Yes. You own every line of code we write, no vendor lock-in, no recurring licensing fees, and no dependency on a third-party platform. You're free to take the codebase to any developer or hosting provider in the future.</p>
+        <p>Yes. You own every line of code we write, no vendor lock in, no recurring licensing fees, and no dependency on a third party platform. You're free to take the codebase to any developer or hosting provider in the future.</p>
       </details>
       <details>
         <summary>What happens after my custom website launches?</summary>

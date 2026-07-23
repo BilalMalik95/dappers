@@ -10,16 +10,11 @@ use Illuminate\Http\Request;
 class SitemapController extends Controller
 {
     /**
-     * Category/service slugs that redirect to a dedicated /services/... page
-     * (see HomeController::STATIC_CATEGORY_ROUTES / STATIC_SERVICE_ROUTES).
-     * These must never be submitted here since they 301 away from this URL.
+     * Categories retired from the site entirely (see
+     * HomeController::RETIRED_CATEGORY_SLUGS) - their pages 404, so neither the
+     * category page nor any service under them may be submitted here.
      */
-    private const REDIRECTED_CATEGORY_SLUGS = [];
-
-    private const REDIRECTED_SERVICE_SLUGS = [
-        'web-development' => ['custom-website-development', 'laravel-development', 'php-development'],
-        'web-design' => ['responsive-design'],
-    ];
+    private const RETIRED_CATEGORY_SLUGS = ['web-development', 'web-design', 'digital-marketing'];
 
     public function index()
     {
@@ -32,7 +27,7 @@ class SitemapController extends Controller
     }
     public function service_categories()
     {
-        $categories = Category::whereNotIn('slug', self::REDIRECTED_CATEGORY_SLUGS)->get();
+        $categories = Category::whereNotIn('slug', self::RETIRED_CATEGORY_SLUGS)->get();
         return response()->view('sitemaps.sitemap_service_categories',compact('categories'))->header('Content-type', 'text/xml');
     }
      public function blogs()
@@ -45,7 +40,7 @@ class SitemapController extends Controller
     {
         $services = Service::where('status',1)->with('category')->get()->reject(function ($service) {
             $categorySlug = $service->category->slug ?? null;
-            return $categorySlug && in_array($service->slug, self::REDIRECTED_SERVICE_SLUGS[$categorySlug] ?? [], true);
+            return $categorySlug && in_array($categorySlug, self::RETIRED_CATEGORY_SLUGS, true);
         });
 
         return response()->view('sitemaps.services',compact('services'))->header('Content-type', 'text/xml');

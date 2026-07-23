@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node verify_logo_align.js)",
+      "Bash(node journey_verify.js)",
+      "Bash(php artisan tinker '--execute= *)",
+      "Read(//tmp/**)",
+      "Bash(cd \"c:/Users/User/Desktop/Office work/dappers\" && php artisan tinker --execute=\" *)",
+      "Bash(head -c 1500 /tmp/rag_blog_raw.html)",
+      "Bash(php \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-User-Desktop-Office-work-dappers\\\\2cb97f19-3e82-4ba7-8c4c-dd1756b5f203\\\\scratchpad\\\\rag_blog_new.php\")",
+      "Bash(php artisan *)",
+      "Bash(curl -s -o /dev/null -w \"blog page: %{http_code}\\\\n\" http://127.0.0.1:8123/blog/what-is-rag-in-ai-and-why-is-it-important)",
+      "Bash(node rag_blog_check.js)",
+      "Bash(curl -s -o /dev/null -w \"home: %{http_code}\\\\n\" http://127.0.0.1:8123/)",
+      "Bash(curl -s -o /dev/null -w \"about: %{http_code}\\\\n\" http://127.0.0.1:8123/aboutus)",
+      "Bash(curl -s -o /dev/null -w \"rag-systems: %{http_code}\\\\n\" http://127.0.0.1:8123/services/ai-development/rag-systems)",
+      "Bash(node schema_check.js)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s \"http://127.0.0.1:8123/sitemap/service-categories\")",
+      "Bash(curl -s \"http://127.0.0.1:8123/sitemap/services\")",
+      "Bash(curl -s \"http://127.0.0.1:8123/sitemap_service_categories.xml\")",
+      "Bash(curl -s \"http://127.0.0.1:8123/sitemap_services.xml\")",
+      "Bash(node measure_journey.js)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8123/about-us)",
+      "Bash(sed -i \"s#/about-us#/aboutus#\" measure_journey.js)",
+      "Bash(node shot_journey2.js)"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'AI App Backend & Deployment Services | Production AI Infrastructure')
+@section('title', 'AI Backend & Deployment Services')
 @section('meta_description', 'AI app backend and deployment services, rate limiting, caching, token cost control, monitoring, and evals so your AI feature stays reliable in production.')
 @section('meta_keywords', 'AI app backend, AI deployment, AI infrastructure, LLM monitoring, AI cost optimization, AI evals, production AI systems, AI reliability engineering')
 
@@ -22,8 +22,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "AI Development", "item": "https://dapperstech.com/ai-development"},
-        {"@type": "ListItem", "position": 3, "name": "AI App Backend & Deployment", "item": "https://dapperstech.com/services/ai-development/ai-backend-deployment"}
+        {"@type": "ListItem", "position": 2, "name": "AI App Backend & Deployment", "item": "https://dapperstech.com/services/ai-development/ai-backend-deployment"}
       ]
     }
   ]
@@ -87,8 +86,6 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <a href="{{ route('ai_development') }}">AI Development</a>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>AI Backend & Deployment</span>
@@ -141,7 +138,7 @@
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> Rate Limiting & Queuing</span>
                         <span><i class="fa-solid fa-check"></i> Graceful Degradation</span>
-                        <span><i class="fa-solid fa-check"></i> Multi-Provider Failover</span>
+                        <span><i class="fa-solid fa-check"></i> Multi Provider Failover</span>
                     </div>
                     <div class="service-card-action">
                         Discuss This Service
@@ -169,7 +166,7 @@
                     <div>
                         <span>02</span>
                         <h3>Evals & Quality Monitoring</h3>
-                        <p>Ongoing evaluation pipelines that catch silent quality drift after launch, not just a one-time test before going live.</p>
+                        <p>Ongoing evaluation pipelines that catch silent quality drift after launch, not just a one time test before going live.</p>
                     </div>
                 </a>
 
@@ -180,7 +177,7 @@
                     <div>
                         <span>03</span>
                         <h3>Cloud Deployment & Scaling</h3>
-                        <p>Production deployment on your cloud of choice, with autoscaling and security hardening built around AI-specific traffic patterns.</p>
+                        <p>Production deployment on your cloud of choice, with autoscaling and security hardening built around AI specific traffic patterns.</p>
                     </div>
                 </a>
 
@@ -198,24 +195,30 @@
         </div>
 
         <div class="services-v2-bottom">
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI development and production infrastructure security" loading="lazy" decoding="async">
+                </div>
                 <span>05</span>
                 <h3>Security Hardening for AI Features</h3>
                 <p>Prompt injection defenses, input sanitisation, and access control around AI endpoints, closing the gaps generic web security misses.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/8636589/pexels-photo-8636589.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="AI agent monitoring and observability" loading="lazy" decoding="async">
+                </div>
                 <span>06</span>
                 <h3>Existing AI Feature Audits</h3>
                 <p>Already live but unreliable or expensive? We audit the architecture and fix the specific bottleneck, cost, latency, or quality.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="{{ route('contact_us') }}" class="service-wide-card">
+            </div>
+            <div class="service-wide-card">
+                <div class="service-mini-icon">
+                    <img src="https://images.pexels.com/photos/12969104/pexels-photo-12969104.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Business process automation with AI agents" loading="lazy" decoding="async">
+                </div>
                 <span>07</span>
                 <h3>Ongoing AI Maintenance</h3>
                 <p>Model version upgrades, prompt regression testing, and continuous monitoring so your AI feature stays reliable as providers change underneath you.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </div>
         </div>
     </div>
 </section>
@@ -236,14 +239,14 @@
                         <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
                         <div>
                             <h3>Built for Real Traffic</h3>
-                            <p>Rate limiting and queuing designed around your actual usage patterns, not a happy-path demo.</p>
+                            <p>Rate limiting and queuing designed around your actual usage patterns, not a happy path demo.</p>
                         </div>
                     </div>
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-sack-dollar"></i></div>
                         <div>
                             <h3>Predictable Cost Curves</h3>
-                            <p>Caching and usage budgets so a viral moment doesn't turn into a surprise five-figure API bill.</p>
+                            <p>Caching and usage budgets so a viral moment doesn't turn into a surprise five figure API bill.</p>
                         </div>
                     </div>
                     <div class="why-item">
@@ -272,7 +275,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star Upwork rating, 40+ systems shipped</span>
+                        <span>5 star Upwork rating, 40+ systems shipped</span>
                     </div>
                 </div>
             </div>
@@ -317,7 +320,7 @@
                     <div class="workflow-content">
                         <span>Architecture Review</span>
                         <h3>Map traffic patterns and cost exposure</h3>
-                        <p>We review expected usage, peak load, and worst-case cost exposure before designing the backend.</p>
+                        <p>We review expected usage, peak load, and worst case cost exposure before designing the backend.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -325,7 +328,7 @@
                     <div class="workflow-content">
                         <span>Harden</span>
                         <h3>Add rate limiting, caching, and failover</h3>
-                        <p>Rate limits, caching layers, and multi-provider failover built in before the system sees real traffic.</p>
+                        <p>Rate limits, caching layers, and multi provider failover built in before the system sees real traffic.</p>
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -374,15 +377,15 @@
       </details>
       <details>
         <summary>How do you stop AI API costs from spiking unexpectedly?</summary>
-        <p>Response caching, prompt compression, and usage budgets so costs scale with your business instead of with traffic spikes. We also add rate limiting and request queuing up front, so a viral moment or bot traffic doesn't turn into a surprise five-figure bill.</p>
+        <p>Response caching, prompt compression, and usage budgets so costs scale with your business instead of with traffic spikes. We also add rate limiting and request queuing up front, so a viral moment or bot traffic doesn't turn into a surprise five figure bill.</p>
       </details>
       <details>
-        <summary>What happens if our AI provider has an outage or rate-limits us?</summary>
-        <p>We build multi-provider failover and graceful degradation into the backend architecture itself, so a single provider outage doesn't take your AI feature, or your whole app, down with it. This is part of the core backend build, not an add-on bolted on after an incident.</p>
+        <summary>What happens if our AI provider has an outage or rate limits us?</summary>
+        <p>We build multi provider failover and graceful degradation into the backend architecture itself, so a single provider outage doesn't take your AI feature, or your whole app, down with it. This is part of the core backend build, not an add on bolted on after an incident.</p>
       </details>
       <details>
         <summary>How do you catch AI quality drift after a model gets updated?</summary>
-        <p>Ongoing evaluation pipelines run continuously after launch, not just as a one-time test before go-live. When a provider updates a model underneath you, the evals catch the quality drift before your users notice it, and we handle the prompt regression testing that comes with it.</p>
+        <p>Ongoing evaluation pipelines run continuously after launch, not just as a one time test before go live. When a provider updates a model underneath you, the evals catch the quality drift before your users notice it, and we handle the prompt regression testing that comes with it.</p>
       </details>
       <details>
         <summary>Our AI feature is already live but unreliable or expensive, can you fix it without a rebuild?</summary>

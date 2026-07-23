@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 
-@section('title', 'Responsive Design Services | Pixel-Perfect on Every Screen')
+@section('title', 'Responsive Web Design Services')
 @section('meta_description', 'Mobile-first responsive design services, pixel-perfect layouts on every screen size, from smartphones to large desktops, built for speed and usability.')
 @section('meta_keywords', 'responsive web design, mobile-first design, cross-device design, pixel-perfect design, adaptive layouts, mobile optimization, responsive UI')
 
@@ -27,8 +27,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dapperstech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Web Design", "item": "https://dapperstech.com/web-design"},
-        {"@type": "ListItem", "position": 3, "name": "Responsive Design", "item": "https://dapperstech.com/services/web-design/responsive-design"}
+        {"@type": "ListItem", "position": 2, "name": "Responsive Design", "item": "https://dapperstech.com/services/web-design/responsive-design"}
       ]
     }
   ]
@@ -92,15 +91,13 @@
     <div class="container">
         <div class="services-page-hero__content">
             <nav class="svc-breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
                 <span>Web Design</span>
                 <i class="fa-solid fa-chevron-right"></i>
                 <span>Responsive Design</span>
             </nav>
             <span class="services-page-kicker">Responsive Design</span>
             <h1>
-                Pixel-perfect layouts on<br>
+                Pixel perfect layouts on<br>
                 every screen size
             </h1>
             <p>
@@ -148,7 +145,7 @@
                     <div class="service-feature-points">
                         <span><i class="fa-solid fa-check"></i> Mobile, Tablet & Desktop Layouts</span>
                         <span><i class="fa-solid fa-check"></i> Fluid Grids & Flexible Images</span>
-                        <span><i class="fa-solid fa-check"></i> Real-Device Testing</span>
+                        <span><i class="fa-solid fa-check"></i> Real Device Testing</span>
                     </div>
                     <div class="service-card-action">
                         Start Responsive Project
@@ -176,8 +173,8 @@
                     </div>
                     <div>
                         <span>02</span>
-                        <h3>Touch-Friendly Navigation</h3>
-                        <p>Mobile menus, buttons, and forms sized and spaced for real thumbs, no accidental taps, no frustrating pinch-to-zoom.</p>
+                        <h3>Touch Friendly Navigation</h3>
+                        <p>Mobile menus, buttons, and forms sized and spaced for real thumbs, no accidental taps, no frustrating pinch to zoom.</p>
                     </div>
                 </a>
 
@@ -187,7 +184,7 @@
                     </div>
                     <div>
                         <span>03</span>
-                        <h3>Performance-Optimised Assets</h3>
+                        <h3>Performance Optimised Assets</h3>
                         <p>Responsive images and lazy loading so mobile visitors get a fast experience even on slower connections.</p>
                     </div>
                 </a>
@@ -198,7 +195,7 @@
                     </div>
                     <div>
                         <span>04</span>
-                        <h3>Cross-Browser & Device QA</h3>
+                        <h3>Cross Browser & Device QA</h3>
                         <p>Tested on real iOS, Android, and desktop browsers, not just emulators, to catch layout issues before launch.</p>
                     </div>
                 </a>
@@ -228,7 +225,7 @@
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                         <div>
-                            <h3>Mobile-First Approach</h3>
+                            <h3>Mobile First Approach</h3>
                             <p>Every design starts on mobile and scales up beautifully, because over 60% of your visitors are on a smartphone.</p>
                         </div>
                     </div>
@@ -265,7 +262,7 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <span>5-star design portfolio, 40+ projects delivered</span>
+                        <span>5 star design portfolio, 40+ projects delivered</span>
                     </div>
                 </div>
             </div>
@@ -274,7 +271,7 @@
                 <img src="https://images.pexels.com/photos/54284/pexels-photo-54284.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Responsive layouts shown across phone tablet and laptop" loading="lazy" decoding="async">
                 <div class="why-floating-card why-floating-card--top">
                     <strong>100%</strong>
-                    <span>Mobile-First</span>
+                    <span>Mobile First</span>
                 </div>
                 <div class="why-floating-card why-floating-card--bottom">
                     <strong>40+</strong>
@@ -345,7 +342,7 @@
                 <div class="workflow-step">
                     <div class="workflow-no">04</div>
                     <div class="workflow-content">
-                        <span>Cross-Device QA</span>
+                        <span>Cross Device QA</span>
                         <h3>Test on real devices before launch</h3>
                         <p>Final testing across real iOS, Android, and desktop browsers to catch any layout issues before going live.</p>
                     </div>
@@ -391,11 +388,11 @@
       </details>
       <details>
         <summary>Does responsive design affect SEO and Google rankings?</summary>
-        <p>Yes. Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile, with fast load times and a usable layout, directly supports better search visibility and conversions.</p>
+        <p>Yes. Google uses mobile first indexing, meaning it primarily evaluates the mobile version of your site for ranking. A responsive site that performs well on mobile, with fast load times and a usable layout, directly supports better search visibility and conversions.</p>
       </details>
       <details>
         <summary>Will responsive design slow down my website on mobile?</summary>
-        <p>No, done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop-sized page on a phone.</p>
+        <p>No, done correctly, it's the opposite. We pair responsive layouts with optimised, responsive images and lazy loading, so mobile visitors get a fast experience even on slower connections, rather than downloading a full desktop sized page on a phone.</p>
       </details>
   </div>
 </section>

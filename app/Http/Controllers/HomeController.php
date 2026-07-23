@@ -33,8 +33,18 @@ class HomeController extends Controller
         ],
         'web-design' => [
             'responsive-design' => 'responsive_design',
+            'uiux-design' => 'ui_ux_design',
+            'graphic-design-&-branding' => 'graphic_design_branding',
         ],
     ];
+
+    /**
+     * Categories (and everything under them) that have been retired from the site.
+     * Their DB rows still exist but must never render — the generic /{category}
+     * and /{category}/{slug} routes 404 for these instead of falling through to
+     * the stale database-backed template.
+     */
+    private const RETIRED_CATEGORY_SLUGS = ['web-development', 'web-design', 'digital-marketing'];
 
     /**
      * Display a listing of the resource.
@@ -117,6 +127,10 @@ class HomeController extends Controller
             return redirect()->route(self::STATIC_SERVICE_ROUTES[$category][$slug], [], 301);
         }
 
+        if (in_array($category, self::RETIRED_CATEGORY_SLUGS, true)) {
+            abort(404);
+        }
+
         $categoryService = Category::where('slug', $category)->with('service', function ($query) use ($slug) {
             $query->where('slug', $slug);
         })->first();
@@ -148,6 +162,10 @@ class HomeController extends Controller
 
         if (isset(self::STATIC_CATEGORY_ROUTES[$slug])) {
             return redirect()->route(self::STATIC_CATEGORY_ROUTES[$slug], [], 301);
+        }
+
+        if (in_array($slug, self::RETIRED_CATEGORY_SLUGS, true)) {
+            abort(404);
         }
 
         $category = Category::where('slug', $slug)->with('service')->first();
